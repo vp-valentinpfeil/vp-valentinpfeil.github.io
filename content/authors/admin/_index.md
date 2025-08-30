@@ -1,20 +1,20 @@
 ---
 # Display name
-title: 吳健雄
+title: Valentin Pfeil
 
 # Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+name_pronunciation: Valentin Pfeil
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
+first_name: Valentin
+last_name: Pfeil
 
 # Pronouns (optional)
-pronouns: she/her
+pronouns: he/him
 
 # Status emoji
 status:
-  icon: ☕️
+  icon: 🚀
 
 # Is this the primary user of the site?
 superuser: true
@@ -23,167 +23,147 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Chief Scientist
+role: Cloud and Confidential Computing Consultant & Military Officer
 
-# Organizations/Affiliations to display in Biography blox
+# Organizations/Affiliations to display in Biography block
 organizations:
-  - name: OpenAI
-    url: https://openai.com/
+  - name: Bundeswehr (German Armed Forces)
+    url: https://www.bundeswehr.de
+  - name: Capgemini
+    url: https://www.capgemini.com
+  - name: University of the Bundeswehr Munich
+    url: https://www.unibw.de
 
 # Social network links
-# Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:your-email@example.com'
-    label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/GetResearchDev
-  - icon: brands/instagram
-    url: https://www.instagram.com/
+    url: 'mailto:vp@valentinpfeil.com'
+    label: E-mail
   - icon: brands/github
-    url: https://github.com/gcushen
+    url: https://github.com/vp-valentinpfeil
   - icon: brands/linkedin
-    url: https://www.linkedin.com/
-  - icon: academicons/google-scholar
-    url: https://scholar.google.com/
-  - icon: academicons/orcid
-    url: https://orcid.org/
+    url: https://www.linkedin.com/in/valentin-pfeil
+  - icon: brands/orcid
+    url: https://orcid.org/0009-0007-8612-4926
+  - icon: brands/researchgate
+    url: https://www.researchgate.net/profile/Valentin-Pfeil
 
 interests:
+  - Cloud Computing & Kubernetes
+  - Confidential Computing & Security
+  - Defence & Cybersecurity
   - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - Fitness, Hyrox & Calisthenics
 
 education:
-  - area: PhD Artificial Intelligence
-    institution: Stanford University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+  - area: M.Sc. Computer Science
+    institution: University of the Bundeswehr Munich
+    date_start: 2024-01-01
+    date_end: 2025-09-30
     summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+      Specialisation in Cloud Security, Confidential Computing and NATO-compliant architecture modelling.  
+      Master’s thesis: *Confidential Computing in NATO Architectures*.
+  - area: B.Sc. Computer Science
+    institution: University of the Bundeswehr Munich
+    date_start: 2021-09-27
+    date_end: 2023-12-31
     summary: |
-      GPA: 3.8/4.0
+      Bachelor’s thesis on Trusted Execution Environments (AMD SEV-SNP) in OpenStack-based HPC Clouds.
+  - area: State-Certified Electrical Engineer
+    institution: DAA Technikum
+    date_start: 2013-10-01
+    date_end: 2019-10-10
+    summary: |
+      Focused on data processing and network technologies.
+  - area: IT Specialist (System Integration)
+    institution: IHK Würzburg-Schweinfurt
+    date_start: 2010-10-01
+    date_end: 2013-07-02
+    summary: |
+      Dual apprenticeship with emphasis on IT system administration and networking.
 
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+work and duty:
+  - position: Platoon Leader, First Lieutenant (OF-1)
+    company_name: IT Battalion 293, Bundeswehr
+    company_url: https://www.bundeswehr.de
+    date_start: 2025-10-01
     summary: |
-      GPA: 3.4/4.0
-      
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
-    company_url: ''
-    company_logo: ''
-    date_start: 2021-01-01
-    date_end: ''
-    summary: |2-
-      Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
-    company_name: X
-    company_url: ''
-    company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+      Leading a platoon in IT and cyber operations. Focus on integrating tactical information technologies into military applications.
+  - position: Working Student / Master’s Candidate
+    company_name: Capgemini Germany
+    company_url: https://www.capgemini.com
+    date_start: 2025-01-01
+    date_end: 2025-09-30
     summary: |
-      Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      Cloud Security & Compliance Architect in the *OmniAware* project.  
+      Focus on Confidential Computing, NATO-compliant architectures and AWS Landing Zones.
+  - position: IT Consultant (Freelancer & SME)
+    company_name: Self-Employed / Medium-Sized Enterprise
+    date_start: 2024-01-01
+    date_end: Today
+    summary: |
+      Consulting in cloud, IT security and infrastructure.
+  - position: (Deputy) Section Leader, Sergeant (OR-5)
+    company_name: CIS Coy, Eurocorps
+    company_url: https://www.bundeswehr.de | https://eurocorps.org
+    date_start: 2016-06-24
+    date_end: 2021-12-15
+    summary: |
+      4.5 years of service in France. Focused on communications and information systems in an international NATO/EU environment.
 
-# Skills
-# Add your own SVG icons to `assets/media/icons/`
 skills:
   - name: Technical Skills
     items:
-      - name: Python
-        description: ''
+      - name: Kubernetes & Cloud Architecture
+        percent: 90
+        icon: cloud
+      - name: Confidential Computing (SEV-SNP, Nitro Enclaves)
+        percent: 95
+        icon: lock-closed
+      - name: Python & DevOps Automation
         percent: 80
         icon: code-bracket
-      - name: Data Science
-        description: ''
-        percent: 100
-        icon: chart-bar
-      - name: SQL
-        description: ''
-        percent: 40
-        icon: circle-stack
-  - name: Hobbies
+      - name: Security Architecture & Compliance
+        percent: 90
+        icon: shield-check
+  - name: Personal
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: Hiking
-        description: ''
-        percent: 60
-        icon: person-simple-walk
-      - name: Cats
-        description: ''
+      - name: Leadership & Military Training
         percent: 100
-        icon: cat
-      - name: Photography
-        description: ''
-        percent: 80
-        icon: camera
+        icon: user-group
+      - name: Sports (Hyrox, Calisthenics, Yoga)
+        percent: 85
+        icon: dumbbell
+      - name: Languages
+        percent: 70
+        icon: language
 
 languages:
-  - name: English
+  - name: German (native)
     percent: 100
-  - name: Chinese
-    percent: 75
-  - name: Portuguese
-    percent: 25
+  - name: English
+    percent: 95
+  - name: French
+    percent: 70
 
-# Awards.
-#   Add/remove as many awards below as you like.
-#   Only `title`, `awarder`, and `date` are required.
-#   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
 awards:
-  - title: Neural Networks and Deep Learning
-    url: https://www.coursera.org/learn/neural-networks-deep-learning
-    date: '2023-11-25'
-    awarder: Coursera
-    icon: coursera
-    summary: |
-      I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
-  - title: Blockchain Fundamentals
-    url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-    date: '2023-07-01'
-    awarder: edX
-    icon: edx
-    summary: |
-      Learned:
-      - Synthesize your own blockchain solutions
-      - Gain an in-depth understanding of the specific mechanics of Bitcoin
-      - Understand Bitcoin’s real-life applications and learn how to attack and destroy Bitcoin, Ethereum, smart contracts and Dapps, and alternatives to Bitcoin’s Proof-of-Work consensus algorithm
-  - title: 'Object-Oriented Programming in R'
-    url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
-    certificate_url: https://www.datacamp.com
-    date: '2023-01-21'
-    awarder: datacamp
-    icon: datacamp
-    summary: |
-      Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
+  - title: Hyrox Finisher
+    date: '2024-11-02'
+    awarder: Hyrox
+    summary: Participation and successful completion of multiple Hyrox events.
+  - title: Academic Excellence Award
+    date: '2023-12-15'
+    awarder: Universität der Bundeswehr München
+    summary: Awarded for outstanding academic performance during the Bachelor’s degree.
 ---
 
 ## About Me
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+I am a Cloud Security Architect, military officer and technology enthusiast.  
+My focus areas are **Confidential Computing, Cloud Security and NATO-compliant architectures**.  
+
+Alongside my work as an officer and IT architect, I am passionate about fitness (Hyrox, calisthenics, yoga) and international collaboration.  
+
+**My mission:** to apply technology responsibly in defence and society.
