@@ -33,10 +33,14 @@ header:
     blox: "navbar"
     fixed_to_top: true
     show_search: true
-    show_theme_chooser: true
+    show_theme_chooser: false
+    # BRAND / LOGO
     logo:
-      image: "/media/logo.png"
-      height: 40
+      image: /media/logo.png          # path relative to /assets/media
+      image_dark: /media/logo.png     # optional, for dark theme
+      alt: "Valentin Pfeil Consulting"
+      height: 40                      # px
+      # text: ""                      # leave empty to hide text if your logo has text
 
 # Site footer
 footer:
