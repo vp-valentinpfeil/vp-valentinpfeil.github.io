@@ -34,8 +34,7 @@ header:
     fixed_to_top: true
     show_search: true
     show_theme_chooser: true
-    logo:
-      text: '<img src="/media/logo.png" alt="Valentin Pfeil Consulting" style="height:40px;">'
+    logo: "/media/logo.png"
       #text: "Your Name"
 
 # Site footer
