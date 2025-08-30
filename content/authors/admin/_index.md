@@ -171,6 +171,6 @@ With my dual background as an IT officer in the German Armed Forces and a cloud 
 Core competencies: Cloud security architecture (AWS, Azure, OpenStack), Kubernetes and container security, infrastructure-as-code (Terraform, Helm, Kubectl), IT governance and compliance consulting.
 Available part-time for consulting, architecture design, security reviews, and proof-of-concepts in civilian industries such as healthcare, finance and Industry 4.0.
 
-**My mission:** building Trust in Cloud.
-
 Alongside my work as an officer and IT architect, I am passionate about sport (Hyrox, calisthenics, yoga) and international collaboration.
+
+**My mission:** building Trust in Cloud.
