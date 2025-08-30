@@ -1,6 +1,6 @@
 # www.valentinpfeil.com
 
-Personal website & portfolio of **Valentin Pfeil** —  
+Website and portfolio of **Valentin Pfeil** —  
 Cloud & Confidential Computing Consultant | IT Officer | Security Architect
 
 🌐 Live Website: [www.valentinpfeil.com](https://www.valentinpfeil.com)  
