@@ -23,16 +23,16 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Cloud and Confidential Computing Consultant & Military Officer
+role: Cloud and Confidential Computing Consultant | IT Officer | Security Architect
 
 # Organizations/Affiliations to display in Biography block
 organizations:
   - name: Bundeswehr (German Armed Forces)
     url: https://www.bundeswehr.de
-  - name: Capgemini
-    url: https://www.capgemini.com
-  - name: University of the Bundeswehr Munich
-    url: https://www.unibw.de
+#  - name: Capgemini
+#    url: https://www.capgemini.com
+#  - name: University of the Bundeswehr Munich
+#    url: https://www.unibw.de
 
 # Social network links
 profiles:
@@ -147,6 +147,8 @@ languages:
     percent: 95
   - name: French
     percent: 70
+  - name: Italian
+    percent: 5
 
 awards:
   - title: Hyrox Finisher
@@ -161,9 +163,14 @@ awards:
 
 ## About Me
 
-I am a Cloud Security Architect, military officer and technology enthusiast.  
-My focus areas are **Confidential Computing, Cloud Security and NATO-compliant architectures**.  
+I support companies **secure** their **cloud** infrastructures and **enable data protection** during use with **confidential computing**.
 
-Alongside my work as an officer and IT architect, I am passionate about fitness (Hyrox, calisthenics, yoga) and international collaboration.  
+My focus areas: Trusted Execution Environments (AMD SEV-SNP, AWS Nitro Enclaves, OP-TEE), remote attestation, and vault integration—for a new level of security for business-critical workloads.
+With my dual background as an IT officer in the German Armed Forces and a cloud security consultant, I combine discipline, technical expertise, and compliance knowledge (**ISO 27001**, BSI C5, **NATO D3.2**) to achieve measurable results.
 
-**My mission:** to apply technology responsibly in defence and society.
+Core competencies: Cloud security architecture (AWS, Azure, OpenStack), Kubernetes and container security, infrastructure-as-code (Terraform, Helm, Kubectl), IT governance and compliance consulting.
+Available part-time for consulting, architecture design, security reviews, and proof-of-concepts in civilian industries such as healthcare, finance and Industry 4.0.
+
+**My mission:** building Trust in Cloud.
+
+Alongside my work as an officer and IT architect, I am passionate about sport (Hyrox, calisthenics, yoga) and international collaboration.
