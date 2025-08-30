@@ -1,4 +1,4 @@
-# valentinpfeil.github.io
+# www.valentinpfeil.com
 
 Personal website & portfolio of **Valentin Pfeil** —  
 Cloud & Confidential Computing Consultant | IT Officer | Security Architect
