@@ -36,7 +36,6 @@ header:
     show_theme_chooser: true
     logo:
       image: "/media/logo.png"
-      alt: "Valentin Pfeil Consulting"
       height: 40
 
 # Site footer
