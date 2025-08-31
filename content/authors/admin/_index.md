@@ -33,9 +33,9 @@ role: Cloud and Confidential Computing Consultant
 
 # Social network links
 profiles:
-  # - icon: phone
-  #   url: 'tel:+49 151 28400183'
-  #   label: Phone
+  - icon: phone
+    url: 'tel:+49 151 28400183'
+    label: Phone
   - icon: at-symbol
     url: 'mailto:vp@valentinpfeil.com'
     label: E-mail
