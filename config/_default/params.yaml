@@ -73,9 +73,9 @@ favicon: "/media/icon.png"
 
 #Activate academic icon pack extension
 extensions:
-  academicons:
-    enable: true
   fontawesome:
+    enable: true
+  academicons:
     enable: true
 
 # Test CSS
