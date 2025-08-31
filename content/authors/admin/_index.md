@@ -1,4 +1,5 @@
 ---
+{{< block color="light" >}}
 # Display name
 title: Valentin Pfeil
 
@@ -17,7 +18,7 @@ last_name: Pfeil
 superuser: true
 
 # Highlight the author in author lists? (true/false)
-highlight_name: true
+highlight_name: false
 
 # Role/position/tagline
 role: Cloud and Confidential Computing Consultant | IT Officer | Security Architect
@@ -44,6 +45,11 @@ profiles:
     url: https://orcid.org/0009-0007-8612-4926
   - icon: brands/researchgate
     url: https://www.researchgate.net/profile/Valentin-Pfeil
+
+{{< /block >}}
+
+
+{{< block color="light" >}}
 
 interests:
   - Cloud Computing & Kubernetes
@@ -78,6 +84,8 @@ education:
     date_end: 2013-07-02
     summary: |
       Dual apprenticeship with emphasis on IT system administration and networking.
+
+{{< /block >}}
 
 work and duty:
   - position: Platoon Leader, First Lieutenant (OF-1)
@@ -158,6 +166,8 @@ awards:
     summary: Awarded for outstanding academic performance during the Bachelor’s degree.
 ---
 
+{{< block color="light" >}}
+
 ## About Me
 
 I support companies **secure** their **cloud** infrastructures and **enable data protection** during use with **confidential computing**.
@@ -169,6 +179,7 @@ Core competencies: Cloud security architecture (AWS, Azure, OpenStack), Kubernet
 Available part-time for consulting, architecture design, security reviews, and proof-of-concepts in civilian industries such as healthcare, finance and Industry 4.0.
 
 Alongside my work as an officer and IT architect, I am passionate about sport (Hyrox, calisthenics, yoga) and international collaboration.
-![Test Logo](/media/logo.png)
 
 **My mission:** building Trust in Cloud.
+
+{{< /block >}}
