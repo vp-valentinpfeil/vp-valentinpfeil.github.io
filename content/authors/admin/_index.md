@@ -68,14 +68,12 @@ education:
     summary: |
       Specialisation in Cloud Security, Confidential Computing and NATO-compliant architecture modelling.  
       Master’s Thesis: *Connected Defence: Next-Generation Data Platform for Military Intelligence and Operations (263 p., Feb 2025 - Jun 2025)*
-#(263 p., Feb 2025 - Jun 2025).
   - area: B.Sc. Computer Science
     institution: University of the Bundeswehr Munich
     date_start: 2021-09-27
     date_end: 2023-12-31
     summary: |
       Bachelor’s Thesis: *Confidential Computing via Hardware Trusted Execution Environments by an OpenStack HPC capable cloud (393 p., Sep 2023 - Jan 2024)*
-#(393 p., Sep 2023 - Jan 2024).
   - area: State-Certified Electrical Engineer
     institution: DAA Technikum
     date_start: 2013-10-01
