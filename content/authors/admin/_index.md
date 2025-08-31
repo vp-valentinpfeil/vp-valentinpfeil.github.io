@@ -43,15 +43,15 @@ profiles:
     url: https://www.linkedin.com/in/valentinpfeil/
   - icon: brands/github
     url: https://github.com/vp-valentinpfeil
-  - icon: ai/osf
+  - icon: academicons/osf
     url: https://osf.io/azqyb
   - icon: brands/orcid
     url: https://orcid.org/0009-0007-8612-4926
-  - icon: ai/researchgate
+  - icon: academicons/researchgate
     url: https://www.researchgate.net/profile/Valentin-Pfeil
-  # - icon: file-text
-  #   url: /files/CV_ValentinPfeil.pdf
-  #   label: CV    
+  - icon: academicons/cv
+    url: /files/CV_ValentinPfeil.pdf
+    label: CV    
 
 interests:
   - Cloud Computing & Kubernetes
