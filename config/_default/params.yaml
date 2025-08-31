@@ -37,8 +37,8 @@ header:
   # BRAND / LOGO
     logo:
       # point to the file under /static (no leading slash)
-      image: /assets/media/logo.png
-      image_dark: /assets/media/logo.png    # or another dark-version if you have one
+      image: media/logo.png
+      image_dark: media/logo.png    # or another dark-version if you have one
       alt: "Valentin Pfeil Consulting"
       height: 40                    # px
       text: ""                      # must be empty to hide “Your Name” text
