@@ -149,7 +149,7 @@ skills:
       - name: Reading (Philosophy, Entrepreneurship, IT)
         percent: 70
         icon: book-open
-      - name: Languages (French, Italian)
+      - name: Languages
         percent: 70
         icon: language
 
