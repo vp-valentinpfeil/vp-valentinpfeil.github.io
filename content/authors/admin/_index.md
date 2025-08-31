@@ -54,7 +54,7 @@ interests:
   - Defence & Cybersecurity
   - Artificial Intelligence
   - Fitness, Hyrox & Calisthenics
-  ![Test Logo](/media/logo.png)
+  ![Test Logo](/assets/media/logo.png)
 education:
   - area: M.Sc. Computer Science
     institution: University of the Bundeswehr Munich
