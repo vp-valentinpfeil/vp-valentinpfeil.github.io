@@ -75,6 +75,8 @@ favicon: "/media/icon.png"
 extensions:
   academicons:
     enable: true
+  fontawesome:
+    enable: true
 
 # Test CSS
 #assets:
