@@ -73,7 +73,7 @@ favicon: "/media/icon.png"
 
 #Activate academic icon pack extension
 extensions:
-  fontawesome:
+  fontawesome: #didn't work out with fa icons in with nutrition/sports
     enable: true
   academicons:
     enable: true
