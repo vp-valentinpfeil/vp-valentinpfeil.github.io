@@ -143,7 +143,13 @@ skills:
       - name: Sports (Calisthenics, Freeletics, Running, Hyrox and Yoga)
         percent: 85
         icon: solid/dumbbell
-      - name: Languages
+      - name: Nutrition
+        percent: 100
+        icon: solid/bowl-food
+      - name: Reading (Philosophy, Entrepreneurship, IT)
+        percent: 70
+        icon: book-open
+      - name: Languages (French, Italian)
         percent: 70
         icon: language
 
