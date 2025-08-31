@@ -9,12 +9,9 @@ name_pronunciation: Valentin Pfeil
 first_name: Valentin
 last_name: Pfeil
 
-# Pronouns (optional)
-pronouns: he/him
-
-# Status emoji
-status:
-  icon: 🚀
+# Status emoji (Optional)
+#status:
+#  icon: 🚀
 
 # Is this the primary user of the site?
 superuser: true
