@@ -66,26 +66,25 @@ education:
     date_start: 2024-01-01
     date_end: 2025-09-30
     summary: |
-      Specialisation in Cloud Security, Confidential Computing and NATO-compliant architecture modelling.  
+      Deepened expertise in cloud security, confidential computing, and NATO-compliant architectures.  
+      Developed a strategic perspective on integrating technical solutions into military and governmental structures.
       Master’s Thesis: *Connected Defence: Next-Generation Data Platform for Military Intelligence and Operations (263 p., Feb 2025 - Jun 2025)*
   - area: B.Sc. Computer Science
     institution: University of the Bundeswehr Munich
     date_start: 2021-09-27
     date_end: 2023-12-31
     summary: |
+      Built a solid foundation in computer science and cloud technologies.  
+      Explored trusted execution environments (AMD SEV-SNP) within OpenStack-based cloud environments.
       Bachelor’s Thesis: *Confidential Computing via Hardware Trusted Execution Environments by an OpenStack HPC capable cloud (393 p., Sep 2023 - Jan 2024)*
   - area: State-Certified Electrical Engineer
     institution: DAA Technikum
     date_start: 2013-10-01
     date_end: 2019-10-10
     summary: |
-      Focused on data processing and network technologies.
-  - area: IT Specialist (System Integration)
-    institution: IHK Würzburg-Schweinfurt
-    date_start: 2010-10-01
-    date_end: 2013-07-02
-    summary: |
-      Dual apprenticeship with emphasis on IT system administration and networking.
+      Focused on data processing and network technologies.  
+      Gained strong practical and technical foundations in IT and electrical engineering.  
+      Developed a systematic and solution-oriented approach later applied to cloud and security architectures.  
 
 "work and duty":
   - position: Platoon Leader, First Lieutenant (OF-1)
@@ -135,7 +134,7 @@ skills:
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: Leadership and Military Training
+      - name: (Military) Leadership and Project Management
         percent: 100
         icon: user-group
       - name: Sports (Calisthenics, Freeletics, Running, Hyrox and Yoga)
