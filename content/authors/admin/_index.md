@@ -20,7 +20,7 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Cloud and Confidential Computing Consultant | IT Officer | Security Architect
+role: Cloud and Confidential Computing Consultant
 
 # Organizations/Affiliations to display in Biography block
 #organizations:
