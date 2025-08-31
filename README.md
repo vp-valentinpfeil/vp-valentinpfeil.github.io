@@ -4,7 +4,7 @@ Website and portfolio of **Valentin Pfeil** —
 Cloud & Confidential Computing Consultant | IT Officer | Security Architect
 
 🌐 Live Website: [www.valentinpfeil.com](https://www.valentinpfeil.com)  
-🔒 Motto: *Building Trust in Cloud*  
+🔒 Slogan: *Building Trust in Cloud*  
 
 ---
 
@@ -26,11 +26,12 @@ With my dual background as an **IT officer in the German Armed Forces** and as a
 This website (powered by **Hugo Blox**) serves as my professional and academic portfolio.  
 It contains:
 
-- **About Me** — professional background, current role, key expertise  
-- **Experience** — Bundeswehr career, consulting and project leadership  
 - **Projects** — incl. OmniAware and other cloud security/Confidential Computing initiatives  
+- **Experience** — Bundeswehr career, consulting and project leadership  
 - **Publications** — academic work, Master’s thesis, upcoming PhD contributions  
-- **Contact** — how to get in touch  
+- **Events** — how to get in touch
+- **News** — recent information  
+- **About** — professional background, current role, key expertise  
 
 ---
 

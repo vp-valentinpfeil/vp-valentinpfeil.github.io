@@ -1,0 +1,18 @@
+/* Immer Logo in der Navbar zeigen – auch im Overlay über dem Hero */
+.header--overlay .navbar-brand {
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+/* Logo nicht zusammenstauchen */
+.navbar-brand img {
+  height: 40px;      /* passend zu deinem params.yaml */
+  width: auto;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Falls der Brand-Text noch irgendwo greift: ausblenden */
+.navbar-brand .brand__text {
+  display: none;
+}

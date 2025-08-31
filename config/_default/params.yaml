@@ -30,16 +30,16 @@ marketing:
 header:
   navbar:
     enable: true
-    blox: "navbar"
     fixed_to_top: true
     show_search: false
     show_theme_chooser: false
 
-    # Make sure nothing else overrides the brand:
-    logo:
-      #image: "/media/logo.png"        # disable file-based logo here
-      #image_dark: "/media/logo.png"   # (optional) also blank
-      text: "Valentin Pfeil"         # MUST be empty to hide “Your Name”
+  logo:
+    image: "media/logo.png"   # weil du /static/media/logo.png nutzt
+    image_dark: "media/logo.png"
+    alt: "Valentin Pfeil Consulting"
+    height: 40
+    text: ""                  # leer lassen, damit kein “Your Name”
 
 # Site footer
 footer:
