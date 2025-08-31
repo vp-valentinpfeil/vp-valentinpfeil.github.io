@@ -23,7 +23,7 @@ highlight_name: true
 role: Cloud and Confidential Computing Consultant #| IT Officer | Security Architect
 
 # Organizations/Affiliations to display in Biography block
-organizations:
+#organizations:
 #  - name: Bundeswehr (German Armed Forces)
 #    url: https://www.bundeswehr.de
 #  - name: Capgemini
@@ -33,9 +33,9 @@ organizations:
 
 # Social network links
 profiles:
-#  - icon: phone
-#    url: 'tel:+49 151 28400183'
-#    label: Phone
+  - icon: phone
+    url: 'tel:+49 151 28400183'
+    label: Phone
   - icon: at-symbol
     url: 'mailto:vp@valentinpfeil.com'
     label: E-mail
@@ -49,7 +49,7 @@ profiles:
     url: https://orcid.org/0009-0007-8612-4926
   - icon: brands/researchgate
     url: https://www.researchgate.net/profile/Valentin-Pfeil
-  # - icon: ai/cv
+  # - icon: file-text
   #   url: /files/CV_ValentinPfeil.pdf
   #   label: CV    
 
