@@ -33,9 +33,9 @@ organizations:
 
 # Social network links
 profiles:
-  - icon: general/phone
-    url: 'tel:+49 151 28400183'
-    label: Phone
+#  - icon: general/phone
+#    url: 'tel:+49 151 28400183'
+#    label: Phone
   - icon: at-symbol
     url: 'mailto:vp@valentinpfeil.com'
     label: E-mail
