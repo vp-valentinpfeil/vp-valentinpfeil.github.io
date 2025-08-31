@@ -146,7 +146,7 @@ skills:
       - name: Nutrition
         percent: 100
         icon: fire
-      - name: Reading (Philosophy, Entrepreneurship, IT)
+      - name: Reading (Philosophy, Entrepreneurship and IT)
         percent: 70
         icon: book-open
       - name: Languages
