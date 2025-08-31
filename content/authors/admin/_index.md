@@ -147,15 +147,15 @@ languages:
   - name: Italian
     percent: 5
 
-awards:
-  - title: Hyrox Finisher
-    date: '2024-11-02'
-    awarder: Hyrox
-    summary: Participation and successful completion of multiple Hyrox events.
-  - title: Academic Excellence Award
-    date: '2023-12-15'
-    awarder: Universität der Bundeswehr München
-    summary: Awarded for outstanding academic performance during the Bachelor’s degree.
+# awards:
+#   - title: Hyrox Finisher
+#     date: '2024-11-02'
+#     awarder: Hyrox
+#     summary: Participation and successful completion of multiple Hyrox events.
+#   - title: Academic Excellence Award
+#     date: '2023-12-15'
+#     awarder: Universität der Bundeswehr München
+#     summary: Awarded for outstanding academic performance during the Bachelor’s degree.
 
 design:
   background:
