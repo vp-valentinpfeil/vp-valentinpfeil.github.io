@@ -89,7 +89,7 @@ education:
     summary: |
       Dual apprenticeship with emphasis on IT system administration and networking.
 
-work and duty:
+"work and duty":
   - position: Platoon Leader, First Lieutenant (OF-1)
     company_name: IT Battalion 293, Bundeswehr
     company_url: https://www.bundeswehr.de
@@ -107,7 +107,7 @@ work and duty:
   - position: IT Consultant (Freelancer & SME)
     company_name: Self-Employed / Medium-Sized Enterprise
     date_start: 2024-01-01
-    date_end: Today
+    date_end: "Today"
     summary: |
       Consulting in cloud, IT security and infrastructure.
   - position: (Deputy) Section Leader, Sergeant (OR-5)
