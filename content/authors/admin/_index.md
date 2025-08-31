@@ -49,7 +49,7 @@ profiles:
     url: https://orcid.org/0009-0007-8612-4926
   - icon: ai/researchgate
     url: https://www.researchgate.net/profile/Valentin-Pfeil
-  # - icon: file-text
+  # - icon: ai/cv
   #   url: /files/CV_ValentinPfeil.pdf
   #   label: CV    
 
