@@ -50,7 +50,7 @@ profiles:
   - icon: academicons/researchgate
     url: https://www.researchgate.net/profile/Valentin-Pfeil
   - icon: academicons/cv
-    url: /files/cv_valentin.pdf
+    url: /files/20241018_CV_VP_EN.pdf
     label: CV    
 
 interests:
@@ -121,13 +121,13 @@ education:
 skills:
   - name: Technical Skills
     items:
-      - name: Kubernetes & Cloud Architecture
+      - name: Kubernetes & Cloud Architecture (Rancher, Azure, AWS, OpenStack)
         percent: 90
         icon: cloud
       - name: Confidential Computing (SEV-SNP, Nitro Enclaves)
         percent: 95
         icon: lock-closed
-      - name: Python & DevOps Automation
+      - name: DevSecOps & DevOps Automation
         percent: 80
         icon: code-bracket
       - name: Security Architecture & Compliance
