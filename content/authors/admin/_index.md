@@ -54,7 +54,7 @@ interests:
   - Defence & Cybersecurity
   - Artificial Intelligence
   - Fitness, Hyrox & Calisthenics
-  ![Test Logo](/assets/media/logo.png)
+
 education:
   - area: M.Sc. Computer Science
     institution: University of the Bundeswehr Munich
@@ -172,5 +172,6 @@ Core competencies: Cloud security architecture (AWS, Azure, OpenStack), Kubernet
 Available part-time for consulting, architecture design, security reviews, and proof-of-concepts in civilian industries such as healthcare, finance and Industry 4.0.
 
 Alongside my work as an officer and IT architect, I am passionate about sport (Hyrox, calisthenics, yoga) and international collaboration.
+![Test Logo](/assets/media/logo.png)
 
 **My mission:** building Trust in Cloud.
