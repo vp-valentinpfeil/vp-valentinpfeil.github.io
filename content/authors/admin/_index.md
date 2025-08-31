@@ -33,17 +33,25 @@ organizations:
 
 # Social network links
 profiles:
+  - icon: phone
+    url: 'tel:+49 151 28400183'
+    label: Phone
   - icon: at-symbol
     url: 'mailto:vp@valentinpfeil.com'
     label: E-mail
-  - icon: brands/github
-    url: https://github.com/vp-valentinpfeil
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/valentinpfeil/
+  - icon: brands/github
+    url: https://github.com/vp-valentinpfeil
+  - icon: brands/osf
+    url: https://osf.io/azqyb
   - icon: brands/orcid
     url: https://orcid.org/0009-0007-8612-4926
   - icon: brands/researchgate
     url: https://www.researchgate.net/profile/Valentin-Pfeil
+  - icon: file-text
+    url: /files/CV_ValentinPfeil.pdf
+    label: CV    
 
 interests:
   - Cloud Computing & Kubernetes
@@ -59,13 +67,15 @@ education:
     date_end: 2025-09-30
     summary: |
       Specialisation in Cloud Security, Confidential Computing and NATO-compliant architecture modelling.  
-      Master’s thesis: *Confidential Computing in NATO Architectures*.
+      Master’s Thesis: *Connected Defence: Next-Generation Data Platform for Military Intelligence and Operations*
+(263 p., Feb 2025 - Jun 2025).
   - area: B.Sc. Computer Science
     institution: University of the Bundeswehr Munich
     date_start: 2021-09-27
     date_end: 2023-12-31
     summary: |
-      Bachelor’s thesis on Trusted Execution Environments (AMD SEV-SNP) in OpenStack-based HPC Clouds.
+      Bachelor’s Thesis: *Confidential Computing via Hardware Trusted Execution Environments by an OpenStack HPC capable cloud*
+(393 p., Sep 2023 - Jan 2024).
   - area: State-Certified Electrical Engineer
     institution: DAA Technikum
     date_start: 2013-10-01
