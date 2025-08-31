@@ -37,9 +37,9 @@ header:
 
     # Make sure nothing else overrides the brand:
     logo:
-      image: "/media/logo.png"        # disable file-based logo here
-      image_dark: "/media/logo.png"   # (optional) also blank
-      text: ""         # MUST be empty to hide “Your Name”
+      #image: "/media/logo.png"        # disable file-based logo here
+      #image_dark: "/media/logo.png"   # (optional) also blank
+      text: "Valentin Pfeil"         # MUST be empty to hide “Your Name”
 
 # Site footer
 footer:
