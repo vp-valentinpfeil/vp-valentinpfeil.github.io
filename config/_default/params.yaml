@@ -34,12 +34,18 @@ header:
     fixed_to_top: true
     show_search: true
     show_theme_chooser: false
-  logo:
-    image: media/logo.png          # relativer Pfad zu /static
-    image_dark: media/logo.png     # optional für Dark Mode
-    alt: "Valentin Pfeil Consulting"
-    height: 40                     # px
-    text: ""                       # muss leer bleiben, sonst überschreibt Text das Logo
+
+    # Force HTML brand (your logo)
+    brand_html: |
+      <img src="/media/logo.png"
+           alt="Valentin Pfeil Consulting"
+           style="height:40px; vertical-align:middle;">
+
+    # Make sure nothing else overrides the brand:
+    logo:
+      image: ""        # disable file-based logo here
+      image_dark: ""   # (optional) also blank
+      text: ""         # MUST be empty to hide “Your Name”
 
 # Site footer
 footer:
