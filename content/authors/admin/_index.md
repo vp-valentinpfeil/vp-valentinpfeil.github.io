@@ -20,13 +20,12 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Cloud and Confidential Computing Consultant
-#| IT Officer | Security Architect
+role: Cloud and Confidential Computing Consultant | IT Officer | Security Architect
 
 # Organizations/Affiliations to display in Biography block
-#organizations:
-#  - name: Bundeswehr (German Armed Forces)
-#    url: https://www.bundeswehr.de
+organizations:
+  - name: Bundeswehr (German Armed Forces)
+    url: https://www.bundeswehr.de
 #  - name: Capgemini
 #    url: https://www.capgemini.com
 #  - name: University of the Bundeswehr Munich
@@ -34,9 +33,9 @@ role: Cloud and Confidential Computing Consultant
 
 # Social network links
 profiles:
-  - icon: phone
-    url: 'tel:+49 151 28400183'
-    label: Phone
+  # - icon: phone
+  #   url: 'tel:+49 151 28400183'
+  #   label: Phone
   - icon: at-symbol
     url: 'mailto:vp@valentinpfeil.com'
     label: E-mail
@@ -67,9 +66,9 @@ education:
     date_start: 2024-01-01
     date_end: 2025-09-30
     summary: |
-      Specialisation in Cloud Security, Confidential Computing and NATO–compliant architecture modelling.
-  Master’s Thesis: *Connected Defence: Next–Generation Data Platform for Military Intelligence and Operations*
-#(263 p., Feb 2025 – Jun 2025).
+      Specialisation in Cloud Security, Confidential Computing and NATO-compliant architecture modelling.  
+      Master’s Thesis: *Connected Defence: Next-Generation Data Platform for Military Intelligence and Operations*
+#(263 p., Feb 2025 - Jun 2025).
   - area: B.Sc. Computer Science
     institution: University of the Bundeswehr Munich
     date_start: 2021-09-27
