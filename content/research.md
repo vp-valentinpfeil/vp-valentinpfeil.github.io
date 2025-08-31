@@ -2,6 +2,7 @@
 title: 'Research and Development'
 date: 2024-05-19
 type: landing
+url: /research/
 
 design:
   # Section spacing
@@ -10,6 +11,7 @@ design:
 # Page Sections
 sections:
   - block: markdown
+    id: papers
     content:
       title: '📚 My Research'
       subtitle: ''
@@ -22,7 +24,6 @@ sections:
     design:
       columns: '1'
   - block: collection
-    id: papers
     content:
       title: Featured Publications
       filters:

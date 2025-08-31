@@ -10,7 +10,8 @@ main:
     weight: 99
 #  - name: Publications
   - name: Research and Development
-    url: /#papers
+    url: /research/
+#    url: /#papers
     weight: 30
 # - name: Talks
 # - name: Events
