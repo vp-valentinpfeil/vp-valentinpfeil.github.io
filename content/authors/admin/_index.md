@@ -74,7 +74,7 @@ education:
     date_end: 2023-12-31
     summary: |
       Bachelor’s Thesis: "Confidential Computing via Hardware Trusted Execution Environments by an OpenStack HPC capable cloud
-(393 p., Sep 2023 - Jan 2024)."
+#(393 p., Sep 2023 - Jan 2024)."
   - area: State-Certified Electrical Engineer
     institution: DAA Technikum
     date_start: 2013-10-01
