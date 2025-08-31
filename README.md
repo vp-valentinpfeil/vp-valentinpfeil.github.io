@@ -1,7 +1,7 @@
 # www.valentinpfeil.com
 
 Website and portfolio of **Valentin Pfeil** —  
-Cloud & Confidential Computing Consultant | IT Officer | Security Architect
+Cloud & Confidential Computing Consultant
 
 🌐 Live Website: [www.valentinpfeil.com](https://www.valentinpfeil.com)  
 🔒 Slogan: *Building Trust in Cloud*  
