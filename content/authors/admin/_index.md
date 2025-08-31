@@ -116,7 +116,7 @@ education:
       4.5 years of service in France. Focused on communications and information systems in an international NATO/EU environment.
 
 skills:
-  - name: Know-How
+  - name: Know-how
     items:
       - name: Kubernetes and Cloud Architecture (Rancher, Azure, AWS, OpenStack)
         percent: 90
