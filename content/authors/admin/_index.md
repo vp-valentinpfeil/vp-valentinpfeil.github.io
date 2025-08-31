@@ -47,7 +47,7 @@ profiles:
     url: https://osf.io/azqyb
   - icon: brands/orcid
     url: https://orcid.org/0009-0007-8612-4926
-  - icon: brands/researchgate
+  - icon: ai/researchgate
     url: https://www.researchgate.net/profile/Valentin-Pfeil
   # - icon: file-text
   #   url: /files/CV_ValentinPfeil.pdf
