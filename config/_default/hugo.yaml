@@ -8,6 +8,10 @@ title: Valentin Pfeil - Cloud and Confidential Computing Consulting
 # Website URL
 baseURL: 'https://www.valentinpfeil.com/'
 
+# Website icon / favicon
+params:
+  favicon: "/media/logo.png"         # Pfad zu deinem Logo
+
 ############################
 ## LANGUAGE
 ############################
