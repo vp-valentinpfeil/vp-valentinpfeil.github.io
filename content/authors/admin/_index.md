@@ -39,7 +39,7 @@ profiles:
   - icon: brands/github
     url: https://github.com/vp-valentinpfeil
   - icon: brands/linkedin
-    url: https://www.linkedin.com/in/valentin-pfeil
+    url: https://www.linkedin.com/in/valentinpfeil/
   - icon: brands/orcid
     url: https://orcid.org/0009-0007-8612-4926
   - icon: brands/researchgate
