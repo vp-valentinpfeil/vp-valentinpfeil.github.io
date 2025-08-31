@@ -12,9 +12,9 @@ appearance:
 marketing:
   seo:
     site_type: Person
-    local_business_type: ''
+#    local_business_type: ''
     org_name: 'Valentin Pfeil'
-    description: 'Cloud and Confidential Computing Consultant | IT Officer | Security Architect'
+    description: 'Cloud and Confidential Computing Consultant'
     twitter: 'GetResearchDev'
   analytics:
     google_analytics: ''
@@ -67,6 +67,9 @@ features:
     enable: false
   privacy_pack:
     enable: false
+
+# Site settings
+favicon: "/media/logo_mini.png"
 
 #Activate academic icon pack extension
 extensions:
