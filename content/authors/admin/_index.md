@@ -43,12 +43,12 @@ profiles:
     url: https://www.linkedin.com/in/valentinpfeil/
   - icon: brands/github
     url: https://github.com/vp-valentinpfeil
-  - icon: ai/osf
-    url: https://osf.io/azqyb
+#  - icon: ai/osf
+#    url: https://osf.io/azqyb
   - icon: brands/orcid
     url: https://orcid.org/0009-0007-8612-4926
-  - icon: ai/researchgate
-    url: https://www.researchgate.net/profile/Valentin-Pfeil
+#  - icon: ai/researchgate
+#    url: https://www.researchgate.net/profile/Valentin-Pfeil
   # - icon: ai/cv
   #   url: /files/CV_ValentinPfeil.pdf
   #   label: CV    
