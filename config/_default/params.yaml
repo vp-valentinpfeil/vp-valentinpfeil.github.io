@@ -69,9 +69,9 @@ features:
     enable: false
 
 #Activate acemic icon pack extension
-extensions:
-  academicons:
-    enable: true
+#extensions:
+#  academicons:
+#    enable: true
 
 # Test CSS
 #assets:
