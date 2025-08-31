@@ -20,12 +20,12 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Cloud and Confidential Computing Consultant | IT Officer | Security Architect
+role: Cloud and Confidential Computing Consultant #| IT Officer | Security Architect
 
 # Organizations/Affiliations to display in Biography block
 organizations:
-  - name: Bundeswehr (German Armed Forces)
-    url: https://www.bundeswehr.de
+#  - name: Bundeswehr (German Armed Forces)
+#    url: https://www.bundeswehr.de
 #  - name: Capgemini
 #    url: https://www.capgemini.com
 #  - name: University of the Bundeswehr Munich
@@ -33,7 +33,7 @@ organizations:
 
 # Social network links
 profiles:
-  - icon: phone
+  - icon: general/phone
     url: 'tel:+49 151 28400183'
     label: Phone
   - icon: at-symbol
@@ -43,11 +43,11 @@ profiles:
     url: https://www.linkedin.com/in/valentinpfeil/
   - icon: brands/github
     url: https://github.com/vp-valentinpfeil
-  - icon: brands/osf
+  - icon: ai/osf
     url: https://osf.io/azqyb
   - icon: brands/orcid
     url: https://orcid.org/0009-0007-8612-4926
-  - icon: brands/researchgate
+  - icon: ai/researchgate
     url: https://www.researchgate.net/profile/Valentin-Pfeil
   # - icon: file-text
   #   url: /files/CV_ValentinPfeil.pdf
