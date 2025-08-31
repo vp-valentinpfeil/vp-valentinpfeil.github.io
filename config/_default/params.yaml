@@ -33,13 +33,16 @@ header:
     fixed_to_top: true
     show_search: false
     show_theme_chooser: false
+    # ⬇️ Force render of the brand in the navbar
+    brand_html: '<img src="/media/logo.png" alt="Valentin Pfeil Consulting" style="height:40px; vertical-align:middle;">'
 
+  # ⬇️ Disable file-based logo so nothing overrides brand_html
   logo:
-    image: "media/logo.png"   # weil du /static/media/logo.png nutzt
-    image_dark: "media/logo.png"
-    alt: "Valentin Pfeil Consulting"
+    image: ""         # leave empty when using brand_html
+    image_dark: ""    # leave empty when using brand_html
+    alt: ""
     height: 40
-    text: ""                  # leer lassen, damit kein “Your Name”
+    text: ""
 
 # Site footer
 footer:
