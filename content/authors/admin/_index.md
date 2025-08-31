@@ -23,9 +23,9 @@ highlight_name: true
 role: Cloud and Confidential Computing Consultant | IT Officer | Security Architect
 
 # Organizations/Affiliations to display in Biography block
-organizations:
-  - name: Bundeswehr (German Armed Forces)
-    url: https://www.bundeswehr.de
+#organizations:
+#  - name: Bundeswehr (German Armed Forces)
+#    url: https://www.bundeswehr.de
 #  - name: Capgemini
 #    url: https://www.capgemini.com
 #  - name: University of the Bundeswehr Munich
