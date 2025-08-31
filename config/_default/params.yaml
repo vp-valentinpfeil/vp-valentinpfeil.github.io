@@ -35,14 +35,10 @@ header:
     show_search: false
     show_theme_chooser: false
 
-    # Force HTML brand (your logo)
-    brand_html: |
-      <img src="/media/logo.png" vertical-align:middle;">
-
     # Make sure nothing else overrides the brand:
     logo:
-      image: ""        # disable file-based logo here
-      image_dark: ""   # (optional) also blank
+      image: "/media/logo.png"        # disable file-based logo here
+      image_dark: "/media/logo.png"   # (optional) also blank
       text: ""         # MUST be empty to hide “Your Name”
 
 # Site footer
