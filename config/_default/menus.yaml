@@ -8,7 +8,8 @@ main:
   - name: About
     url: /
     weight: 99
-  - name: Publications
+#  - name: Publications
+  - name: Research and Development
     url: /#papers
     weight: 30
 # - name: Talks
