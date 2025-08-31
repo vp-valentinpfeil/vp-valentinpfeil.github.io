@@ -142,10 +142,10 @@ skills:
         icon: user-group
       - name: Sports (Calisthenics, Freeletics, Running, Hyrox and Yoga)
         percent: 85
-        icon: custom/medal-solid-full
+        icon: trophy
       - name: Nutrition
         percent: 100
-        icon: custom/bowl-food-solid-full
+        icon: fire
       - name: Reading (Philosophy, Entrepreneurship, IT)
         percent: 70
         icon: book-open
