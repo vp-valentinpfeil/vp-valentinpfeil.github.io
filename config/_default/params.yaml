@@ -68,6 +68,11 @@ features:
   privacy_pack:
     enable: false
 
+#Activate acemic icon pack extension
+extensions:
+  academicons:
+    enable: true
+
 # Test CSS
 #assets:
 #  css:
