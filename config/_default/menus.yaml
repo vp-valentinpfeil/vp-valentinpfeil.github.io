@@ -12,12 +12,12 @@ main:
     url: /#papers
     weight: 30
 # - name: Talks
-  - name: Events
-    url: /#talks
-    weight: 80
-  - name: News
-    url: /#news
-    weight: 90
+# - name: Events
+#   url: /#talks
+#   weight: 80
+# - name: News
+#   url: /#news
+#   weight: 90
   - name: Experience
     url: experience/
     weight: 20
