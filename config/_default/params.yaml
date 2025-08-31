@@ -80,12 +80,9 @@ extensions:
   academicons:
     enable: true
 
-# Test CSS
-assets:
-  css:
-    - "css/custom.css"
+# Hugo compiles automatically assets/scss/custom.scss
 
-# Test CSS
+# Test Static CSS, not needed because of custom.scss
 #assets:
 #  css:
 #    - "css/navlogo.css"
