@@ -29,7 +29,7 @@ marketing:
 
 # Site header
 header:
-  favicon: "/media/icon.png"
+  favicon: "/favicon.ico"
   navbar:
     enable: true
     fixed_to_top: true
