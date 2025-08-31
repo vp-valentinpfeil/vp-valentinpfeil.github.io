@@ -68,7 +68,7 @@ features:
   privacy_pack:
     enable: false
 
-#Activate acemic icon pack extension
+#Activate academic icon pack extension
 #extensions:
 #  academicons:
 #    enable: true
