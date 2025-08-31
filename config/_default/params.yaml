@@ -13,8 +13,8 @@ marketing:
   seo:
     site_type: Person
     local_business_type: ''
-    org_name: ''
-    description: 'The highly-customizable Hugo Academic theme powered by Hugo Blox Builder. Easily create your personal academic website.'
+    org_name: 'Valentin Pfeil'
+    description: 'Cloud and Confidential Computing Consultant | IT Officer | Security Architect'
     twitter: 'GetResearchDev'
   analytics:
     google_analytics: ''
@@ -44,11 +44,11 @@ header:
 # Site footer
 footer:
   copyright:
-    notice: '© {year} Me. This work is licensed under {license}'
+    notice: '© {year} Valentin Pfeil. This work is licensed under {license}'
     license:
-      enable: true
+      enable: false
       allow_derivatives: false
-      share_alike: true
+      share_alike: false
       allow_commercial: false
 
 # Localization
