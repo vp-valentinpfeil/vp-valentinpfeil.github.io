@@ -33,8 +33,10 @@ header:
     fixed_to_top: true
     show_search: false
     show_theme_chooser: false
-    # ⬇️ Force render of the brand in the navbar
-    brand_html: '<img src="/media/logo.png" alt="Valentin Pfeil Consulting" style="height:40px; vertical-align:middle;">'
+    # ⬇️ Force render of the brand in the navbar #2 Try
+    blox: "my-navbar"
+    # ⬇️ Force render of the brand in the navbar #1 Try
+    #brand_html: '<img src="/media/logo.png" alt="Valentin Pfeil Consulting" style="height:40px; vertical-align:middle;">'
 
   # ⬇️ Disable file-based logo so nothing overrides brand_html
   logo:
