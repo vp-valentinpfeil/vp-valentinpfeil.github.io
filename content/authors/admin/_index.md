@@ -33,9 +33,9 @@ organizations:
 
 # Social network links
 profiles:
-  # - icon: phone
-  #   url: 'tel:+49 151 28400183'
-  #   label: Phone
+  - icon: phone
+    url: 'tel:+49 151 28400183'
+    label: Phone
   - icon: at-symbol
     url: 'mailto:vp@valentinpfeil.com'
     label: E-mail
@@ -49,9 +49,9 @@ profiles:
     url: https://orcid.org/0009-0007-8612-4926
   - icon: brands/researchgate
     url: https://www.researchgate.net/profile/Valentin-Pfeil
-  # - icon: file-text
-  #   url: /files/CV_ValentinPfeil.pdf
-  #   label: CV    
+  - icon: file-text
+    url: /files/CV_ValentinPfeil.pdf
+    label: CV    
 
 interests:
   - Cloud Computing & Kubernetes
