@@ -54,11 +54,11 @@ profiles:
     label: CV    
 
 interests:
-  - Cloud Computing & Kubernetes
-  - Confidential Computing & Security
-  - Defence & Cybersecurity
+  - Cloud Computing and Kubernetes
+  - Confidential Computing and Security
+  - Defence and Cybersecurity
   - Artificial Intelligence
-  - Fitness, Hyrox & Calisthenics
+  - Fitness, Hyrox and Calisthenics
 
 education:
   - area: M.Sc. Computer Science
@@ -102,9 +102,9 @@ education:
     date_start: 2025-01-01
     date_end: 2025-09-30
     summary: |
-      Cloud Security & Compliance Architect in the *OmniAware* project.  
+      Cloud Security and Compliance Architect in the *OmniAware* project.  
       Focus on Confidential Computing, NATO-compliant architectures and AWS Landing Zones.
-  - position: IT Consultant (Freelancer & SME)
+  - position: IT Consultant (Freelancer)
     company_name: Self-Employed / Medium-Sized Enterprise
     date_start: 2024-01-01
     date_end: "Today"
@@ -121,28 +121,28 @@ education:
 skills:
   - name: Technical Skills
     items:
-      - name: Kubernetes & Cloud Architecture (Rancher, Azure, AWS, OpenStack)
+      - name: Kubernetes and Cloud Architecture (Rancher, Azure, AWS, OpenStack)
         percent: 90
         icon: cloud
       - name: Confidential Computing (SEV-SNP, Nitro Enclaves)
         percent: 95
         icon: lock-closed
-      - name: DevSecOps & DevOps Automation
+      - name: DevSecOps and DevOps Automation
         percent: 80
         icon: code-bracket
-      - name: Security Architecture & Compliance
+      - name: Security Architecture and Compliance
         percent: 90
         icon: shield-check
   - name: Personal
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: Leadership & Military Training
+      - name: Leadership and Military Training
         percent: 100
         icon: user-group
-      - name: Sports (Hyrox, Calisthenics, Yoga)
+      - name: Sports (Calisthenics, Freeletics, Running, Hyrox and Yoga)
         percent: 85
-        icon: dumbbell
+        icon: solid/dumbbell
       - name: Languages
         percent: 70
         icon: language
