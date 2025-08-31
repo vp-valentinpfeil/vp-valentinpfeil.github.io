@@ -68,3 +68,12 @@ features:
   privacy_pack:
     enable: false
 
+#Activate academic icon pack extension
+extensions:
+  academicons:
+    enable: true
+
+# Test CSS
+#assets:
+#  css:
+#    - "css/navlogo.css"
