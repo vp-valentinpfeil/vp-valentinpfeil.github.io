@@ -65,34 +65,24 @@
   filter: none !important;
 }
 
-/* ============================
-   3) Avatar: nur EIN dezenter Rand
-   ============================ */
-.blox-resume-biography-3 #profile .avatar-wrapper{
+/* ===============================
+   3) Avatar: nur EIN sauberer Rand
+   =============================== */
+.blox-resume-biography-3 #profile .avatar-wrapper,
+.blox-resume-biography-3 #profile .avatar-wrapper img {
   box-sizing: border-box;
-  border: 2px solid rgba(39, 39, 42, .28) !important; /* zinc-800 mit ~28% Alpha */
-  border-radius: 9999px !important;
-  background-clip: padding-box;                       /* sauber, kein Overlay */
-  box-shadow: 0 2px 8px rgba(2, 6, 23, .08);          /* dezenter Schatten */
-}
-
-/* Theme-Auren/Overlays komplett deaktivieren */
-.blox-resume-biography-3 #profile .avatar-wrapper::before,
-.blox-resume-biography-3 #profile .avatar-wrapper::after{
-  content: none !important;
-  border: none !important;
-  box-shadow: none !important;
-  background: transparent !important;
-}
-
-/* Bild selbst ohne Zusatz-Rand */
-.blox-resume-biography-3 #profile .avatar-wrapper img{
-  border: none !important;
+  border: none !important;                    /* ALLE default borders weg */
+  ring: none !important;                      /* Tailwind ring utilities neutralisieren */
   outline: none !important;
-  box-shadow: none !important;
-  border-radius: inherit !important;
+  border-radius: 9999px !important;
+  background-clip: padding-box;
+  box-shadow: 0 2px 8px rgba(2,6,23,.08);      /* dezenter Schatten */
 }
 
+/* unser einziger, dezenter Rahmen */
+.blox-resume-biography-3 #profile .avatar-wrapper {
+  border: 2px solid rgba(39,39,42,.28) !important; /* zinc-800 mit Alpha */
+}
 /* ===================================================
    4) About-Panel (Text + Button + Interests + Edu)
    =================================================== */
