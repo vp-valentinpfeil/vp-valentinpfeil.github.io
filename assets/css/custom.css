@@ -292,3 +292,38 @@ h3, .prose h3{ font-size: var(--vp-h3-size); font-weight: 600; }
   fill: currentColor !important;
   opacity: .95 !important;
 }
+
+
+/* =========================
+   Typo-Patch: Bodoni für
+   – Profilzeilen (Name + Subline)
+   – "Download CV" Button
+   – "Interests" & "Education"
+   ========================= */
+
+/* 1) Profil: Name + Subline beide in Bodoni */
+.blox-resume-biography-3 #profile .portrait-title h1,
+.blox-resume-biography-3 #profile .portrait-title h3{
+  font-family: var(--vp-font-heading) !important; /* Bodoni Moda */
+  letter-spacing: -0.01em;
+  font-feature-settings: "liga","kern";
+}
+.blox-resume-biography-3 #profile .portrait-title h1{ font-weight: 700; line-height: 1.15; }
+.blox-resume-biography-3 #profile .portrait-title h3{ font-weight: 600; line-height: 1.25; }
+
+/* 2) "Download CV" – Label in Bodoni */
+.blox-resume-biography-3 .flex-auto.max-w-prose a[href*="CV"],
+.blox-resume-biography-3 .flex-auto.max-w-prose a[href$=".pdf"]{
+  font-family: var(--vp-font-heading) !important; /* Bodoni Moda */
+  font-weight: 600;
+  letter-spacing: 0.005em;
+  font-feature-settings: "liga","kern";
+}
+
+/* 3) Abschnittsüberschriften unten (Interests/Education) – sicher auf Bodoni */
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid h3{
+  font-family: var(--vp-font-heading) !important; /* Bodoni Moda */
+  font-weight: 700;
+  letter-spacing: -0.005em;
+  font-feature-settings: "liga","kern";
+}
