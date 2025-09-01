@@ -1,5 +1,5 @@
-{{- $css := resources.Get "css/custom.css" | minify | fingerprint -}}
-<link rel="stylesheet"
-      href="{{ $css.RelPermalink }}"
-      integrity="{{ $css.Data.Integrity }}"
-      crossorigin="anonymous">
+{{- $in := resources.Get "scss/custom.scss" -}}
+{{- $scss := $in | resources.ToCSS -}}          {{/* SCSS → CSS */}}
+{{- $post := $scss | resources.PostCSS -}}      {{/* Tailwind/PostCSS anwenden (postcss.config.cjs) */}}
+{{- $min := $post | minify | fingerprint -}}
+<link rel="stylesheet" href="{{ $min.RelPermalink }}" integrity="{{ $min.Data.Integrity }}" crossorigin="anonymous">
