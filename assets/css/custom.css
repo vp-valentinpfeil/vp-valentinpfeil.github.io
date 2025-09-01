@@ -358,3 +358,54 @@ h3, .prose h3{ font-size: var(--vp-h3-size); font-weight: 600; }
   font-weight: 600;
   font-feature-settings: "liga","kern";
 }
+
+
+
+/* === Font-Scope Fix: Bodoni nur für Name, CV-Button, Interests/Education, Mission === */
+
+/* 1) Im About-Panel alles erstmal wieder auf Inter setzen (Reset) */
+.blox-resume-biography-3 .flex-auto.max-w-prose,
+.blox-resume-biography-3 .flex-auto.max-w-prose h1,
+.blox-resume-biography-3 .flex-auto.max-w-prose h2,
+.blox-resume-biography-3 .flex-auto.max-w-prose h3,
+.blox-resume-biography-3 .flex-auto.max-w-prose p,
+.blox-resume-biography-3 .flex-auto.max-w-prose li,
+.blox-resume-biography-3 .flex-auto.max-w-prose a {
+  font-family: var(--vp-font-body) !important; /* Inter */
+}
+
+/* 2) Profil-Name in Bodoni, Subtitle bleibt Inter */
+.blox-resume-biography-3 #profile .portrait-title h1 {
+  font-family: var(--vp-font-heading) !important; /* Bodoni Moda */
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+}
+.blox-resume-biography-3 #profile .portrait-title h3 {
+  font-family: var(--vp-font-body) !important;    /* Inter */
+  font-weight: 500;
+}
+
+/* 3) "Download CV" Button-Label in Bodoni */
+.blox-resume-biography-3 .flex-auto.max-w-prose a[href*="CV"],
+.blox-resume-biography-3 .flex-auto.max-w-prose a[href$=".pdf"] {
+  font-family: var(--vp-font-heading) !important; /* Bodoni Moda */
+  font-weight: 600;
+  letter-spacing: 0.005em;
+}
+
+/* 4) Nur die Abschnittsüberschriften unten (Interests/Education) in Bodoni
+      – sie liegen in der .grid, das trennt sie sauber von "About Me" */
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid h3 {
+  font-family: var(--vp-font-heading) !important; /* Bodoni Moda */
+  font-weight: 700;
+  letter-spacing: -0.005em;
+}
+
+/* 5) "My mission: …" – gesamten Absatz in Bodoni
+      (nutzt :has(), das in aktuellen Chromium/Safari & neueren Firefox-Versionen funktioniert) */
+.blox-resume-biography-3 .flex-auto.max-w-prose p:has(> strong) {
+  font-family: var(--vp-font-heading) !important; /* Bodoni Moda */
+  font-weight: 600;
+  letter-spacing: -0.005em;
+}
