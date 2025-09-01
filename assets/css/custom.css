@@ -20,7 +20,6 @@
   /* Profil-Farbfamilie */
   --vp-profile-rgb: 24,24,27;                      /* zinc-900 */
   --vp-profile-color: rgb(var(--vp-profile-rgb));  /* Text-Vollton */
-  --vp-avatar-border-alpha: .28;                   /* Rand-Transparenz */
 
   /* Geometrie: harte Kanten, kein Radius */
   --vp-card-radius: 0px;
@@ -64,23 +63,22 @@
 }
 
 /* ===============================
-   3) Avatar: nur EIN sauberer Rand
+   3) Avatar: komplett ohne Rand
    =============================== */
 .blox-resume-biography-3 #profile .avatar-wrapper,
 .blox-resume-biography-3 #profile .avatar-wrapper img{
   box-sizing: border-box;
   border-radius: 9999px !important;
   outline: none !important;
-  border: none !important;
+  border: none !important;                        /* alle Ränder weg */
   background-clip: padding-box;
-  box-shadow: 0 2px 8px rgba(2,6,23,.08) !important; /* dezent */
+  box-shadow: 0 2px 8px rgba(2,6,23,.08) !important; /* nur dezenter Shadow */
 }
-.blox-resume-biography-3 #profile .avatar-wrapper{
-  border: 2px solid rgba(var(--vp-profile-rgb), var(--vp-avatar-border-alpha)) !important;
-}
+
+/* Eventuelle Pseudo-Auren/Overlays hart deaktivieren */
 .blox-resume-biography-3 #profile .avatar-wrapper::before,
 .blox-resume-biography-3 #profile .avatar-wrapper::after{
-  content: none !important; /* Aura/Overlay sicher aus */
+  content: none !important;
 }
 
 /* ===================================================
@@ -97,17 +95,17 @@
   max-width: clamp(56ch, 68vw, 1040px);
   margin-inline: auto;
   margin-bottom: 0;
-  box-shadow: var(--vp-card-shadow);                  /* Schatten nur oben */
+  box-shadow: var(--vp-card-shadow);
 }
 .blox-resume-biography-3 #profile .avatar-wrapper{ margin-inline: auto; }
 .blox-resume-biography-3 #profile .portrait-title,
 .blox-resume-biography-3 #profile .network-icon{ text-align: center; }
 
-/* ABOUT-TEIL (unten) – bündig anschließen, kein Extra-Schatten */
+/* ABOUT-TEIL (unten) */
 .blox-resume-biography-3 .flex-auto.max-w-prose{
   background: rgba(248,250,252,var(--vp-panel-alpha));
   backdrop-filter: blur(2px);
-  border-radius: var(--vp-card-radius);               /* 0 */
+  border-radius: var(--vp-card-radius);
   padding: clamp(16px, 2.2vw, 28px);
   max-width: clamp(56ch, 68vw, 1040px);
   margin-inline: auto;
@@ -115,7 +113,7 @@
   box-shadow: none;
 }
 
-/* dünne „Naht“-Kaschierung (optional, bleibt eckig) */
+/* „Naht“-Kaschierung */
 .blox-resume-biography-3 #profile{
   border-bottom: 1px solid rgba(248,250,252,var(--vp-panel-alpha));
 }
@@ -123,7 +121,7 @@
   border-top: 1px solid rgba(248,250,252,var(--vp-panel-alpha));
 }
 
-/* Laptop-Breiten (z. B. MBP14 + Firefox) */
+/* Laptop-Breiten */
 @media (min-width:1200px) and (max-width:1536px){
   .blox-resume-biography-3 #profile,
   .blox-resume-biography-3 .flex-auto.max-w-prose{
@@ -142,7 +140,7 @@
    5) Typografie im Panel – konsequent Zinc
    ========================================= */
 .blox-resume-biography-3 .flex-auto.max-w-prose,
-.blox-resume-biBiography-3 .flex-auto.max-w-prose p,
+.blox-resume-biography-3 .flex-auto.max-w-prose p,
 .blox-resume-biography-3 .flex-auto.max-w-prose li,
 .blox-resume-biography-3 .flex-auto.max-w-prose a{
   color: var(--vp-zinc-800) !important;
@@ -151,7 +149,7 @@
 .blox-resume-biography-3 .flex-auto.max-w-prose h1,
 .blox-resume-biography-3 .flex-auto.max-w-prose h2,
 .blox-resume-biography-3 .flex-auto.max-w-prose h3{
-  color: var(--vp-zinc-900) !important; /* gilt auch für „Interests“/„Education“ */
+  color: var(--vp-zinc-900) !important;
 }
 .blox-resume-biography-3 .flex-auto.max-w-prose strong{
   color: var(--vp-zinc-700) !important;
@@ -170,14 +168,22 @@
 .blox-resume-biography-3 .flex-auto.max-w-prose a:hover{
   color: var(--vp-zinc-800) !important;
 }
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid h3{
+  color: var(--vp-zinc-900) !important;
+}
 .blox-resume-biography-3 .flex-auto.max-w-prose .grid p,
-.blox-resume-biography-3 .flex-auto.max-w-prose .grid li{
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid li,
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid a,
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid span{
   color: var(--vp-zinc-800) !important;
+  opacity: 1 !important;
 }
 .blox-resume-biography-3 .flex-auto.max-w-prose .grid li::marker,
 .blox-resume-biography-3 .flex-auto.max-w-prose .grid svg{
   color: var(--vp-zinc-800) !important;
-  opacity: .95;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+  opacity: .95 !important;
 }
 
 /* ==========================================
@@ -197,6 +203,10 @@
   width: fit-content;
   margin: 1rem auto;
 }
+.blox-resume-biography-3 .flex-auto.max-w-prose a[href*="CV"]:hover,
+.blox-resume-biography-3 .flex-auto.max-w-prose a[href$=".pdf"]:hover{
+  filter: brightness(1.06);
+}
 
 /* =================================
    7) Kleine Screens – Komfort
@@ -214,69 +224,3 @@
    =========================================
    – einfach oben --vp-panel-alpha ändern (z.B. .74)
 */
-
-
-/* =========================================================
-   PATCH A — Avatar: Rand & Ringe KOMPLETT entfernt
-   (Profile-Card bleibt, nur der sichtbare Border weg)
-   ========================================================= */
-
-/* Neutralisiert Border, Outline und Tailwind-Ring-Shadows */
-.blox-resume-biography-3 #profile .avatar-wrapper,
-.blox-resume-biography-3 #profile .avatar-wrapper img {
-  box-sizing: border-box;
-  border: none !important;              /* alle Borders weg */
-  outline: none !important;
-  border-radius: 9999px !important;
-  background-clip: padding-box;
-
-  /* Tailwind-Ring neutralisieren (ring-*, ring-offset-*) */
-  --tw-ring-offset-shadow: 0 0 #0000 !important;
-  --tw-ring-shadow: 0 0 #0000 !important;
-
-  /* nur noch ein sehr dezenter, neutraler Drop Shadow */
-  box-shadow: 0 2px 8px rgba(2, 6, 23, .08) !important;
-}
-
-/* Eventuelle Pseudo-Auren des Themes hart deaktivieren */
-.blox-resume-biography-3 #profile .avatar-wrapper::before,
-.blox-resume-biography-3 #profile .avatar-wrapper::after {
-  content: none !important;
-}
-
-/* Falls in der Datei noch irgendwo ein Border für den Avatar steht,
-   wird er hier sicher übersteuert: */
-.blox-resume-biography-3 #profile .avatar-wrapper {
-  border: none !important;
-}
-
-/* =========================================================
-   PATCH B — Interests & Education in denselben Zinc-Farben
-   (wie im About-Panel), inkl. Icons/Marker/Opacity
-   ========================================================= */
-
-.blox-resume-biography-3 .flex-auto.max-w-prose .grid h3 {
-  color: var(--vp-zinc-900) !important;  /* Heading-Ton wie „About Me“ */
-  opacity: 1 !important;
-  text-shadow: none !important;
-}
-
-.blox-resume-biography-3 .flex-auto.max-w-prose .grid p,
-.blox-resume-biography-3 .flex-auto.max-w-prose .grid li,
-.blox-resume-biography-3 .flex-auto.max-w-prose .grid a,
-.blox-resume-biography-3 .flex-auto.max-w-prose .grid span {
-  color: var(--vp-zinc-800) !important;  /* Fließtext-Ton wie im Panel */
-  opacity: 1 !important;                 /* keine aufgehellten Varianten */
-}
-
-/* List bullets & kleine SVG-Icons anpassen */
-.blox-resume-biography-3 .flex-auto.max-w-prose .grid li::marker {
-  color: var(--vp-zinc-800) !important;
-}
-
-.blox-resume-biography-3 .flex-auto.max-w-prose .grid svg {
-  color: var(--vp-zinc-800) !important;
-  fill: currentColor !important;
-  stroke: currentColor !important;
-  opacity: .95 !important;
-}
