@@ -1,24 +1,34 @@
-/* assets/css/custom.css */
-
-/* Debug-Flag */
+/* Debug-Flag: später im DOM als CSS-Variable sichtbar */
 :root { --vp-custom-css: 1; }
 
-/* 1) Graue Textbox nur im Overlay-Header hinter dem About-Text */
-.header--overlay .bio-text {
-  /* bg-gray-100 ≈ #f5f5f5, /90 ≈ 0.9; rounded-xl ≈ 12px; px-6 (24px) py-5 (20px) */
-  @apply bg-gray-100/90 rounded-xl shadow px-6 py-5 max-w-[800px] mx-auto text-zinc-800;
+/* 1) Graue Box nur um den eigentlichen Bio-Text im Overlay-Header */
+.header--overlay .bio-text,
+.resume-biography .bio-text {              /* zweite Selektor-Variante, falls Header-Klasse abweicht */
+  background: rgba(245,245,245,0.92);      /* ≈ bg-gray-100/90 */
+  border-radius: 12px;                     /* ≈ rounded-xl */
+  box-shadow: 0 4px 10px rgba(0,0,0,.08);  /* ≈ shadow */
+  padding: 20px 24px;                      /* ≈ py-5 px-6 */
+  max-width: min(800px, 90vw);
+  margin: 0 auto;                          /* mittig */
 }
 
-/* 2) Textfarbe in der Box (überschreibt dark:prose-invert des Themes) */
+/* 2) Textfarbe in der Box (überstimmt dark:prose-invert der Theme-Prosa) */
 .header--overlay .bio-text h1,
 .header--overlay .bio-text h2,
 .header--overlay .bio-text h3,
 .header--overlay .bio-text p,
-.header--overlay .bio-text li {
-  @apply text-zinc-800 leading-relaxed;
+.header--overlay .bio-text li,
+.resume-biography .bio-text h1,
+.resume-biography .bio-text h2,
+.resume-biography .bio-text h3,
+.resume-biography .bio-text p,
+.resume-biography .bio-text li {
+  color: #222;              /* dunkles Grau */
+  line-height: 1.6;
 }
 
-/* 3) Optional: mehr Luft auf großen Screens (≥ 1024px) */
+/* 3) Optional: mehr Luft auf großen Screens */
 @media (min-width: 1024px) {
-  .header--overlay .bio-text { @apply px-8; } /* 2rem seitlich */
+  .header--overlay .bio-text,
+  .resume-biography .bio-text { padding: 20px 32px; }
 }
