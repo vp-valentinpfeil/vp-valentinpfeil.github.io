@@ -3,12 +3,12 @@
    Stabil & responsiv für Hugo Blox (Tailwind)
    ========================== */
 
-/* -------- 0) Tuning-Variablen (zentral) -------- */
+/* -------- 0) Zentrale Variablen -------- */
 :root{
   /* Opazität der About-Panel-Box (0.00–1.00) */
   --vp-panel-alpha: .82;
 
-  /* Zinc-Palette (Tailwind-ähnlich) */
+  /* Zinc-Palette (Tailwind-nah) */
   --vp-zinc-200: #e4e4e7;
   --vp-zinc-300: #d4d4d8;
   --vp-zinc-400: #a1a1aa;
@@ -16,9 +16,18 @@
   --vp-zinc-800: #27272a;
   --vp-zinc-900: #18181b;
   --vp-zinc-950: #09090b;
+
+  /* Profil-Farbfamilie:
+     – Rand des Avatars halbtransparent aus *demselben* dunklen Basiston
+     – Texte im Profil (Name/Untertitel/Icons) exakt dieser Basiston – aber *ohne* Alpha */
+  --vp-profile-rgb: 24,24,27;                      /* = #18181b (zinc-900) als RGB */
+  --vp-profile-color: rgb(var(--vp-profile-rgb));  /* Vollton für Text */
+  --vp-avatar-border-alpha: .28;                   /* Rand-Transparenz */
 }
 
-/* -------- 1) Re-Layout: Profil OBEN zentriert -------- */
+/* =========================================================
+   1) Profil oben zentrieren (statt zweispaltig nebeneinander)
+   ========================================================= */
 .blox-resume-biography-3 .resume-biography{
   flex-direction: column !important;
   align-items: center !important;
@@ -29,60 +38,68 @@
   text-align: center;
 }
 
-/* Profiltypografie: komplett dunkle Zinc-Töne (keine Weiß-Töne) */
-.blox-resume-biography-3 #profile .portrait-title h1{
-  color: var(--vp-zinc-950) !important; /* Name – sehr dunkel und klar */
-  text-shadow: none !important;
-}
-.blox-resume-biography-3 #profile .portrait-title h3{
-  color: var(--vp-zinc-800) !important; /* Untertitel */
-  text-shadow: none !important;
-}
-/* Social-Icons unter dem Profil ebenfalls dunkel */
+/* ================================
+   2) Profiltypografie (einheitlich)
+   =================================
+   – Name, Untertitel & alle Icons
+     im *selben* dunklen Zinc-Ton
+   – keinerlei Weiß/Glow/Shadow
+*/
+.blox-resume-biography-3 #profile .portrait-title h1,
+.blox-resume-biography-3 #profile .portrait-title h3,
 .blox-resume-biography-3 #profile .network-icon,
 .blox-resume-biography-3 #profile .network-icon a{
-  color: var(--vp-zinc-800) !important;
-  opacity: .95;
+  color: var(--vp-profile-color) !important;  /* #18181b */
+  opacity: 1 !important;
+  text-shadow: none !important;
 }
 
-/* Avatar: EIN sauberer Rand, dezenter Schatten, keine Aura */
+/* ============================
+   3) Avatar: EIN sauberer Rand
+   ============================
+   – dezenter, halbtransparenter Rand
+   – keine Aura/Versatz-Effekte
+*/
 .blox-resume-biography-3 #profile .avatar-wrapper{
-  border: 4px solid var(--vp-zinc-900) !important;
+  box-sizing: border-box;
+  border: 2px solid rgba(var(--vp-profile-rgb), var(--vp-avatar-border-alpha)) !important;
   border-radius: 9999px !important;
-  box-shadow: 0 8px 24px rgba(2,6,23,.28);
-  position: relative;
+  box-shadow: 0 2px 10px rgba(2,6,23,.08);   /* sehr zurückhaltend */
+  background-clip: padding-box;
 }
 .blox-resume-biography-3 #profile .avatar-wrapper::after{
-  content: none !important; /* evtl. vorhandene Aura komplett entfernen */
+  content: none !important;                  /* evtl. Aura komplett entfernen */
 }
 
-/* -------- 2) Panel/Box für den gesamten rechten Content --------
-   (About-Text, CV-Button, Interests & Education) */
+/* ===================================================
+   4) About-Panel (Text + Button + Interests + Edu)
+   =================================================== */
 .blox-resume-biography-3 .flex-auto.max-w-prose{
-  background: rgba(248,250,252,var(--vp-panel-alpha)); /* „frosted“ zinc-50 */
-  border-radius: 0;                                    /* eckige Kanten */
+  /* „frosted“ Box wie Gravatar, eckig, zentriert */
+  background: rgba(248,250,252,var(--vp-panel-alpha));  /* ~ zinc-50 mit Alpha */
+  border-radius: 0;
   box-shadow: 0 18px 40px rgba(2,6,23,.14);
   backdrop-filter: blur(2px);
+
+  /* natürliche, gerätefreundliche Breite */
   padding: clamp(16px, 2.2vw, 28px);
-  max-width: clamp(56ch, 68vw, 1040px);               /* MBP-14" sweet spot */
-  margin-inline: auto;                                 /* Box zentrieren */
+  max-width: clamp(56ch, 68vw, 1040px);      /* Sweet-Spot u.a. für MBP 14" */
+  margin-inline: auto;
 }
 
-/* Schmaler auf typischen Laptop-Breiten (z. B. MBP14 + Firefox) */
+/* Typische Laptopbreiten (z. B. MBP14 + Firefox): etwas schlanker */
 @media (min-width:1200px) and (max-width:1536px){
-  .blox-resume-biography-3 .flex-auto.max-w-prose{
-    max-width: min(60vw, 980px);
-  }
+  .blox-resume-biography-3 .flex-auto.max-w-prose{ max-width: min(60vw, 980px); }
 }
 
-/* Sehr breite Monitore: nicht ausufern lassen */
+/* Sehr breite Monitore nicht ausufern lassen */
 @media (min-width:1600px){
-  .blox-resume-biography-3 .flex-auto.max-w-prose{
-    max-width: 1200px;
-  }
+  .blox-resume-biography-3 .flex-auto.max-w-prose{ max-width: 1200px; }
 }
 
-/* -------- 3) Typografie in der Box – konsequent Zinc -------- */
+/* =========================================
+   5) Typografie im Panel – konsequent Zinc
+   ========================================= */
 .blox-resume-biography-3 .flex-auto.max-w-prose,
 .blox-resume-biography-3 .flex-auto.max-w-prose p,
 .blox-resume-biography-3 .flex-auto.max-w-prose li,
@@ -90,24 +107,28 @@
   color: var(--vp-zinc-800) !important;
   line-height: 1.65;
 }
-/* Überschriften (inkl. „About Me“, „Interests“, „Education“) */
+
+/* Überschriften (About/Interests/Education) */
 .blox-resume-biography-3 .flex-auto.max-w-prose h1,
 .blox-resume-biography-3 .flex-auto.max-w-prose h2,
 .blox-resume-biography-3 .flex-auto.max-w-prose h3{
   color: var(--vp-zinc-900) !important;
 }
-/* Markdown-Highlights (**secure**, **cloud** …) */
+
+/* Markdown-Highlights (**secure**, **cloud**, …) */
 .blox-resume-biography-3 .flex-auto.max-w-prose strong{
   color: var(--vp-zinc-700) !important;
   font-weight: 700;
 }
-/* Em/mark ohne Gelb */
+
+/* Em/mark ohne gelben Marker */
 .blox-resume-biography-3 .flex-auto.max-w-prose em,
 .blox-resume-biography-3 .flex-auto.max-w-prose mark{
   color: var(--vp-zinc-700) !important;
   background: transparent;
   font-style: italic;
 }
+
 /* Links dezent */
 .blox-resume-biography-3 .flex-auto.max-w-prose a{
   color: var(--vp-zinc-700) !important;
@@ -117,27 +138,26 @@
   color: var(--vp-zinc-800) !important;
 }
 
-/* Interests & Education – exakt wie Fließtext/Headings */
+/* Interests & Education exakt wie Text/Headings */
 .blox-resume-biography-3 .flex-auto.max-w-prose .grid h3{
-  color: var(--vp-zinc-900) !important; /* gleiche Farbe wie „About Me“ */
+  color: var(--vp-zinc-900) !important;
 }
 .blox-resume-biography-3 .flex-auto.max-w-prose .grid p,
 .blox-resume-biography-3 .flex-auto.max-w-prose .grid li{
   color: var(--vp-zinc-800) !important;
 }
-/* Bullet/Icon-Farbe angleichen */
-.blox-resume-biography-3 .flex-auto.max-w-prose .grid li::marker{
-  color: var(--vp-zinc-800) !important;
-}
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid li::marker,
 .blox-resume-biography-3 .flex-auto.max-w-prose .grid svg{
   color: var(--vp-zinc-800) !important;
   opacity: .95;
 }
 
-/* -------- 4) CV-Button: dunkel, Weiß, garantiert mittig -------- */
+/* ==========================================
+   6) CV-Button – dunkel, Weiß, garantiert mittig
+   ========================================== */
 .blox-resume-biography-3 .flex-auto.max-w-prose a[href*="CV"],
 .blox-resume-biography-3 .flex-auto.max-w-prose a[href$=".pdf"]{
-  display: flex;                    /* für margin:auto mittig */
+  display: flex;                              /* für margin:auto wirklich mittig */
   align-items: center;
   justify-content: center;
   gap: .6rem;
@@ -148,14 +168,16 @@
   text-decoration: none !important;
   box-shadow: 0 10px 24px rgba(2,6,23,.16);
   width: fit-content;
-  margin: 1rem auto;                /* mittig in der Box */
+  margin: 1rem auto;
 }
 .blox-resume-biography-3 .flex-auto.max-w-prose a[href*="CV"]:hover,
 .blox-resume-biography-3 .flex-auto.max-w-prose a[href$=".pdf"]:hover{
   filter: brightness(1.06);
 }
 
-/* -------- 5) Kleine Screens (Komfort) -------- */
+/* =================================
+   7) Kleine Screens – Komfort
+   ================================= */
 @media (max-width:480px){
   .blox-resume-biography-3 .flex-auto.max-w-prose{
     padding: 14px;
@@ -163,5 +185,8 @@
   }
 }
 
-/* -------- 6) Transparenz schnell anpassen -------- */
-/* Stell die Box-Transparenz oben mit --vp-panel-alpha ein (z.B. .74) */
+/* =========================================
+   8) Transparenz der Box schnell anpassen
+   =========================================
+   – einfach oben --vp-panel-alpha ändern (z.B. .74)
+*/
