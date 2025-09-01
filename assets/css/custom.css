@@ -328,33 +328,3 @@ h3, .prose h3{ font-size: var(--vp-h3-size); font-weight: 600; }
   font-feature-settings: "liga","kern";
 }
 
-
-/* ======= Typo-Zielsetzung: Bodoni NUR für Name, Mission, Interests, Education ======= */
-
-/* Name (oben in der Profile Card) */
-.blox-resume-biography-3 #profile .portrait-title h1{
-  font-family: var(--vp-font-heading) !important; /* Bodoni Moda */
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  line-height: 1.15;
-}
-
-/* Subtitle explizit in Inter lassen (damit nicht Bodoni rüberblutet) */
-.blox-resume-biography-3 #profile .portrait-title h3{
-  font-family: var(--vp-font-body) !important;     /* Inter */
-  font-weight: 500;
-}
-
-/* „My mission: …“ – ganzer Absatz in Bodoni (erkennt <p><strong>My mission...</strong> ...) */
-.blox-resume-biography-3 .flex-auto.max-w-prose p:has(> strong){
-  font-family: var(--vp-font-heading) !important;  /* Bodoni Moda */
-  font-weight: 600;
-  letter-spacing: -0.005em;
-}
-
-/* Abschnittsüberschriften unten („Interests“, „Education“) in Bodoni */
-.blox-resume-biography-3 .flex-auto.max-w-prose .grid h3{
-  font-family: var(--vp-font-heading) !important;  /* Bodoni Moda */
-  font-weight: 700;
-  letter-spacing: -0.005em;
-}
