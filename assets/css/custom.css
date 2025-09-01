@@ -23,32 +23,61 @@
   /* Geometrie / Schatten (eckig) */
   --vp-card-radius: 0px;
   --vp-card-shadow: 0 18px 40px rgba(2,6,23,.14);
-}
 
-/* === Webfonts laden (Google Fonts) === */
-/* Font-Tokens */
-:root{
+  /* === Typo-Variablen (Inter + Bodoni Moda) === */
   --vp-font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
-                  "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+                  "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji",
+                  "Segoe UI Emoji","Segoe UI Symbol", sans-serif;
 
-  /* Bodoni-Variante + belastbare Fallbacks (passen zu deinem Logo) */
-  --vp-font-display: "Bodoni Moda", "Bodoni 72", Didot, "Baskerville", serif;
+  /* Bodoni-Variante + robuste Fallbacks (Logo-nah) */
+  --vp-font-heading: "Bodoni Moda", "Bodoni 72", "Didot", "Baskerville", serif;
+
+  /* Skalen */
+  --vp-h1-size: clamp(1.9rem, 1.2rem + 2.2vw, 3.0rem);
+  --vp-h2-size: clamp(1.4rem, 1.0rem + 1.2vw, 2.0rem);
+  --vp-h3-size: clamp(1.2rem, 0.95rem + .8vw, 1.5rem);
+
+  --vp-body-size: clamp(1rem, 0.96rem + .2vw, 1.06rem);
+  --vp-line-body: 1.65;
 }
 
-/* Body */
-html { font-family: var(--vp-font-body); }
+/* =========================
+   1) Globale Typo-Anwendung
+   ========================= */
 
-/* Headings global + in Blox-Sections */
-h1,h2,h3,h4,h5,h6,
-.blox-resume-biography-3 h1,
-.blox-resume-biography-3 h2,
-.blox-resume-biography-3 h3 {
-  font-family: var(--vp-font-display);
+/* Body (alle Seitenbereiche) */
+html, body, .page-body{
+  font-family: var(--vp-font-body);
+  font-size: var(--vp-body-size);
+  line-height: var(--vp-line-body);
   font-feature-settings: "liga","kern";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
+
+/* Headings – global + in Blox/Prose/Docs/Home/Article-Bereichen */
+h1,h2,h3,h4,h5,h6,
+.prose h1,.prose h2,.prose h3,.prose h4,.prose h5,.prose h6,
+.docs-content h1,.docs-content h2,.docs-content h3,
+.home-section h1,.home-section h2,.home-section h3,
+.article-container h1,.article-container h2,.article-container h3,
+.blox-resume-biography-3 h1,.blox-resume-biography-3 h2,.blox-resume-biography-3 h3 {
+  font-family: var(--vp-font-heading);
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+/* Größen/Weights (lassen Farben unberührt) */
+h1, .prose h1{ font-size: var(--vp-h1-size); font-weight: 700; }
+h2, .prose h2{ font-size: var(--vp-h2-size); font-weight: 600; }
+h3, .prose h3{ font-size: var(--vp-h3-size); font-weight: 600; }
+
+/* Listen/Code – dezentes Tuning (Inter hat schöne Ziffern) */
+.prose ol, .prose ul{ padding-left: 1.2em; }
+.prose code, .prose pre{ font-feature-settings: "tnum" 1, "liga" 0; }
 
 /* =========================================================
-   1) Re-Layout: Profil oben, zentriert
+   2) Re-Layout: Profil oben, zentriert
    ========================================================= */
 .blox-resume-biography-3 .resume-biography{
   flex-direction: column !important;
@@ -57,7 +86,7 @@ h1,h2,h3,h4,h5,h6,
 }
 
 /* =========================
-   2) Profile-Card (oben, eckig)
+   3) Profile-Card (oben, eckig)
    ========================= */
 .blox-resume-biography-3 #profile{
   background: rgba(248,250,252,var(--vp-panel-alpha));
@@ -80,6 +109,17 @@ h1,h2,h3,h4,h5,h6,
   filter: none !important;
   mix-blend-mode: normal !important;
 }
+/* Name/Untertitel bekommen das abgesprochene Pairing */
+.blox-resume-biography-3 #profile .portrait-title h1{
+  font-family: var(--vp-font-heading);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+}
+.blox-resume-biography-3 #profile .portrait-title h3{
+  font-family: var(--vp-font-body);
+  font-weight: 500;
+}
 
 /* Social-Icons unter dem Namen im selben Ton */
 .blox-resume-biography-3 #profile .network-icon,
@@ -91,11 +131,11 @@ h1,h2,h3,h4,h5,h6,
   opacity: 1 !important;
 }
 
-/* Avatar: KEIN sichtbarer Rand, nur dezenter Schatten */
-/* Leer */
+/* Avatar: KEIN sichtbarer Rand, nur dezenter Schatten (Themereste entfernt) */
+/* bewusst leer – Rand via Theme bereits neutralisiert */
 
 /* =========================================================
-   3) About-Card (unten, eckig) – bündig zur Profil-Card
+   4) About-Card (unten, eckig) – bündig zur Profil-Card
    ========================================================= */
 .blox-resume-biography-3 .flex-auto.max-w-prose{
   background: rgba(248,250,252,var(--vp-panel-alpha));
@@ -123,7 +163,7 @@ h1,h2,h3,h4,h5,h6,
 }
 
 /* =========================================
-   4) Typografie im About-Block – konsequent Zinc
+   5) Typografie im About-Block – konsequent Zinc
    ========================================= */
 /* Basis */
 .blox-resume-biography-3 .flex-auto.max-w-prose,
@@ -183,7 +223,7 @@ h1,h2,h3,h4,h5,h6,
 }
 
 /* ==========================================
-   5) CV-Button – dunkel, Weiß, garantiert mittig
+   6) CV-Button – dunkel, Weiß, garantiert mittig
    ========================================== */
 .blox-resume-biography-3 .flex-auto.max-w-prose a[href*="CV"],
 .blox-resume-biography-3 .flex-auto.max-w-prose a[href$=".pdf"]{
@@ -201,7 +241,7 @@ h1,h2,h3,h4,h5,h6,
 }
 
 /* =================================
-   6) Kleine Screens – Komfort
+   7) Kleine Screens – Komfort
    ================================= */
 @media (max-width:480px){
   .blox-resume-biography-3 #profile,
@@ -212,23 +252,19 @@ h1,h2,h3,h4,h5,h6,
 }
 
 /* =========================================
-   7) Transparenz der Box schnell anpassen
+   8) Transparenz der Box schnell anpassen
    =========================================
    – einfach oben --vp-panel-alpha ändern (z. B. .74)
 */
 
 
-/* Hardcoding für Interests & Education
-   (da Hugo Blox hier keine eigenen Klassen o. Ä. vergibt)
-   ========================================= */
-
 /* =========================================================
-   Interests & Education – Farbe hart auf Zinc anpassen
+   9) Hardcoding für Interests & Education – Farbe fix
    (überschreibt text-zinc-300, prose-invert & opacity)
    ========================================================= */
 
 .blox-resume-biography-3 .flex-auto.max-w-prose .grid {
-  mix-blend-mode: normal !important;   /* kein invert/Blend vom Theme */
+  mix-blend-mode: normal !important;
 }
 
 /* Überschriften wie "About Me" (zinc-900) */
@@ -256,60 +292,3 @@ h1,h2,h3,h4,h5,h6,
   fill: currentColor !important;
   opacity: .95 !important;
 }
-
-/* ==== =============================
-   8) Typografie – Google Fonts + Variablen
-   ============================== */
-
-/* === Typo-Variablen === */
-:root{
-  --vp-font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol", sans-serif;
-  --vp-font-heading: "Bodoni Moda", "Bodoni 72", "Didot", "Baskerville", serif;
-
-  --vp-h1-size: clamp(1.9rem, 1.2rem + 2.2vw, 3.0rem);
-  --vp-h2-size: clamp(1.4rem, 1.0rem + 1.2vw, 2.0rem);
-  --vp-h3-size: clamp(1.2rem, 0.95rem + .8vw, 1.5rem);
-
-  --vp-body-size: clamp(1rem, 0.96rem + .2vw, 1.06rem);
-  --vp-line-body: 1.65;
-}
-
-/* === Global anwenden, ohne deine Farben zu ändern === */
-body, .page-body{
-  font-family: var(--vp-font-body);
-  font-size: var(--vp-body-size);
-  line-height: var(--vp-line-body);
-  font-feature-settings: "liga","kern";
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-}
-
-/* Headlines überall – inkl. About/Interests/Education */
-h1, h2, h3,
-.blox-resume-biography-3 .flex-auto.max-w-prose h1,
-.blox-resume-biography-3 .flex-auto.max-w-prose h2,
-.blox-resume-biography-3 .flex-auto.max-w-prose h3{
-  font-family: var(--vp-font-heading);
-  letter-spacing: -0.01em;
-  line-height: 1.2;
-}
-h1, .prose h1{ font-size: var(--vp-h1-size); font-weight: 700; }
-h2, .prose h2{ font-size: var(--vp-h2-size); font-weight: 600; }
-h3, .prose h3{ font-size: var(--vp-h3-size); font-weight: 600; }
-
-/* Profil-Card: Name & Untertitel bleiben im dunklen Zinc,
-   bekommen aber das Headline-/Body-Font-Pairing */
-.blox-resume-biography-3 #profile .portrait-title h1{
-  font-family: var(--vp-font-heading);
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  line-height: 1.15;
-}
-.blox-resume-biography-3 #profile .portrait-title h3{
-  font-family: var(--vp-font-body);
-  font-weight: 500;
-}
-
-/* Listen/Tabellen sauber setzen (Inter hat schöne Zahlen) */
-.prose ol, .prose ul{ padding-left: 1.2em; }
-.prose code, .prose pre{ font-feature-settings: "tnum" 1, "liga" 0; }
