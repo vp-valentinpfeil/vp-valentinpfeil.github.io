@@ -1,150 +1,93 @@
-/* ====== VP Custom CSS – Academic CV (Tailwind) compatible ====== */
-/* Debug-Flag, damit du in DevTools suchen kannst */
+/* =============== About-Panel (Academic CV) =============== */
+/* Ziel: Box hinter dem kompletten About-Inhalt + gut lesbare Zinc-Farben,
+   responsiv, zentriert, eckige Kanten, dunkler CV-Button in Weiß. */
+
+/* 0) Hilfsflag für schnellen Check im Head (optional) */
 :root { --vp-custom-css: 1; }
 
-/* --------------------------------------------------------------- */
-/* A) Layout im Overlay-Hero: Profil oben zentrieren, Text darunter */
-/* Der About-Hero heißt in Blox "resume-biography". Die Struktur ist:
-   <section id="section-resume-biography-...">
-     <div class="resume-biography ... flex ...">
-       <div class="flex-none"   >  <-- Profil-Spalte
-       <div class="flex-auto ..." > <-- Textspalte
-*/
-[id^="section-resume-biography"] .resume-biography {
-  /* egal was Tailwind per md:flex-row setzt -> wir überschreiben */
-  display: flex;
-  flex-direction: column !important;
-  align-items: center;
-  gap: 1.5rem;
-}
-[id^="section-resume-biography"] .resume-biography > .flex-none,
-[id^="section-resume-biography"] .resume-biography > .flex-auto {
-  width: 100%;
-  max-width: 72rem;           /* obere Breite der gesamten inhaltlichen Zone */
-}
-
-/* Profil-Zeile mittig */
-#profile { justify-content: center; }
-
-/* --------------------------------------------------------------- */
-/* B) About-Text-Box (grau/weiß, eckig, leicht transparent, fluid) */
-/* Die Box liegt im Markup in einem div.bio-text (innerhalb der Textspalte) */
-.header--overlay .bio-text {
-  /* Hintergrund: leicht transparentes Hellgrau */
-  background: rgba(245, 245, 245, 0.88);
-  /* eckig, nicht rund */
-  border-radius: 0;
-  /* weicher, moderner Schatten */
-  box-shadow: 0 10px 24px rgba(0, 0, 0, .12);
-  /* angenehme Innenabstände */
-  padding: clamp(1rem, 2.5vw, 1.5rem) clamp(1rem, 3vw, 2rem);
-  /* fluid: nutzt den Platz, aber klemmt nicht */
-  width: min(100%, 70rem);
+/* 1) Panel-Hintergrund + Layout (greift die komplette rechte Spalte:
+      About-Text, Button, Interests & Education) */
+.blox-resume-biography-3 .flex-auto.max-w-prose {
+  /* Box-Erscheinung */
+  background: rgba(248, 250, 252, 0.82);          /* ~ zinc-50 mit Transparenz */
+  border-radius: 0;                                /* eckige Kanten */
+  box-shadow: 0 18px 40px rgba(2, 6, 23, 0.14);    /* weicher Schatten */
+  /* Innenabstand responsiv */
+  padding: clamp(16px, 2.2vw, 28px);
+  /* Breite: „natürlich“, skaliert mit Viewport – hält Text, Interests & Education zusammen */
+  max-width: clamp(56ch, 72vw, 1100px);
+  /* Im Section-Layout mittig halten */
   margin-inline: auto;
 }
 
-/* Box minimal transparenter beim sehr breiten Viewport, damit BG durchscheint */
-@media (min-width: 1280px) {
-  .header--overlay .bio-text { background: rgba(245, 245, 245, 0.84); }
-}
-
-/* --------------------------------------------------------------- */
-/* C) Typografie/Farbkonzept in der About-Box (Zinc-Skala)         */
-/* Grundfarbe für alle Standardtexte & Links */
-.header--overlay .bio-text,
-.header--overlay .bio-text h1,
-.header--overlay .bio-text h2,
-.header--overlay .bio-text h3,
-.header--overlay .bio-text p,
-.header--overlay .bio-text li,
-.header--overlay .bio-text a {
+/* 2) Typografie im Panel: überall gut lesbarer „Zinc“-Ton */
+.blox-resume-biography-3 .flex-auto.max-w-prose,
+.blox-resume-biography-3 .flex-auto.max-w-prose p,
+.blox-resume-biography-3 .flex-auto.max-w-prose li,
+.blox-resume-biography-3 .flex-auto.max-w-prose a {
   color: #27272a !important;   /* zinc-800 */
   line-height: 1.65;
 }
 
-/* Überschriften etwas dunkler (mehr Kontrast) */
-.header--overlay .bio-text h1,
-.header--overlay .bio-text h2,
-.header--overlay .bio-text h3 {
+/* Überschriften leicht dunkler für Kontrast */
+.blox-resume-biography-3 .flex-auto.max-w-prose h1,
+.blox-resume-biography-3 .flex-auto.max-w-prose h2,
+.blox-resume-biography-3 .flex-auto.max-w-prose h3 {
   color: #18181b !important;   /* zinc-900 */
 }
 
-/* Hervorhebungen aus Markdown/Prose (stark) */
-.header--overlay .bio-text strong {
+/* Markdown-Hervorhebungen (z.B. **secure**, **cloud**, …) */
+.blox-resume-biography-3 .flex-auto.max-w-prose strong {
   color: #3f3f46 !important;   /* zinc-700 */
   font-weight: 700;
 }
 
-/* Emphasis/mark (kursiv, ohne gelben Marker) */
-.header--overlay .bio-text em,
-.header--overlay .bio-text mark {
+/* Em/mark optisch angleichen (keine gelben Marker) */
+.blox-resume-biography-3 .flex-auto.max-w-prose em,
+.blox-resume-biography-3 .flex-auto.max-w-prose mark {
   color: #3f3f46 !important;   /* zinc-700 */
   background: transparent;
   font-style: italic;
 }
 
-/* Links dezent, ohne grelles Blau + klarer Hover */
-.header--overlay .bio-text a {
-  color: #3f3f46 !important;     /* zinc-700 */
+/* Links dezent (kein grelles Blau) */
+.blox-resume-biography-3 .flex-auto.max-w-prose a {
+  color: #3f3f46 !important;           /* zinc-700 */
   text-decoration-thickness: .08em;
 }
-.header--overlay .bio-text a:hover {
-  color: #18181b !important;     /* zinc-900 */
+.blox-resume-biography-3 .flex-auto.max-w-prose a:hover {
+  color: #27272a !important;           /* zinc-800 */
 }
 
-/* Bullet-Listen & kleine Meta-Labels */
-.header--overlay .bio-text ul,
-.header--overlay .bio-text ol,
-.header--overlay .bio-text small {
-  color: #27272a !important;   /* gleichmäßig im Zinc-Thema */
+/* 3) Download-CV Button: dunkle Zinc-Box, weiße Schrift, mittig */
+.blox-resume-biography-3 .flex-auto.max-w-prose a[href*="CV"],
+.blox-resume-biography-3 .flex-auto.max-w-prose a[href$=".pdf"] {
+  display: inline-flex;
+  align-items: center;
+  gap: .6rem;
+  background: #27272a;                 /* zinc-800 */
+  color: #fff !important;
+  padding: .78rem 1.25rem;
+  border-radius: .75rem;               /* Button gerne soft-rounded */
+  text-decoration: none !important;
+  box-shadow: 0 10px 24px rgba(2, 6, 23, 0.16);
+  margin: 1rem auto;                   /* zentriert im Panel */
+}
+.blox-resume-biography-3 .flex-auto.max-w-prose a[href*="CV"]:hover,
+.blox-resume-biography-3 .flex-auto.max-w-prose a[href$=".pdf"]:hover {
+  filter: brightness(1.06);
 }
 
-/* "My mission" o. ä. kleine Überschriften angleichen */
-.header--overlay .bio-text .font-semibold,
-.header--overlay .bio-text .font-medium {
-  color: #18181b !important;
+/* 4) Grid unten (Interests/Education): Farbe konsistent halten */
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid h3,
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid p,
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid li {
+  color: #27272a !important;           /* gleiche Basisfarbe wie Text */
 }
 
-/* --------------------------------------------------------------- */
-/* D) Download-CV Button (dunkler Zinc mit weißer Schrift)          */
-.header--overlay a.btn,
-.header--overlay .btn,
-.header--overlay .btn-primary {
-  background-color: #1f2937 !important;   /* ≈ zinc-800 */
-  color: #ffffff !important;
-  border: none !important;
-  border-radius: 10px;                     /* sanfte, aber nicht runde Ecken */
-  padding: .7rem 1.2rem !important;
-  box-shadow: 0 6px 18px rgba(2, 6, 23, .18);
-}
-.header--overlay a.btn:hover,
-.header--overlay .btn:hover,
-.header--overlay .btn-primary:hover {
-  background-color: #0f172a !important;   /* dunkler (zwischen zinc-900 & slate-900) */
-  color: #ffffff !important;
-}
+/* 5) „About Me“-Panel soll sich natürlich vergrößern/verkleinern:
+      (max-width & padding oben sorgen bereits für das Responsive-Verhalten) */
 
-/* Falls der Button ein SVG-Icon enthält → Icon auch weiß */
-.header--overlay .btn svg,
-.header--overlay a.btn svg {
-  fill: currentColor !important;
-  color: currentColor !important;
-}
-
-/* --------------------------------------------------------------- */
-/* E) Responsive Feinschliff                                       */
-@media (min-width: 768px) {
-  /* Box darf auf größeren Screens etwas luftiger sein */
-  .header--overlay .bio-text {
-    padding: clamp(1.25rem, 2vw, 2rem) clamp(1.25rem, 3vw, 2.5rem);
-    width: min(100%, 72rem);
-  }
-}
-@media (min-width: 1024px) {
-  .header--overlay .bio-text { width: min(100%, 68rem); }
-}
-
-/* --------------------------------------------------------------- */
-/* F) Fallback: Sollte die About-Box-Klasse fehlen, Prose erzwingen */
-[id^="section-resume-biography"] .flex-auto .prose { max-width: none; }
-/* ====== Ende: VP Custom CSS ====== */
+/* 6) OPTIONAL: Panel etwas transparenter machen – dreh einfach an der Opacity oben:
+   background: rgba(248, 250, 252, 0.74);
+*/
