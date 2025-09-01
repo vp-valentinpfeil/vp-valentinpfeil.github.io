@@ -1,93 +1,125 @@
-/* =============== About-Panel (Academic CV) =============== */
-/* Ziel: Box hinter dem kompletten About-Inhalt + gut lesbare Zinc-Farben,
-   responsiv, zentriert, eckige Kanten, dunkler CV-Button in Weiß. */
+/* ===========================
+   LAYOUT: Profil oben, Box mittig
+   =========================== */
 
-/* 0) Hilfsflag für schnellen Check im Head (optional) */
-:root { --vp-custom-css: 1; }
-
-/* 1) Panel-Hintergrund + Layout (greift die komplette rechte Spalte:
-      About-Text, Button, Interests & Education) */
-.blox-resume-biography-3 .flex-auto.max-w-prose {
-  /* Box-Erscheinung */
-  background: rgba(248, 250, 252, 0.82);          /* ~ zinc-50 mit Transparenz */
-  border-radius: 0;                                /* eckige Kanten */
-  box-shadow: 0 18px 40px rgba(2, 6, 23, 0.14);    /* weicher Schatten */
-  /* Innenabstand responsiv */
-  padding: clamp(16px, 2.2vw, 28px);
-  /* Breite: „natürlich“, skaliert mit Viewport – hält Text, Interests & Education zusammen */
-  max-width: clamp(56ch, 72vw, 1100px);
-  /* Im Section-Layout mittig halten */
-  margin-inline: auto;
+/* Der Container, der Profil + Textspalte hält, wird auf allen Breakpoints gestapelt
+   und zentriert (überschreibt md:flex-row aus dem Theme). */
+.header--overlay .resume-biography {
+  display: flex;
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 1.75rem;
 }
 
-/* 2) Typografie im Panel: überall gut lesbarer „Zinc“-Ton */
-.blox-resume-biography-3 .flex-auto.max-w-prose,
-.blox-resume-biography-3 .flex-auto.max-w-prose p,
-.blox-resume-biography-3 .flex-auto.max-w-prose li,
-.blox-resume-biography-3 .flex-auto.max-w-prose a {
-  color: #27272a !important;   /* zinc-800 */
+/* Profilblock (#profile) zentrieren und etwas Luft nach unten. */
+.header--overlay #profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.header--overlay .resume-biography > .flex-none {
+  margin: 0 auto 0.75rem;
+}
+
+/* ===========================
+   ABOUT-Panel: Breite, Transparenz, scharfe Kanten
+   =========================== */
+
+/* Eine gemeinsame, natürliche Maximalbreite für den gesamten About-Block.
+   1100px fühlt sich gut an; passt die Zahl gern an. */
+:root { --about-max: min(1100px, 92vw); }
+
+/* Dein Panel (die helle Box) – rechteckig, leicht transparent, zentriert. */
+.header--overlay .bio-panel {
+  background: rgba(248, 250, 252, 0.78); /* FS gray-50 ~ zinc-50 mit Transparenz */
+  border-radius: 0;                       /* eckig */
+  box-shadow: 0 8px 28px rgba(0,0,0,.13);
+  width: 100%;
+  max-width: var(--about-max);
+  margin: 0 auto;
+  padding: 1.25rem 1.25rem 1.5rem;
+}
+
+/* Auf größeren Screens mehr Luft innen. */
+@media (min-width: 1024px) {
+  .header--overlay .bio-panel { padding: 1.75rem 2rem 2rem; }
+}
+
+/* ===========================
+   TYPOGRAFIE: überall gut lesbares Zinc
+   =========================== */
+
+/* Grundfarbe in der Box (Zinc ~800) für ALLE Textelemente */
+.header--overlay .bio-panel,
+.header--overlay .bio-panel h1,
+.header--overlay .bio-panel h2,
+.header--overlay .bio-panel h3,
+.header--overlay .bio-panel p,
+.header--overlay .bio-panel li,
+.header--overlay .bio-panel a,
+.header--overlay .bio-panel strong,
+.header--overlay .bio-panel em,
+.header--overlay .bio-panel mark,
+.header--overlay .bio-panel small {
+  color: #27272a !important;  /* zinc-800 */
   line-height: 1.65;
 }
 
-/* Überschriften leicht dunkler für Kontrast */
-.blox-resume-biography-3 .flex-auto.max-w-prose h1,
-.blox-resume-biography-3 .flex-auto.max-w-prose h2,
-.blox-resume-biography-3 .flex-auto.max-w-prose h3 {
-  color: #18181b !important;   /* zinc-900 */
+/* Überschriften etwas dunkler für besseren Kontrast */
+.header--overlay .bio-panel h1,
+.header--overlay .bio-panel h2,
+.header--overlay .bio-panel h3 {
+  color: #18181b !important;  /* zinc-900 */
 }
 
-/* Markdown-Hervorhebungen (z.B. **secure**, **cloud**, …) */
-.blox-resume-biography-3 .flex-auto.max-w-prose strong {
-  color: #3f3f46 !important;   /* zinc-700 */
-  font-weight: 700;
-}
+/* Hervorhebungen aus Markdown (z. B. **secure**, **cloud**, …) etwas akzentuiert */
+.header--overlay .bio-panel strong { color: #3f3f46 !important; font-weight: 700; } /* zinc-700 */
 
-/* Em/mark optisch angleichen (keine gelben Marker) */
-.blox-resume-biography-3 .flex-auto.max-w-prose em,
-.blox-resume-biography-3 .flex-auto.max-w-prose mark {
-  color: #3f3f46 !important;   /* zinc-700 */
-  background: transparent;
-  font-style: italic;
-}
-
-/* Links dezent (kein grelles Blau) */
-.blox-resume-biography-3 .flex-auto.max-w-prose a {
-  color: #3f3f46 !important;           /* zinc-700 */
+/* Links dezent – kein knalliges Blau */
+.header--overlay .bio-panel a {
+  color: #3f3f46 !important;               /* zinc-700 */
   text-decoration-thickness: .08em;
 }
-.blox-resume-biography-3 .flex-auto.max-w-prose a:hover {
-  color: #27272a !important;           /* zinc-800 */
+.header--overlay .bio-panel a:hover { color: #27272a !important; } /* zinc-800 */
+
+/* ===========================
+   GRID: Textbreite = Interests + Education
+   =========================== */
+
+/* Der Textcontainer (die Spalte mit "About Me") und das Grid darunter
+   teilen sich die gleiche Maximalbreite. */
+.header--overlay .bio-text,
+.header--overlay .bio-panel .grid {
+  max-width: var(--about-max);
+  margin-inline: auto;
 }
 
-/* 3) Download-CV Button: dunkle Zinc-Box, weiße Schrift, mittig */
-.blox-resume-biography-3 .flex-auto.max-w-prose a[href*="CV"],
-.blox-resume-biography-3 .flex-auto.max-w-prose a[href$=".pdf"] {
+/* Sicherheitshalber: zweispaltiges Layout für Interests/Education ab md */
+@media (min-width: 768px) {
+  .header--overlay .bio-panel .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* ===========================
+   BUTTON: Download CV mittig + dunkler Zinc
+   =========================== */
+
+.header--overlay .bio-panel a.btn,
+.header--overlay .bio-panel a.button,
+.header--overlay .bio-panel .btn {
   display: inline-flex;
   align-items: center;
-  gap: .6rem;
-  background: #27272a;                 /* zinc-800 */
-  color: #fff !important;
-  padding: .78rem 1.25rem;
-  border-radius: .75rem;               /* Button gerne soft-rounded */
-  text-decoration: none !important;
-  box-shadow: 0 10px 24px rgba(2, 6, 23, 0.16);
-  margin: 1rem auto;                   /* zentriert im Panel */
-}
-.blox-resume-biography-3 .flex-auto.max-w-prose a[href*="CV"]:hover,
-.blox-resume-biography-3 .flex-auto.max-w-prose a[href$=".pdf"]:hover {
-  filter: brightness(1.06);
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;          /* mittig */
+  color: #fff !important;      /* weiße Schrift */
+  background-color: #272e38 !important; /* dunkler Zinc/Slate-Mix, gut lesbar */
+  border-color: transparent !important;
 }
 
-/* 4) Grid unten (Interests/Education): Farbe konsistent halten */
-.blox-resume-biography-3 .flex-auto.max-w-prose .grid h3,
-.blox-resume-biography-3 .flex-auto.max-w-prose .grid p,
-.blox-resume-biography-3 .flex-auto.max-w-prose .grid li {
-  color: #27272a !important;           /* gleiche Basisfarbe wie Text */
+/* Optional etwas Hover-Kontrast */
+.header--overlay .bio-panel a.btn:hover,
+.header--overlay .bio-panel a.button:hover,
+.header--overlay .bio-panel .btn:hover {
+  background-color: #1f2630 !important;
 }
-
-/* 5) „About Me“-Panel soll sich natürlich vergrößern/verkleinern:
-      (max-width & padding oben sorgen bereits für das Responsive-Verhalten) */
-
-/* 6) OPTIONAL: Panel etwas transparenter machen – dreh einfach an der Opacity oben:
-   background: rgba(248, 250, 252, 0.74);
-*/
