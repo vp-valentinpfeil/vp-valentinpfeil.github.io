@@ -1,164 +1,141 @@
-/* assets/css/custom.css */
+/* === ABOUT SECTION OVERRIDES (Academic CV / Tailwind) === */
 
-/* Sichtbarer Marker zum Prüfen in DevTools */
-:root { --vp-custom-css: 5; }
+/* Container der About-Sektion: zwei Spalten (Profil + Text). */
+.resume-biography {
+  /* Auf allen Screens als Spalte (Profil oben, Text darunter) */
+  flex-direction: column !important;
+  align-items: center !important;
+  gap: 2.5rem !important; /* etwas Luft zwischen Avatar und Text */
+}
 
-/* ====================================================================== */
-/* 1) Card-Container über die gesamte About-Sektion (eckig, glasig)       */
-/* ====================================================================== */
-section[id^="section-resume-biography-"] .resume-biography {
-  /* eckig */
-  border-radius: 0;                        /* <- eckige Kanten */
-  /* Glas-Effekt, dezenter Schatten und Rahmen */
-  background: rgba(250, 250, 250, 0.90);   /* etwas heller als zuvor */
-  -webkit-backdrop-filter: saturate(120%) blur(6px);
-  backdrop-filter: saturate(120%) blur(6px);
-  box-shadow: 0 16px 36px rgba(0, 0, 0, .08);
-  border: 1px solid rgba(228, 228, 231, .9);   /* zinc-200/90 */
+/* Ab MD verhalten wir es weiter als Spalte (nicht mehr side-by-side). */
+@media (min-width: 768px) {
+  .resume-biography {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+}
 
-  /* Innenabstände & Breite */
-  padding: 2.25rem 1.75rem;                /* 36px / 28px */
-  max-width: 80rem;                        /* 1280px */
+/* Profilblock oben schön zentrieren */
+.resume-biography > .flex-none {
+  margin: 0 auto !important;
+}
+
+/* Textspalte voll nutzbar & responsiv begrenzt */
+.resume-biography > .flex-auto {
+  width: 100% !important;
+  /* nutzt Fensterbreite, begrenzt auf angenehme Lesebreite */
+  max-width: min(1100px, 95vw) !important;
+}
+
+/* Die „grau/weiße“ Box hinter dem About-Text */
+.header--overlay .bio-text {
+  /* leicht transparente, kühle Fläche (Zinc-Kompatibel) */
+  background: rgba(248, 250, 252, 0.85); /* ≈ zinc-50 mit 85% Deckung */
+  /* scharfkantig: */
+  border-radius: 0 !important;
+  /* dezenter Shadow, Blur für eleganten Frost-Effekt */
+  box-shadow: 0 10px 30px rgba(2, 6, 23, 0.12);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+
+  /* Innenabstände & automatische Breite */
+  padding: clamp(1rem, 2.5vw, 1.5rem) clamp(1rem, 3vw, 2rem);
+  width: 100%;
   margin: 0 auto;
-  position: relative;
-  z-index: 1;
-
-  /* Layout: Profil oben zentriert, Inhalt darunter */
-  display: grid;
-  grid-template-columns: repeat(12, minmax(0, 1fr));
-  gap: 2rem;
 }
 
-/* ====================================================================== */
-/* 2) Profil zentriert ganz oben                                          */
-/* ====================================================================== */
-section[id^="section-resume-biography-"] #profile {
-  grid-column: 1 / -1;                     /* volle Breite */
-  display: flex;
-  flex-direction: column;
-  align-items: center;                      /* Avatar + Name mittig */
-  justify-content: center;
-  gap: .75rem;
-  margin-bottom: .5rem;
-}
-section[id^="section-resume-biography-"] .avatar-wrapper {
-  /* dezenter Tiefenwurf unter dem runden Bild */
-  filter: drop-shadow(0 10px 18px rgba(0,0,0,.12));
-}
-section[id^="section-resume-biography-"] .portrait-title {
-  color: #0a0a0b;                           /* fast schwarz, Zinc-950 */
-}
-section[id^="section-resume-biography-"] .portrait-title h3 {
-  color: #18181b;                           /* zinc-900 */
+/* Box soll mitzoomen / natürlich skalieren */
+@media (min-width: 1024px) {
+  .header--overlay .bio-text {
+    padding: clamp(1.25rem, 2vw, 1.75rem) clamp(1.5rem, 3vw, 2.25rem);
+  }
 }
 
-/* Social-Icons unter dem Profil konsistent */
-section[id^="section-resume-biography-"] .network-icon {
-  color: #52525b;                           /* zinc-600 */
-}
-section[id^="section-resume-biography-"] .network-icon a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 2rem; height: 2rem;
-  border-radius: 9999px;
-  transition: background-color .2s ease, color .2s ease;
-}
-section[id^="section-resume-biography-"] .network-icon a:hover {
-  background: rgba(212, 212, 216, .7);      /* zinc-300/70 */
-  color: #18181b;                           /* zinc-900 */
-}
-
-/* ====================================================================== */
-/* 3) Inhalt unter dem Profil: kräftige Zinc-Typo & bessere Lesbarkeit     */
-/* ====================================================================== */
-
-/* Globale Grundfarbe in der Card */
-section[id^="section-resume-biography-"],
-section[id^="section-resume-biography-"] .resume-biography {
-  color: #27272a;                           /* zinc-800 */
+/* Typography in About-Box to be adjusted */
+/* Grundfarbe in der Box (zinc-800-ish) */
+.header--overlay .bio-text,
+.header--overlay .bio-text h1,
+.header--overlay .bio-text h2,
+.header--overlay .bio-text h3,
+.header--overlay .bio-text p,
+.header--overlay .bio-text li,
+.header--overlay .bio-text a {
+  color: #27272a !important; /* zinc-800 */
   line-height: 1.65;
 }
 
-/* Überschriften deutlich dunkler */
-section[id^="section-resume-biography-"] h1,
-section[id^="section-resume-biography-"] h2,
-section[id^="section-resume-biography-"] h3 {
-  color: #18181b;                           /* zinc-900 */
-  letter-spacing: -0.01em;
+/* Überschriften etwas dunkler für Kontrast */
+.header--overlay .bio-text h1,
+.header--overlay .bio-text h2,
+.header--overlay .bio-text h3 {
+  color: #18181b !important; /* zinc-900 */
 }
 
-/* „My mission“, kleine Labels, helle Textteile -> dunkler */
-section[id^="section-resume-biography-"] .text-slate-300,
-section[id^="section-resume-biography-"] .text-gray-300,
-section[id^="section-resume-biography-"] .dark\:prose-invert,
-section[id^="section-resume-biography-"] .prose :where(p, li, small, span) {
-  color: #27272a !important;                /* zinc-800 */
+/* Hervorhebungen aus Markdown (z.B. **secure**, **cloud** …) */
+.header--overlay .bio-text strong {
+  color: #3f3f46 !important; /* zinc-700 */
+  font-weight: 700;
 }
 
-/* Links dezent, aber sichtbar */
-section[id^="section-resume-biography-"] a {
-  color: #27272a;                           /* zinc-800 */
-  text-decoration: underline;
-  text-decoration-color: #d4d4d8;           /* zinc-300 */
-}
-section[id^="section-resume-biography-"] a:hover {
-  color: #09090b;                           /* zinc-950 */
+/* Emphasis/mark optional angleichen */
+.header--overlay .bio-text em,
+.header--overlay .bio-text mark {
+  color: #3f3f46 !important; /* zinc-700 */
+  background: transparent;
+  font-style: italic;
 }
 
-/* Prose-Container nicht unnötig einschränken */
-section[id^="section-resume-biography-"] .prose {
-  max-width: none;
-  color: #27272a;
+/* Links dezent, ohne „grelles“ Blau */
+.header--overlay .bio-text a {
+  color: #3f3f46 !important; /* zinc-700 */
+  text-decoration-thickness: .08em;
+}
+.header--overlay .bio-text a:hover {
+  color: #27272a !important; /* zinc-800 */
 }
 
-/* CV-Button zentriert als primäre Aktion */
-section[id^="section-resume-biography-"] .btn {
-  display: block;
-  margin: 1rem auto .25rem;
+/* „Interests“ & „Education“: gleiche Farbe wie Fließtext */
+.header--overlay .bio-text .grid,
+.header--overlay .bio-text .grid * {
+  color: #27272a !important;
 }
 
-/* ====================================================================== */
-/* 4) Spalten-Anordnung unterhalb des Profils                             */
-/*    (Desktop: Text links breit, rechte Spalte für Lists/Cards bleibt)   */
-/* ====================================================================== */
-section[id^="section-resume-biography-"] .max-w-prose {
-  grid-column: 1 / -1;                      /* mobile: volle Breite */
+/* Download CV-Button */
+/* Grundzustand des Buttons in der About-Box */
+.header--overlay .bio-text .btn,
+.header--overlay .bio-text a.btn,
+.header--overlay .bio-text .btn-primary {
+  background-color: #1f2937 !important; /* zinc-800 */
+  color: #ffffff !important;
+  border: none !important;
+  box-shadow: 0 2px 10px rgba(2, 6, 23, .15);
 }
 
-/* Desktop-Aufteilung */
-@media (min-width: 1024px) {
-  section[id^="section-resume-biography-"] .resume-biography {
-    padding: 3rem 3rem;
-  }
-  /* Profil bleibt oben zentriert; darunter 12er Grid,
-     wobei der große Text links (span 7–8), rechts (span 4–5) Platz
-     für „Interests / Education“ etc. ist. */
-  section[id^="section-resume-biography-"] .max-w-prose {
-    grid-column: 1 / span 8;                /* linke breite Spalte */
-  }
-  /* Nimm den direkt folgenden Content-Block rechts daneben auf */
-  section[id^="section-resume-biography-"] .max-w-prose + div {
-    grid-column: 9 / -1;                    /* rechte Spalte */
-  }
+/* Hover aktiver/dunkler */
+.header--overlay .bio-text .btn:hover,
+.header--overlay .bio-text a.btn:hover,
+.header--overlay .bio-text .btn-primary:hover {
+  background-color: #111827 !important; /* zinc-900 */
+  color: #ffffff !important;
 }
 
-/* ====================================================================== */
-/* 5) Kleinere Feinschliffe                                               */
-/* ====================================================================== */
-/* Bullet-Listen ein wenig dunkler */
-section[id^="section-resume-biography-"] .prose ul > li::marker {
-  color: #3f3f46;                            /* zinc-700 */
-}
-/* „My mission“ Zeile (falls als kleine Caption gerendert) */
-section[id^="section-resume-biography-"] .uppercase,
-section[id^="section-resume-biography-"] .tracking-wide {
-  color: #18181b;                            /* dunkler, besser lesbar */
+/* Optical Refinements */
+/* Avatar: Rahmenschatten etwas feiner */
+.avatar-wrapper img,
+.avatar-wrapper {
+  box-shadow: 0 6px 24px rgba(2, 6, 23, 0.18);
 }
 
-/* Falls Elemente trotzdem zu hell sind, letzte Absicherung: */
-section[id^="section-resume-biography-"] .text-white,
-section[id^="section-resume-biography-"] .text-slate-200,
-section[id^="section-resume-biography-"] .text-gray-200 {
-  color: #18181b !important;                 /* zinc-900 */
+/* Netzwerk-Icons unter dem Namen dezent */
+#profile .network-icon li a {
+  color: #52525b !important;        /* zinc-600 */
+}
+#profile .network-icon li a:hover {
+  color: #27272a !important;        /* zinc-800 */
+}
+
+/* Listenpunkte in „Interests“ besser sichtbar */
+.header--overlay .bio-text ul li::marker {
+  color: #3f3f46; /* zinc-700 */
 }
