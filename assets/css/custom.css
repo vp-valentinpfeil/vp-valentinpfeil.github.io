@@ -47,8 +47,8 @@
 /* Avatar: dezenter Rand + transluzente „Aura“ */
 .blox-resume-biography-3 #profile .avatar-wrapper{
   position: relative;               /* für die Aura */
-  border: 3px solid rgba(24,24,27,.85);       /* zinc-900 */
-  box-shadow: 0 10px 28px rgba(2,6,23,.35);
+  border: 1px solid rgba(24,24,27,.85);       /* zinc-900 */
+  box-shadow: 0 10px 28px rgba(2, 6, 23, 0.624);
   border-radius: 9999px;
 }
 .blox-resume-biography-3 #profile .avatar-wrapper::after{
@@ -159,4 +159,65 @@
     padding: 14px;
     max-width: 92vw;
   }
+}
+
+/* Weitere Refinements */
+
+/* ===== Profil: konsequent dunkle Zinc-Töne ===== */
+:root{
+  --vp-zinc-200: #e4e4e7;
+  --vp-zinc-700: #3f3f46;
+  --vp-zinc-800: #27272a;
+  --vp-zinc-900: #18181b;
+  --vp-zinc-950: #09090b;  /* sehr dunkel */
+}
+
+/* Profilblock bleibt oben zentriert (dein vorhandenes Layout lassen) */
+
+/* Name + Untertitel in dunklem Zinc (keine Weiß-Töne mehr) */
+.blox-resume-biography-3 #profile .portrait-title h1{
+  color: var(--vp-zinc-950) !important;   /* Name – sehr dunkel */
+  text-shadow: none !important;
+}
+.blox-resume-biography-3 #profile .portrait-title h3{
+  color: var(--vp-zinc-800) !important;   /* Untertitel */
+  text-shadow: none !important;
+}
+
+/* Social-Icons unter dem Profil ebenfalls dunkler */
+.blox-resume-biography-3 #profile .network-icon,
+.blox-resume-biography-3 #profile .network-icon a{
+  color: var(--vp-zinc-800) !important;
+  opacity: .95;
+}
+
+/* ===== Avatar: nur EIN Rand, sauber, keine Aura ===== */
+.blox-resume-biography-3 #profile .avatar-wrapper{
+  border: 4px solid var(--vp-zinc-900) !important;
+  border-radius: 9999px !important;
+  box-shadow: 0 8px 24px rgba(2,6,23,.28);  /* dezent, nicht „oval/versetzt“ */
+  position: relative;
+}
+.blox-resume-biography-3 #profile .avatar-wrapper::after{
+  content: none !important; /* Aura/zweiter Rand komplett entfernen */
+}
+
+/* ===== Interests & Education: gleiche Farben wie About ===== */
+/* Überschriften exakt wie „About Me“ */
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid h3{
+  color: var(--vp-zinc-900) !important;   /* deckungsgleich mit About-Heading */
+}
+/* Listen- & Absatztext wie Fließtext im Panel */
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid p,
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid li{
+  color: var(--vp-zinc-800) !important;
+}
+
+/* (Optional) Bullet-/Icon-Farbe in den Listen ebenfalls angleichen */
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid li::marker{
+  color: var(--vp-zinc-800) !important;
+}
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid svg{
+  color: var(--vp-zinc-800) !important;
+  opacity: .95;
 }
