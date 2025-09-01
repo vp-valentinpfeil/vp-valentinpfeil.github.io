@@ -196,6 +196,10 @@
 */
 
 
+/* Hardcoding für Interests & Education
+   (da Hugo Blox hier keine eigenen Klassen o. Ä. vergibt)
+   ========================================= */
+
 /* =========================================================
    Interests & Education – Farbe hart auf Zinc anpassen
    (überschreibt text-zinc-300, prose-invert & opacity)
@@ -230,3 +234,63 @@
   fill: currentColor !important;
   opacity: .95 !important;
 }
+
+/* ==== =============================
+   8) Typografie – Google Fonts + Variablen
+   ============================== */
+
+/* === Webfonts laden (Google Fonts) === */
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,600;6..96,700;6..96,800&family=Inter:wght@400;500;600;700&display=swap');
+
+/* === Typo-Variablen === */
+:root{
+  --vp-font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol", sans-serif;
+  --vp-font-heading: "Bodoni Moda", "Bodoni 72", "Didot", "Baskerville", serif;
+
+  --vp-h1-size: clamp(1.9rem, 1.2rem + 2.2vw, 3.0rem);
+  --vp-h2-size: clamp(1.4rem, 1.0rem + 1.2vw, 2.0rem);
+  --vp-h3-size: clamp(1.2rem, 0.95rem + .8vw, 1.5rem);
+
+  --vp-body-size: clamp(1rem, 0.96rem + .2vw, 1.06rem);
+  --vp-line-body: 1.65;
+}
+
+/* === Global anwenden, ohne deine Farben zu ändern === */
+body, .page-body{
+  font-family: var(--vp-font-body);
+  font-size: var(--vp-body-size);
+  line-height: var(--vp-line-body);
+  font-feature-settings: "liga","kern";
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Headlines überall – inkl. About/Interests/Education */
+h1, h2, h3,
+.blox-resume-biography-3 .flex-auto.max-w-prose h1,
+.blox-resume-biography-3 .flex-auto.max-w-prose h2,
+.blox-resume-biography-3 .flex-auto.max-w-prose h3{
+  font-family: var(--vp-font-heading);
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+h1, .prose h1{ font-size: var(--vp-h1-size); font-weight: 700; }
+h2, .prose h2{ font-size: var(--vp-h2-size); font-weight: 600; }
+h3, .prose h3{ font-size: var(--vp-h3-size); font-weight: 600; }
+
+/* Profil-Card: Name & Untertitel bleiben im dunklen Zinc,
+   bekommen aber das Headline-/Body-Font-Pairing */
+.blox-resume-biography-3 #profile .portrait-title h1{
+  font-family: var(--vp-font-heading);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+}
+.blox-resume-biography-3 #profile .portrait-title h3{
+  font-family: var(--vp-font-body);
+  font-weight: 500;
+}
+
+/* Listen/Tabellen sauber setzen (Inter hat schöne Zahlen) */
+.prose ol, .prose ul{ padding-left: 1.2em; }
+.prose code, .prose pre{ font-feature-settings: "tnum" 1, "liga" 0; }
