@@ -1,0 +1,24 @@
+/* assets/scss/custom.scss */
+
+/* Debug-Flag */
+:root { --vp-custom-css: 1; }
+
+/* 1) Graue Textbox nur im Overlay-Header hinter dem About-Text */
+.header--overlay .bio-text {
+  /* bg-gray-100 ≈ #f5f5f5, /90 ≈ 0.9; rounded-xl ≈ 12px; px-6 (24px) py-5 (20px) */
+  @apply bg-gray-100/90 rounded-xl shadow px-6 py-5 max-w-[800px] mx-auto text-zinc-800;
+}
+
+/* 2) Textfarbe in der Box (überschreibt dark:prose-invert des Themes) */
+.header--overlay .bio-text h1,
+.header--overlay .bio-text h2,
+.header--overlay .bio-text h3,
+.header--overlay .bio-text p,
+.header--overlay .bio-text li {
+  @apply text-zinc-800 leading-relaxed;
+}
+
+/* 3) Optional: mehr Luft auf großen Screens (≥ 1024px) */
+@media (min-width: 1024px) {
+  .header--overlay .bio-text { @apply px-8; } /* 2rem seitlich */
+}
