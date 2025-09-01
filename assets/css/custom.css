@@ -214,3 +214,69 @@
    =========================================
    – einfach oben --vp-panel-alpha ändern (z.B. .74)
 */
+
+
+/* =========================================================
+   PATCH A — Avatar: Rand & Ringe KOMPLETT entfernt
+   (Profile-Card bleibt, nur der sichtbare Border weg)
+   ========================================================= */
+
+/* Neutralisiert Border, Outline und Tailwind-Ring-Shadows */
+.blox-resume-biography-3 #profile .avatar-wrapper,
+.blox-resume-biography-3 #profile .avatar-wrapper img {
+  box-sizing: border-box;
+  border: none !important;              /* alle Borders weg */
+  outline: none !important;
+  border-radius: 9999px !important;
+  background-clip: padding-box;
+
+  /* Tailwind-Ring neutralisieren (ring-*, ring-offset-*) */
+  --tw-ring-offset-shadow: 0 0 #0000 !important;
+  --tw-ring-shadow: 0 0 #0000 !important;
+
+  /* nur noch ein sehr dezenter, neutraler Drop Shadow */
+  box-shadow: 0 2px 8px rgba(2, 6, 23, .08) !important;
+}
+
+/* Eventuelle Pseudo-Auren des Themes hart deaktivieren */
+.blox-resume-biography-3 #profile .avatar-wrapper::before,
+.blox-resume-biography-3 #profile .avatar-wrapper::after {
+  content: none !important;
+}
+
+/* Falls in der Datei noch irgendwo ein Border für den Avatar steht,
+   wird er hier sicher übersteuert: */
+.blox-resume-biography-3 #profile .avatar-wrapper {
+  border: none !important;
+}
+
+/* =========================================================
+   PATCH B — Interests & Education in denselben Zinc-Farben
+   (wie im About-Panel), inkl. Icons/Marker/Opacity
+   ========================================================= */
+
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid h3 {
+  color: var(--vp-zinc-900) !important;  /* Heading-Ton wie „About Me“ */
+  opacity: 1 !important;
+  text-shadow: none !important;
+}
+
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid p,
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid li,
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid a,
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid span {
+  color: var(--vp-zinc-800) !important;  /* Fließtext-Ton wie im Panel */
+  opacity: 1 !important;                 /* keine aufgehellten Varianten */
+}
+
+/* List bullets & kleine SVG-Icons anpassen */
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid li::marker {
+  color: var(--vp-zinc-800) !important;
+}
+
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid svg {
+  color: var(--vp-zinc-800) !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+  opacity: .95 !important;
+}
