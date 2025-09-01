@@ -38,20 +38,31 @@
   text-align: center;
 }
 
-/* ================================
-   2) Profiltypografie (einheitlich)
-   =================================
-   – Name, Untertitel & alle Icons
-     im *selben* dunklen Zinc-Ton
-   – keinerlei Weiß/Glow/Shadow
-*/
+/* =========================
+   Profil: EIN Farbton, kein Weiß/Glow
+   ========================= */
+
+/* 1) Zentraler Profil-Farbton (dunkles Zinc) */
+:root{
+  --vp-profile-color: #18181b; /* tailwind zinc-900 */
+}
+
+/* 2) Name, Untertitel, Icons – alles in einem Ton
+      (überstimmt text-white/dark:text-... usw.) */
 .blox-resume-biography-3 #profile .portrait-title h1,
 .blox-resume-biography-3 #profile .portrait-title h3,
+.blox-resume-biography-3 #profile .portrait-title [class*="text-white"],
+.blox-resume-biography-3 #profile .portrait-title [class*="text-zinc"],
 .blox-resume-biography-3 #profile .network-icon,
-.blox-resume-biography-3 #profile .network-icon a{
-  color: var(--vp-profile-color) !important;  /* #18181b */
+.blox-resume-biography-3 #profile .network-icon a,
+.blox-resume-biography-3 #profile .network-icon svg {
+  color: var(--vp-profile-color) !important;
+  fill: var(--vp-profile-color) !important;   /* für SVG-Icons */
+  stroke: var(--vp-profile-color) !important; /* falls Icons stroken */
   opacity: 1 !important;
   text-shadow: none !important;
+  -webkit-text-stroke: 0 !important;
+  filter: none !important;
 }
 
 /* ============================
