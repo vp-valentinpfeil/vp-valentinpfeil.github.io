@@ -194,3 +194,39 @@
    =========================================
    – einfach oben --vp-panel-alpha ändern (z. B. .74)
 */
+
+
+/* =========================================================
+   Interests & Education – Farbe hart auf Zinc anpassen
+   (überschreibt text-zinc-300, prose-invert & opacity)
+   ========================================================= */
+
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid {
+  mix-blend-mode: normal !important;   /* kein invert/Blend vom Theme */
+}
+
+/* Überschriften wie "About Me" (zinc-900) */
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid h3,
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid [class*="heading"] {
+  color: var(--vp-zinc-900) !important;
+  opacity: 1 !important;
+  text-shadow: none !important;
+}
+
+/* Fließtext/Listen (zinc-800) */
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid p,
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid li,
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid [class*="text-"] {
+  color: var(--vp-zinc-800) !important;
+  opacity: 1 !important;
+}
+
+/* Listen-Bullets & kleine SVG-Icons angleichen */
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid li::marker {
+  color: var(--vp-zinc-800) !important;
+}
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid svg {
+  color: var(--vp-zinc-800) !important;
+  fill: currentColor !important;
+  opacity: .95 !important;
+}
