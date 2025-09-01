@@ -36,7 +36,7 @@ profiles:
   - icon: phone
     url: 'tel:+49 151 28400183'
     label: Phone
-  - icon: envelope
+  - icon: envelope-open
     url: 'mailto:vp@valentinpfeil.com'
     label: E-mail
   - icon: brands/linkedin
