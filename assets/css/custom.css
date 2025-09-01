@@ -39,7 +39,7 @@
 }
 
 /* =========================
-   Profil: EIN Farbton, kein Weiß/Glow
+   2) Profil: EIN Farbton, kein Weiß/Glow
    ========================= */
 
 /* 1) Zentraler Profil-Farbton (dunkles Zinc) */
@@ -202,3 +202,55 @@
    =========================================
    – einfach oben --vp-panel-alpha ändern (z.B. .74)
 */
+
+/* =========================================================
+   PATCH: Profil-Farben vereinheitlichen + Avatar-Rand fixen
+   (am Ende der Datei einfügen)
+   ========================================================= */
+
+/* 1) Name, Untertitel & Icons – ein gemeinsamer dunkler Zinc-Ton */
+.blox-resume-biography-3 #profile .portrait-title,
+.blox-resume-biography-3 #profile .portrait-title * {
+  color: var(--vp-profile-color) !important;   /* #18181b (zinc-900) */
+  opacity: 1 !important;
+  text-shadow: none !important;
+  -webkit-text-stroke: 0 !important;
+  filter: none !important;
+  mix-blend-mode: normal !important;
+}
+
+/* Icon-Reihe unter dem Namen */
+.blox-resume-biography-3 #profile .network-icon,
+.blox-resume-biography-3 #profile .network-icon *,
+.blox-resume-biography-3 #profile .network-icon svg {
+  color: var(--vp-profile-color) !important;
+  fill: var(--vp-profile-color) !important;    /* für SVGs */
+  stroke: var(--vp-profile-color) !important;  /* falls stroken */
+  opacity: 1 !important;
+  text-shadow: none !important;
+  mix-blend-mode: normal !important;
+}
+
+/* 2) Avatar: EIN dezenter, halbtransparenter Rand – keine Aura/Versatz */
+.blox-resume-biography-3 #profile .avatar-wrapper,
+.blox-resume-biography-3 #profile .avatar-wrapper img {
+  box-sizing: border-box;
+  border-radius: 9999px !important;
+  outline: none !important;
+  /* alle evtl. Theme-/Tailwind-Ringe und Borders neutralisieren */
+  border: none !important;
+  box-shadow: 0 2px 8px rgba(2, 6, 23, .08) !important; /* sehr dezent */
+  background-clip: padding-box;
+}
+
+/* unser einziger, sauberer Rahmen (Grau, leicht transparent) */
+.blox-resume-biography-3 #profile .avatar-wrapper {
+  border: 2px solid rgba(var(--vp-profile-rgb), var(--vp-avatar-border-alpha)) !important;
+  /* entspricht zinc-900 @ ~28% aus deinen Variablen */
+}
+
+/* evtl. pseudo-basierte Auren/Overlays des Themes hart entfernen */
+.blox-resume-biography-3 #profile .avatar-wrapper::before,
+.blox-resume-biography-3 #profile .avatar-wrapper::after {
+  content: none !important;
+}
