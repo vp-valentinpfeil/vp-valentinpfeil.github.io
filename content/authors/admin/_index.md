@@ -170,10 +170,10 @@ languages:
 #     awarder: Universität der Bundeswehr München
 #     summary: Awarded for outstanding academic performance during the Bachelor’s degree.
 
-design:
-  background:
-    color: "#f5f5f5"    # hellgrau
-    text_color_light: false
+# design:
+#   background:
+#     color: "#f5f5f5"    # hellgrau
+#     text_color_light: false
 ---
 
 ## About Me
