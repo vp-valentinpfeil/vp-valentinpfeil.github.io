@@ -1,34 +1,27 @@
-/* Debug-Flag: später im DOM als CSS-Variable sichtbar */
-:root { --vp-custom-css: 1; }
+/* Debug Flag */
+:root { --vp-custom-css: 2; }
 
-/* 1) Graue Box nur um den eigentlichen Bio-Text im Overlay-Header */
-.header--overlay .bio-text,
-.resume-biography .bio-text {              /* zweite Selektor-Variante, falls Header-Klasse abweicht */
-  background: rgba(245,245,245,0.92);      /* ≈ bg-gray-100/90 */
-  border-radius: 12px;                     /* ≈ rounded-xl */
-  box-shadow: 0 4px 10px rgba(0,0,0,.08);  /* ≈ shadow */
-  padding: 20px 24px;                      /* ≈ py-5 px-6 */
-  max-width: min(800px, 90vw);
-  margin: 0 auto;                          /* mittig */
+/* Gesamte About-Section in Box packen */
+#section-resume-biography-3 {
+  @apply bg-zinc-50/95 rounded-xl shadow-lg px-6 py-8 max-w-5xl mx-auto;
 }
 
-/* 2) Textfarbe in der Box (überstimmt dark:prose-invert der Theme-Prosa) */
-.header--overlay .bio-text h1,
-.header--overlay .bio-text h2,
-.header--overlay .bio-text h3,
-.header--overlay .bio-text p,
-.header--overlay .bio-text li,
-.resume-biography .bio-text h1,
-.resume-biography .bio-text h2,
-.resume-biography .bio-text h3,
-.resume-biography .bio-text p,
-.resume-biography .bio-text li {
-  color: #222;              /* dunkles Grau */
-  line-height: 1.6;
+/* Einheitliche Schriftfarbe und Zeilenhöhe */
+#section-resume-biography-3,
+#section-resume-biography-3 h1,
+#section-resume-biography-3 h2,
+#section-resume-biography-3 h3,
+#section-resume-biography-3 p,
+#section-resume-biography-3 li {
+  @apply text-zinc-800 leading-relaxed;
 }
 
-/* 3) Optional: mehr Luft auf großen Screens */
-@media (min-width: 1024px) {
-  .header--overlay .bio-text,
-  .resume-biography .bio-text { padding: 20px 32px; }
+/* Profil-Block (Avatar + Name + Social Icons) optisch in Box integrieren */
+#section-resume-biography-3 #profile {
+  @apply mb-6; /* Abstand nach unten zum Text */
+}
+
+/* CV-Button zentriert */
+#section-resume-biography-3 .btn {
+  @apply mx-auto block;
 }
