@@ -58,7 +58,7 @@ interests:
   - Confidential Computing and Security
   - Defence and Cybersecurity
   - Artificial Intelligence
-  - Freeletics, Calisthenics, Gymnastics, Running, Yoga, and Competitions, such as (Half-)Marathons and Hyrox
+  - Calisthenics, Gymnastics, Yoga and Hyrox
 
 education:
   - area: M.Sc. Computer Science
