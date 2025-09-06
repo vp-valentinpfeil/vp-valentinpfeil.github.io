@@ -36,6 +36,7 @@
   --vp-h1-size: clamp(1.9rem, 1.2rem + 2.2vw, 3.0rem);
   --vp-h2-size: clamp(1.4rem, 1.0rem + 1.2vw, 2.0rem);
   --vp-h3-size: clamp(1.2rem, 0.95rem + .8vw, 1.5rem);
+  --vp-bio-mission-size: clamp(1.2rem, 1rem + 0.8vw, 1.4rem);
 
   --vp-body-size: clamp(1rem, 0.96rem + .2vw, 1.06rem);
   --vp-line-body: 1.65;
@@ -363,13 +364,16 @@ h3, .prose h3{ font-size: var(--vp-h3-size); font-weight: 600; }
 .blox-resume-biography-3 .flex-auto.max-w-prose .bio-text p:last-of-type{
   font-family: var(--vp-font-heading) !important; /* Bodoni */
   font-weight: 600;
-  font-size: 1.4rem
+  font-size: var(--vp-bio-mission-size) !important;
   letter-spacing: -0.005em;
 }
 
 /* Abschnittsüberschriften unten („Interests“, „Education“) in Bodoni */
+/* Interests & Education Überschriften größer machen */
 .blox-resume-biography-3 .flex-auto.max-w-prose .grid h3{
   font-family: var(--vp-font-heading) !important;  /* Bodoni Moda */
   font-weight: 700;
+  font-size: 1.4rem;   /* oder 1.5rem für noch mehr Präsenz */
+  line-height: 1.3;
   letter-spacing: -0.005em;
 }
