@@ -39,6 +39,12 @@
 
   --vp-body-size: clamp(1rem, 0.96rem + .2vw, 1.06rem);
   --vp-line-body: 1.65;
+
+  /* Abstände */
+  --vp-space-1: .6rem;
+  --vp-space-2: .78rem;
+  --vp-space-3: 1.25rem;
+  --vp-card-pad: clamp(16px, 2.2vw, 28px);
 }
 
 /* =========================
@@ -57,11 +63,12 @@ html, body, .page-body{
 
 /* Headings – global + in Blox/Prose/Docs/Home/Article-Bereichen */
 h1,h2,h3,h4,h5,h6,
-.prose h1,.prose h2,.prose h3,.prose h4,.prose h5,.prose h6,
-.docs-content h1,.docs-content h2,.docs-content h3,
-.home-section h1,.home-section h2,.home-section h3,
-.article-container h1,.article-container h2,.article-container h3,
-.blox-resume-biography-3 h1,.blox-resume-biography-3 h2,.blox-resume-biography-3 h3 {
+.prose h1,.prose h2,.prose h3,.prose h4,.prose h5,.prose h6, /* prose */
+.docs-content h1,.docs-content h2,.docs-content h3, /* docs-content */
+.home-section h1,.home-section h2,.home-section h3, /* home-section */
+.article-container h1,.article-container h2,.article-container h3, /* article-container */
+.blox-resume-biography-3 h1,.blox-resume-biography-3 h2,.blox-resume-biography-3 h3 /* resume-biography */
+.section-subheading mb-3 h1,.section-subheading mb-3 h2,.section-subheading mb-3 h3 /* section-subheading */ { 
   font-family: var(--vp-font-heading);
   letter-spacing: -0.01em;
   line-height: 1.2;
