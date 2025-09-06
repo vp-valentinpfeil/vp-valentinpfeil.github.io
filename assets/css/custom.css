@@ -68,7 +68,7 @@ h1,h2,h3,h4,h5,h6,
 .home-section h1,.home-section h2,.home-section h3, /* home-section */
 .article-container h1,.article-container h2,.article-container h3, /* article-container */
 .blox-resume-biography-3 h1,.blox-resume-biography-3 h2,.blox-resume-biography-3 h3 /* resume-biography */
-.section-subheading mb-3 h1,.section-subheading mb-3 h2,.section-subheading mb-3 h3 /* section-subheading */ { 
+.section-subheading.mb-3 h1,.section-subheading.mb-3 h2,.section-subheading.mb-3 h3 /* section-subheading */ { 
   font-family: var(--vp-font-heading);
   letter-spacing: -0.01em;
   line-height: 1.2;
