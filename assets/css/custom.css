@@ -363,6 +363,7 @@ h3, .prose h3{ font-size: var(--vp-h3-size); font-weight: 600; }
 .blox-resume-biography-3 .flex-auto.max-w-prose .bio-text p:last-of-type{
   font-family: var(--vp-font-heading) !important; /* Bodoni */
   font-weight: 600;
+  font-size: 1.4rem
   letter-spacing: -0.005em;
 }
 
