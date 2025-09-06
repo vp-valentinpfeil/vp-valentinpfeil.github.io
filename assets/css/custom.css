@@ -1,5 +1,5 @@
 /* ==========================
-   Academic CV – About & Experience
+   Academic CV – About Section
    Stabil & responsiv für Hugo Blox (Tailwind)
    ========================== */
 
@@ -24,23 +24,28 @@
   --vp-card-radius: 0px;
   --vp-card-shadow: 0 18px 40px rgba(2,6,23,.14);
 
-  /* Typo-Variablen */
+  /* === Typo-Variablen (Inter + Bodoni Moda) === */
   --vp-font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto,
                   "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji",
                   "Segoe UI Emoji","Segoe UI Symbol", sans-serif;
-  --vp-font-heading: "Bodoni Moda", "Bodoni 72", Didot, Baskerville, serif;
 
-  /* Textgrößen (nur als sanfte Defaults) */
+  /* Bodoni-Variante + robuste Fallbacks (Logo-nah) */
+  --vp-font-heading: "Bodoni Moda", "Bodoni 72", "Didot", "Baskerville", serif;
+
+  /* Skalen */
   --vp-h1-size: clamp(1.9rem, 1.2rem + 2.2vw, 3.0rem);
   --vp-h2-size: clamp(1.4rem, 1.0rem + 1.2vw, 2.0rem);
   --vp-h3-size: clamp(1.2rem, 0.95rem + .8vw, 1.5rem);
+
   --vp-body-size: clamp(1rem, 0.96rem + .2vw, 1.06rem);
   --vp-line-body: 1.65;
 }
 
 /* =========================
-   1) Globale Typo-Basis
+   1) Globale Typo-Anwendung
    ========================= */
+
+/* Body (alle Seitenbereiche) */
 html, body, .page-body{
   font-family: var(--vp-font-body);
   font-size: var(--vp-body-size);
@@ -50,19 +55,43 @@ html, body, .page-body{
   text-rendering: optimizeLegibility;
 }
 
-/* =========================
-   2) ABOUT – Layout & Farben
-   ========================= */
+/* Headings – global + in Blox/Prose/Docs/Home/Article-Bereichen */
+h1,h2,h3,h4,h5,h6,
+.prose h1,.prose h2,.prose h3,.prose h4,.prose h5,.prose h6,
+.docs-content h1,.docs-content h2,.docs-content h3,
+.home-section h1,.home-section h2,.home-section h3,
+.article-container h1,.article-container h2,.article-container h3,
+.blox-resume-biography-3 h1,.blox-resume-biography-3 h2,.blox-resume-biography-3 h3 {
+  font-family: var(--vp-font-heading);
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+}
+
+/* Größen/Weights (lassen Farben unberührt) */
+h1, .prose h1{ font-size: var(--vp-h1-size); font-weight: 700; }
+h2, .prose h2{ font-size: var(--vp-h2-size); font-weight: 600; }
+h3, .prose h3{ font-size: var(--vp-h3-size); font-weight: 600; }
+
+/* Listen/Code – dezentes Tuning (Inter hat schöne Ziffern) */
+.prose ol, .prose ul{ padding-left: 1.2em; }
+.prose code, .prose pre{ font-feature-settings: "tnum" 1, "liga" 0; }
+
+/* =========================================================
+   2) Re-Layout: Profil oben, zentriert
+   ========================================================= */
 .blox-resume-biography-3 .resume-biography{
   flex-direction: column !important;
   align-items: center !important;
   gap: 1.25rem !important;
 }
 
+/* =========================
+   3) Profile-Card (oben, eckig)
+   ========================= */
 .blox-resume-biography-3 #profile{
   background: rgba(248,250,252,var(--vp-panel-alpha));
   backdrop-filter: blur(2px);
-  border-radius: var(--vp-card-radius);
+  border-radius: var(--vp-card-radius); /* 0 */
   padding: clamp(16px, 2.2vw, 28px);
   max-width: clamp(56ch, 68vw, 1040px);
   margin: .25rem auto 0 auto;
@@ -70,7 +99,7 @@ html, body, .page-body{
   text-align: center;
 }
 
-/* Profiltexte: ein dunkler Ton, keine Glows */
+/* Profiltypografie: EIN dunkler Zinc-Ton, keine Glows */
 .blox-resume-biography-3 #profile .portrait-title,
 .blox-resume-biography-3 #profile .portrait-title *{
   color: var(--vp-profile-color) !important;
@@ -80,138 +109,252 @@ html, body, .page-body{
   filter: none !important;
   mix-blend-mode: normal !important;
 }
+/* Name/Untertitel bekommen das abgesprochene Pairing */
+.blox-resume-biography-3 #profile .portrait-title h1{
+  font-family: var(--vp-font-heading);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+}
+.blox-resume-biography-3 #profile .portrait-title h3{
+  font-family: var(--vp-font-body);
+  font-weight: 500;
+}
 
-/* Avatar: bewusst ohne sichtbaren Rand (Themereste bereits neutralisiert) */
+/* Social-Icons unter dem Namen im selben Ton */
+.blox-resume-biography-3 #profile .network-icon,
+.blox-resume-biography-3 #profile .network-icon *,
+.blox-resume-biography-3 #profile .network-icon svg{
+  color: var(--vp-profile-color) !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+  opacity: 1 !important;
+}
 
-/* About-Panel bündig unter dem Profil */
+/* Avatar: KEIN sichtbarer Rand, nur dezenter Schatten (Themereste entfernt) */
+/* bewusst leer – Rand via Theme bereits neutralisiert */
+
+/* =========================================================
+   4) About-Card (unten, eckig) – bündig zur Profil-Card
+   ========================================================= */
 .blox-resume-biography-3 .flex-auto.max-w-prose{
   background: rgba(248,250,252,var(--vp-panel-alpha));
   backdrop-filter: blur(2px);
-  border-radius: var(--vp-card-radius);
+  border-radius: var(--vp-card-radius); /* 0 */
   padding: clamp(16px, 2.2vw, 28px);
   max-width: clamp(56ch, 68vw, 1040px);
   margin: 0 auto;
-  box-shadow: none;
+  box-shadow: none; /* Schatten kommt von der oberen Card */
 }
 
-/* Farbkonsistenz im About-Panel */
+/* feine „Naht“, bleibt eckig */
+.blox-resume-biography-3 #profile{border-bottom:1px solid rgba(248,250,252,var(--vp-panel-alpha));}
+.blox-resume-biography-3 .flex-auto.max-w-prose{border-top:1px solid rgba(248,250,252,var(--vp-panel-alpha));}
+
+/* Laptop-Breiten (z. B. MBP 14") */
+@media (min-width:1200px) and (max-width:1536px){
+  .blox-resume-biography-3 #profile,
+  .blox-resume-biography-3 .flex-auto.max-w-prose{ max-width: min(60vw, 980px); }
+}
+/* Sehr breite Monitore */
+@media (min-width:1600px){
+  .blox-resume-biography-3 #profile,
+  .blox-resume-biography-3 .flex-auto.max-w-prose{ max-width: 1200px; }
+}
+
+/* =========================================
+   5) Typografie im About-Block – konsequent Zinc
+   ========================================= */
+/* Basis */
 .blox-resume-biography-3 .flex-auto.max-w-prose,
 .blox-resume-biography-3 .flex-auto.max-w-prose p,
 .blox-resume-biography-3 .flex-auto.max-w-prose li,
 .blox-resume-biography-3 .flex-auto.max-w-prose a{
   color: var(--vp-zinc-800) !important;
   line-height: 1.65;
+  opacity: 1 !important; /* gegen text-white/70, opacity-80, prose-invert etc. */
 }
+
+/* Headings (gilt auch für „Interests“ / „Education“) */
 .blox-resume-biography-3 .flex-auto.max-w-prose h1,
 .blox-resume-biography-3 .flex-auto.max-w-prose h2,
 .blox-resume-biography-3 .flex-auto.max-w-prose h3{
   color: var(--vp-zinc-900) !important;
+  opacity: 1 !important;
 }
 
-/* =========================
-   3) ABOUT – gezieltes Font-Pairing
-   (Bodoni nur dort, wo du es willst)
-   ========================= */
-
-/* Profil-NAME + SUBTITLE in Bodoni */
-.blox-resume-biography-3 #profile .portrait-title h1,
-.blox-resume-biography-3 #profile .portrait-title h3{
-  font-family: var(--vp-font-heading) !important;
-  letter-spacing: -0.01em;
-}
-.blox-resume-biography-3 #profile .portrait-title h1{ font-weight: 700; line-height: 1.15; }
-.blox-resume-biography-3 #profile .portrait-title h3{ font-weight: 600; line-height: 1.25; }
-
-/* „About Me“ Überschrift = Bodoni */
-.blox-resume-biography-3 .flex-auto.max-w-prose h2{
-  font-family: var(--vp-font-heading) !important;
+/* Hervorhebungen */
+.blox-resume-biography-3 .flex-auto.max-w-prose strong{
+  color: var(--vp-zinc-700) !important;
   font-weight: 700;
-  letter-spacing: -0.005em;
+}
+.blox-resume-biography-3 .flex-auto.max-w-prose em,
+.blox-resume-biography-3 .flex-auto.max-w-prose mark{
+  color: var(--vp-zinc-700) !important;
+  background: transparent;
+  font-style: italic;
 }
 
-/* Fließtexte inkl. „My mission …“ = Inter */
-.blox-resume-biography-3 .flex-auto.max-w-prose p,
-.blox-resume-biography-3 .flex-auto.max-w-prose li,
+/* Links dezent */
 .blox-resume-biography-3 .flex-auto.max-w-prose a{
-  font-family: var(--vp-font-body) !important;
+  color: var(--vp-zinc-700) !important;
+  text-decoration-thickness: .08em;
+}
+.blox-resume-biography-3 .flex-auto.max-w-prose a:hover{
+  color: var(--vp-zinc-800) !important;
 }
 
-/* Download-CV Button = Bodoni (Label) */
+/* Interests/Education Text + Marker + kleine SVGs */
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid p,
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid li,
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid a,
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid span{
+  color: var(--vp-zinc-800) !important;
+  opacity: 1 !important;
+}
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid li::marker{
+  color: var(--vp-zinc-800) !important;
+}
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid svg{
+  color: var(--vp-zinc-800) !important;
+  fill: currentColor !important;
+  stroke: currentColor !important;
+  opacity: .95 !important;
+}
+
+/* ==========================================
+   6) CV-Button – dunkel, Weiß, garantiert mittig
+   ========================================== */
 .blox-resume-biography-3 .flex-auto.max-w-prose a[href*="CV"],
 .blox-resume-biography-3 .flex-auto.max-w-prose a[href$=".pdf"]{
-  display: flex; align-items: center; justify-content: center; gap: .6rem;
-  background: var(--vp-zinc-800); color: #fff !important;
-  padding: .78rem 1.25rem; text-decoration: none !important;
-  box-shadow: 0 10px 24px rgba(2,6,23,.16); width: fit-content; margin: 1rem auto;
-  font-family: var(--vp-font-heading) !important; font-weight: 600; letter-spacing: .005em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .6rem;
+  background: var(--vp-zinc-800);
+  color: #fff !important;
+  padding: .78rem 1.25rem;
+  text-decoration: none !important;
+  box-shadow: 0 10px 24px rgba(2,6,23,.16);
+  width: fit-content;
+  margin: 1rem auto;
 }
 
-/* „Interests“ & „Education“ Überschriften = Bodoni;
-   Listen darunter = Inter */
-.blox-resume-biography-3 .flex-auto.max-w-prose .grid h3{
-  font-family: var(--vp-font-heading) !important;
-  font-weight: 700; letter-spacing: -0.005em;
-}
-.blox-resume-biography-3 .flex-auto.max-w-prose .grid p,
-.blox-resume-biography-3 .flex-auto.max-w-prose .grid li{
-  font-family: var(--vp-font-body) !important;
-}
-
-/* =========================
-   4) EXPERIENCE – gezieltes Typo-Mapping
-   (funktioniert auf deiner /experience/ Seite
-    und bleibt auf anderen Seiten unauffällig)
-   ========================= */
-
-/* Section-Heading „Education“ = Bodoni */
-main section[id*="education"] > h2,
-main .section-heading:has(> h2)#education > h2{
-  font-family: var(--vp-font-heading) !important;
-  font-weight: 700; letter-spacing: -0.005em;
-}
-
-/* Abschluss-Titel (M.Sc., B.Sc., State-Certified …) = Bodoni
-   – deckt die gängigen Blox/Academic Markup-Varianten ab */
-main section[id*="education"] h3,
-main section[id*="education"] .card-title,
-main section[id*="education"] .resume-item-title,
-main section[id*="education"] .timeline-item-title{
-  font-family: var(--vp-font-heading) !important;
-  font-weight: 700; letter-spacing: -0.005em;
-}
-
-/* Beschreibungstexte unter den Titeln = Inter */
-main section[id*="education"] p,
-main section[id*="education"] li,
-main section[id*="education"] .item-text{
-  font-family: var(--vp-font-body) !important;
-}
-
-/* „Competences and Interests“, „Know-how“, „Personal“ = Bodoni */
-main section[id*="competence"] h2,
-main section[id*="competence"] h3{
-  font-family: var(--vp-font-heading) !important;
-  font-weight: 700; letter-spacing: -0.005em;
-}
-
-/* „Languages“ (Section-Titel) = Bodoni; Labels darunter = Inter */
-main section[id*="language"] h2{
-  font-family: var(--vp-font-heading) !important;
-  font-weight: 700; letter-spacing: -0.005em;
-}
-main section[id*="language"] p,
-main section[id*="language"] li,
-main section[id*="language"] figcaption{
-  font-family: var(--vp-font-body) !important;
-}
-
-/* =========================
-   5) Kleine Screens – Komfort
-   ========================= */
+/* =================================
+   7) Kleine Screens – Komfort
+   ================================= */
 @media (max-width:480px){
   .blox-resume-biography-3 #profile,
   .blox-resume-biography-3 .flex-auto.max-w-prose{
     padding: 14px;
     max-width: 92vw;
   }
+}
+
+/* =========================================
+   8) Transparenz der Box schnell anpassen
+   =========================================
+   – einfach oben --vp-panel-alpha ändern (z. B. .74)
+*/
+
+
+/* =========================================================
+   9) Hardcoding für Interests & Education – Farbe fix
+   (überschreibt text-zinc-300, prose-invert & opacity)
+   ========================================================= */
+
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid {
+  mix-blend-mode: normal !important;
+}
+
+/* Überschriften wie "About Me" (zinc-900) */
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid h3,
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid [class*="heading"] {
+  color: var(--vp-zinc-900) !important;
+  opacity: 1 !important;
+  text-shadow: none !important;
+}
+
+/* Fließtext/Listen (zinc-800) */
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid p,
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid li,
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid [class*="text-"] {
+  color: var(--vp-zinc-800) !important;
+  opacity: 1 !important;
+}
+
+/* Listen-Bullets & kleine SVG-Icons angleichen */
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid li::marker {
+  color: var(--vp-zinc-800) !important;
+}
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid svg {
+  color: var(--vp-zinc-800) !important;
+  fill: currentColor !important;
+  opacity: .95 !important;
+}
+
+
+/* =========================
+   Typo-Patch: Bodoni für
+   – Profilzeilen (Name + Subline)
+   – "Download CV" Button
+   – "Interests" & "Education"
+   ========================= */
+
+/* 1) Profil: Name + Subline beide in Bodoni */
+.blox-resume-biography-3 #profile .portrait-title h1,
+.blox-resume-biography-3 #profile .portrait-title h3{
+  font-family: var(--vp-font-heading) !important; /* Bodoni Moda */
+  letter-spacing: -0.01em;
+  font-feature-settings: "liga","kern";
+}
+.blox-resume-biography-3 #profile .portrait-title h1{ font-weight: 700; line-height: 1.15; }
+.blox-resume-biography-3 #profile .portrait-title h3{ font-weight: 600; line-height: 1.25; }
+
+/* 2) "Download CV" – Label in Bodoni */
+.blox-resume-biography-3 .flex-auto.max-w-prose a[href*="CV"],
+.blox-resume-biography-3 .flex-auto.max-w-prose a[href$=".pdf"]{
+  font-family: var(--vp-font-heading) !important; /* Bodoni Moda */
+  font-weight: 600;
+  letter-spacing: 0.005em;
+  font-feature-settings: "liga","kern";
+}
+
+/* 3) Abschnittsüberschriften unten (Interests/Education) – sicher auf Bodoni */
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid h3{
+  font-family: var(--vp-font-heading) !important; /* Bodoni Moda */
+  font-weight: 700;
+  letter-spacing: -0.005em;
+  font-feature-settings: "liga","kern";
+}
+
+
+/* ======= Typo-Zielsetzung: Bodoni NUR für Name, Mission, Interests, Education ======= */
+
+/* Name (oben in der Profile Card) */
+.blox-resume-biography-3 #profile .portrait-title h1{
+  font-family: var(--vp-font-heading) !important; /* Bodoni Moda */
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+}
+
+/* Subtitle explizit in Inter lassen (damit nicht Bodoni rüberblutet) */
+.blox-resume-biography-3 #profile .portrait-title h3{
+  font-family: var(--vp-font-body) !important;     /* Inter */
+  font-weight: 500;
+}
+
+/* „My mission: …“ – ganzer Absatz in Bodoni (erkennt <p><strong>My mission...</strong> ...) */
+.blox-resume-biography-3 .flex-auto.max-w-prose p:has(> strong){
+  font-family: var(--vp-font-heading) !important;  /* Bodoni Moda */
+  font-weight: 600;
+  letter-spacing: -0.005em;
+}
+
+/* Abschnittsüberschriften unten („Interests“, „Education“) in Bodoni */
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid h3{
+  font-family: var(--vp-font-heading) !important;  /* Bodoni Moda */
+  font-weight: 700;
+  letter-spacing: -0.005em;
 }
