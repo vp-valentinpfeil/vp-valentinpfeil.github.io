@@ -352,9 +352,16 @@ h3, .prose h3{ font-size: var(--vp-h3-size); font-weight: 600; }
   line-height: 1.15;
 }
 
-/* „My mission: …“ – ganzer Absatz in Bodoni (erkennt <p><strong>My mission...</strong> ...) */
-.blox-resume-biography-3 .flex-auto.max-w-prose p:has(> strong){
-  font-family: var(--vp-font-heading) !important;  /* Bodoni Moda */
+/* Bio: Default Inter für alle Absätze */
+.blox-resume-biography-3 .flex-auto.max-w-prose .bio-text p{
+  font-family: var(--vp-font-body) !important;   /* Inter */
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+/* Bio: nur der letzte Absatz in Bodoni (z. B. "My mission: ...") */
+.blox-resume-biography-3 .flex-auto.max-w-prose .bio-text p:last-of-type{
+  font-family: var(--vp-font-heading) !important; /* Bodoni */
   font-weight: 600;
   letter-spacing: -0.005em;
 }
