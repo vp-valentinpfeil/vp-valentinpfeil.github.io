@@ -184,4 +184,4 @@ Available part-time for consulting, architecture design, security reviews, and p
 
 Alongside my work as an officer and IT architect, I am passionate about sports (Hyrox, calisthenics and yoga) and international collaboration.
 
-**My mission:** building Trust in Cloud.
+Building Trust in Cloud.
