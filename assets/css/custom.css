@@ -129,10 +129,10 @@ h3, .prose h3{ font-size: var(--vp-h3-size); font-weight: 600; }
   letter-spacing: -0.01em;
   line-height: 1.15;
 }
-.blox-resume-biography-3 #profile .portrait-title h3{
+/* .blox-resume-biography-3 #profile .portrait-title h3{
   font-family: var(--vp-font-body);
   font-weight: 500;
-}
+} */
 
 /* Social-Icons unter dem Namen im selben Ton */
 .blox-resume-biography-3 #profile .network-icon,
