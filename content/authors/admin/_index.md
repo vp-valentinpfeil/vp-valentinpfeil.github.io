@@ -54,7 +54,7 @@ profiles:
     label: CV    
 
 interests:
-  - Cloud Computing and Kubernetess
+  - Cloud Computing and Kubernetes
   - Confidential Computing and Security
   - Defence and Cybersecurity
   - Artificial Intelligence
