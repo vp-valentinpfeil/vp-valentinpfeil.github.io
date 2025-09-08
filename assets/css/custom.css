@@ -390,16 +390,6 @@ h3, .prose h3{ font-size: var(--vp-h3-size); font-weight: 600; }
 
 
 /* Experience */
-/* Education – gleichziehen */
-#section-resume-education .mb-6.text-3xl.font-bold,
-#section-resume-education h2{
-  font-family: var(--vp-font-heading) !important;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  line-height: 1.2;
-  font-size: clamp(1.6rem, 1.1rem + 1.2vw, 2rem);
-}
-
 /* === Alles andere in den Sektionen bleibt Inter (Sicherheitsnetz) === */
 #section-resume-skills .skills-content,
 #section-resume-languages .flex.items-center{
