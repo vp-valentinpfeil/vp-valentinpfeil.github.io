@@ -27,7 +27,7 @@ sections:
         - Risk & resilience with AI support in critical infrastructures
 
         **Selected theses:**  
-        → [Master’s Thesis – Connected Defence](/project/master-thesis/) ·
+        [Master’s Thesis – Connected Defence](/project/master-thesis/) ·
         [Bachelor's Thesis – Confidential Computing in HPC Clouds](/project/bachelor-thesis/)
     design:
       columns: '1'
