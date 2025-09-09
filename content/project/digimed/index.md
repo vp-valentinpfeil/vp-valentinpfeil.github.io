@@ -1,6 +1,6 @@
 ---
 title: "DigiMed"
-date: 2023-12-15
+date: 2023-12-05 #5. Dez 2023 – Launch der „Secure Cloud“ im Zuge eines Symposiums
 links:
   - type: site
     url: https://www.digimed-bayern.de/en.html
