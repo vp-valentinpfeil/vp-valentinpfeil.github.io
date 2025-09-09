@@ -1,6 +1,6 @@
 ---
 title: "DigiMed"
-date: 2023-10-26
+date: 2023-12-15
 links:
   - type: site
     url: https://www.digimed-bayern.de/en.html

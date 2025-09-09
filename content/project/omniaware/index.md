@@ -1,6 +1,6 @@
 ---
 title: "OmniAware – Connected Defence"
-date: Ongoing  # trage dein Projektabschlussdatum ein
+date: 2025-09  # trage dein Projektabschlussdatum ein
 links:
   - type: site
     url: https://www.capgemini.com/solutions/omniaware-connected-defense/
