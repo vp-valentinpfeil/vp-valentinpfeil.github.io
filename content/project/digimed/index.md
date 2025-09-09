@@ -1,5 +1,5 @@
 ---
-title: DigiMed
+title: "DigiMed"
 date: 2023-10-26
 links:
   - type: site

@@ -1,5 +1,5 @@
 ---
-title: Master’s Thesis: Connected Defence — Next-Gen Data Platform for Military Intelligence and Operations
+title: "Master’s Thesis: Connected Defence — Next-Gen Data Platform for Military Intelligence and Operations"
 date: 2025-06
 tags:
   - Confidential Computing
