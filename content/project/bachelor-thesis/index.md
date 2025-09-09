@@ -1,9 +1,9 @@
 ---
 title: Bachelor Thesis: Confidential Computing in HPC Clouds
 date: 2024-01-15
-links:
-  - type: pdf
-    url: /files/BachelorThesis_ValentinPfeil.pdf
+# links:
+#   - type: pdf
+#     url: /files/BachelorThesis_ValentinPfeil.pdf
 tags:
   - Confidential Computing
   - HPC
