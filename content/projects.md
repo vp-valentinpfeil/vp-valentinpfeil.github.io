@@ -15,10 +15,10 @@ sections:
     text: >
       A curated selection of projects that reflect my focus on **cloud security,
       confidential computing and defence/health-oriented innovation**.  
-      Highlights include applied research in precision medicine (DigiMed),
-      confidential computing in HPC-enabled clouds (Bachelor’s Thesis),
-      federated multi-cloud security for defence (OmniAware), and NATO-aligned
-      architectures for data sovereignty (Master’s Thesis).
+      Highlights include applied research in precision medicine,
+      confidential computing in HPC-enabled clouds,
+      federated multi-cloud security for defence and NATO-aligned
+      architectures for data sovereignty.
     filters:
       folders:
         - project
