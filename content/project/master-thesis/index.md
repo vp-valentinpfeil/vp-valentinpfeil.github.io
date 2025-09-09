@@ -1,6 +1,6 @@
 ---
 title: "Master’s Thesis: Connected Defence — Next-Gen Data Platform for Military Intelligence and Operations"
-date: 2025-06
+date: 2025-06-30
 tags:
   - Confidential Computing
   - Defense
