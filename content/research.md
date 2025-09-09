@@ -13,14 +13,22 @@ sections:
   - block: markdown
     id: papers
     content:
-      title: '📚 My Research'
-      subtitle: ''
+      title: "My Research"
+      subtitle: ""
       text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
+        I design **secure cloud architectures** with a focus on **Confidential Computing** and
+        **defence-grade data platforms**. My work covers attestation, data integrity and
+        compliance in multi-cloud settings – from healthcare data (DigiMed) to **NATO-aligned**
+        architectures.
 
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
-        
-        Please reach out to collaborate 😃
+        **Focus areas**
+        - Confidential Computing (AMD SEV-SNP, Nitro Enclaves) & remote attestation  
+        - Cloud security architecture & data sovereignty (NAFv4, ISO 27001)  
+        - Risk & resilience with AI support in critical infrastructures
+
+        **Selected theses:**  
+        → [Master’s Thesis – Connected Defence](/project/master-thesis/) ·
+        [Bachelor Thesis – Confidential Computing in HPC Clouds](/project/bachelor-thesis/)
     design:
       columns: '1'
   - block: collection
