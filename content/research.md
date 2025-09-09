@@ -28,7 +28,7 @@ sections:
 
         **Selected theses:**  
         → [Master’s Thesis – Connected Defence](/project/master-thesis/) ·
-        [Bachelor Thesis – Confidential Computing in HPC Clouds](/project/bachelor-thesis/)
+        [Bachelor's Thesis – Confidential Computing in HPC Clouds](/project/bachelor-thesis/)
     design:
       columns: '1'
   - block: collection
