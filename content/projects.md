@@ -9,15 +9,21 @@ design:
 
 # Page sections
 sections:
-  - block: collection
-    content:
-      title: Selected Projects
-      text: I enjoy making things. Here are a selection of projects that I have worked on over the years.
-      filters:
-        folders:
-          - project
-    design:
-      view: article-grid
-      fill_image: false
-      columns: 4
+- block: collection
+  content:
+    title: Selected Projects
+    text: >
+      A curated selection of projects that reflect my focus on **cloud security,
+      confidential computing, and defence-oriented innovation**.  
+      Highlights include applied research in precision medicine (DigiMed),
+      confidential computing in HPC-enabled clouds (Bachelor’s Thesis),
+      federated multi-cloud security for defence (OmniAware), and NATO-aligned
+      architectures for data sovereignty (Master’s Thesis).
+    filters:
+      folders:
+        - project
+  design:
+    view: article-grid
+    fill_image: false
+    columns: 4
 ---
