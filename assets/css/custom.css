@@ -418,7 +418,7 @@ h3, .prose h3{ font-size: var(--vp-h3-size); font-weight: 600; }
 /* Research Section Styling */
 
 /* Titel "My Research" → Bodoni */
-#section-papers .mb-6.text-3xl.font-bold {
+#papers .mb-6.text-3xl.font-bold {
   font-family: var(--vp-font-heading) !important; /* Bodoni Moda */
   font-weight: 700;
   letter-spacing: -0.01em;
@@ -427,10 +427,10 @@ h3, .prose h3{ font-size: var(--vp-h3-size); font-weight: 600; }
 }
 
 /* Rest (Paragraphs, Lists) → Inter */
-#section-papers p,
-#section-papers li,
-#section-papers strong,
-#section-papers em {
+#papers p,
+#papers li,
+#papers strong,
+#papers em {
   font-family: var(--vp-font-body) !important;   /* Inter */
   font-weight: 400;
   line-height: 1.55;
