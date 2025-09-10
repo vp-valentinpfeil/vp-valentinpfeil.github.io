@@ -437,12 +437,27 @@ h3, .prose h3{ font-size: var(--vp-h3-size); font-weight: 600; }
   font-size: 0.98rem;
 }
 
-/* Publication Titles → Bodoni */
-.pub-list .pub-title,
-.article-title,
-.publication-title {
+/* Publications — Titel in Bodoni (Listen + Karten) */
+#section-collection .article-title,
+#section-collection .article-title a,
+#papers .pub-list-item > a.underline{
   font-family: var(--vp-font-heading) !important; /* Bodoni Moda */
   font-weight: 700;
   letter-spacing: -0.01em;
   line-height: 1.25;
+}
+
+/* Publications — Metadaten/Links in Inter */
+#papers .article-metadata,
+#papers .article-metadata *,
+#papers .pub-links,
+#papers .pub-links *,
+#papers .btn,
+#papers .btn *,
+#papers .pub-list .pub-meta,
+#papers .pub-list .pub-authors,
+#papers .pub-list .pub-abstract{
+  font-family: var(--vp-font-body) !important; /* Inter */
+  font-weight: 400;
+  line-height: 1.5;
 }
