@@ -1,92 +1,44 @@
 ---
-title: 'An example conference paper'
+title: "Bachelor Thesis: Confidential Computing via Hardware Trusted Execution Environments in an OpenStack HPC-capable Cloud"
 
-# Authors
-# If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
-# and it will be replaced with their full name and linked to their profile.
 authors:
   - admin
-  - Robert Ford
 
-# Author notes (optional)
-author_notes:
-  - 'Equal contribution'
-  - 'Equal contribution'
+date: '2024-01-15'
+publishDate: '2024-01-20'
 
-date: '2013-07-01T00:00:00Z'
+publication_types: ['thesis']
 
-# Schedule page publish date (NOT publication's date).
-publishDate: '2017-01-01T00:00:00Z'
+publication: University of the Bundeswehr Munich, Department of Computer Science, Institute for Software Technology
+publication_short: UniBw M
 
-# Publication type.
-# Accepts a single type but formatted as a YAML list (for Hugo requirements).
-# Enter a publication type from the CSL standard.
-publication_types: ['paper-conference']
+abstract: >
+  This thesis investigates the integration of Confidential Computing in High-Performance Computing (HPC) environments by leveraging hardware-based Trusted Execution Environments (TEEs) such as AMD SEV-SNP within an OpenStack cloud infrastructure. It analyses how TEEs protect sensitive biomedical and scientific data by ensuring security attestation, data integrity and isolation of workloads. The study includes deployment automation with Terraform and Ansible, workload orchestration with SLURM and benchmarks with GROMACS simulations to evaluate usability, performance and scalability. The results highlight the trade-offs between performance overhead and enhanced confidentiality, providing a foundation for secure cloud-based HPC suitable for regulated research projects such as DigiMed Bayern.
 
-# Publication name and optional abbreviated publication name.
-publication: In *Hugo Blox Builder Conference*
-publication_short: In *ICW*
-
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
-
-# Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+summary: >
+  Integration of hardware Trusted Execution Environments (AMD SEV-SNP) into an OpenStack HPC cloud, with focus on deployment, attestation, usability and performance benchmarking using biomedical workloads.
 
 tags:
-  - Large Language Models
+  - Confidential Computing
+  - Trusted Execution Environments
+  - HPC
+  - OpenStack
+  - Cloud Security
+  - DigiMed Bayern
 
-# Display this page in the Featured widget?
 featured: true
 
-# Standard identifiers for auto-linking
-hugoblox:
-  ids:
-    doi: 10.5555/123456
-
-# Custom links
 links:
   - type: pdf
-    url: ""
-  - type: code
-    url: https://github.com/HugoBlox/hugo-blox-builder
-  - type: dataset
-    url: https://github.com/HugoBlox/hugo-blox-builder
+    url: "/files/UniBwM_ST23_CC-HWTEE-CLD-HPC-OpenStack_VP.pdf"
   - type: slides
-    url: https://www.slideshare.net/
-  - type: source
-    url: https://github.com/HugoBlox/hugo-blox-builder
-  - type: video
-    url: https://youtube.com
+    url: "/files/20230119_BA_Pres_VP.pdf"
 
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder.
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
-  focal_point: ''
+  caption: 'Bachelor Thesis at UniBw M, 2024'
+  focal_point: 'top'
   preview_only: false
 
-# Associated Projects (optional).
-#   Associate this publication with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `internal-project` references `content/project/internal-project/index.md`.
-#   Otherwise, set `projects: []`.
 projects:
-  - example
-
-# Slides (optional).
-#   Associate this publication with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides: "example"` references `content/slides/example/index.md`.
-#   Otherwise, set `slides: ""`.
-slides: ""
+  - bachelor-thesis
 ---
-
-{{% callout note %}}
-Click the _Cite_ button above to demo the feature to enable visitors to import publication metadata into their reference management software.
-{{% /callout %}}
-
-{{% callout note %}}
-Create your slides in Markdown - click the _Slides_ button to check out the example.
-{{% /callout %}}
-
-Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/).

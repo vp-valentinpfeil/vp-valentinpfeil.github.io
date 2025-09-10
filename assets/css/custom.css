@@ -421,7 +421,6 @@ h3, .prose h3{ font-size: var(--vp-h3-size); font-weight: 600; }
 #papers .mb-6.text-3xl.font-bold {
   font-family: var(--vp-font-heading) !important; /* Bodoni Moda */
   font-weight: 700;
-  font-size: 1.4rem;   /* oder 1.5rem für noch mehr Präsenz */
   letter-spacing: -0.01em;
   line-height: 1.2;
   margin-bottom: 0.75rem;
