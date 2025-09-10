@@ -82,7 +82,6 @@ h1,h2,h3,h4,h5,h6,
 #section-resume-languages .mb-6.text-3xl.font-bold,
 #section-resume-skills .mb-5.text-xl.font-bold{
   font-family: var(--vp-font-heading) !important;
-  font-size: 1.35rem;
   font-weight: 700;
   letter-spacing: -0.01em;
   line-height: 1.2;
@@ -330,7 +329,6 @@ h3, .prose h3{ font-size: var(--vp-h3-size); font-weight: 600; }
 .blox-resume-biography-3 #profile .portrait-title h1,
 .blox-resume-biography-3 #profile .portrait-title h3{
   font-family: var(--vp-font-heading) !important; /* Bodoni Moda */
-  font-size: 1.35rem;
   letter-spacing: -0.01em;
   font-feature-settings: "liga","kern";
 }
@@ -341,7 +339,6 @@ h3, .prose h3{ font-size: var(--vp-h3-size); font-weight: 600; }
 .blox-resume-biography-3 .flex-auto.max-w-prose a[href*="CV"],
 .blox-resume-biography-3 .flex-auto.max-w-prose a[href$=".pdf"]{
   font-family: var(--vp-font-heading) !important; /* Bodoni Moda */
-  font-size: 1.35rem;
   font-weight: 600;
   letter-spacing: 0.005em;
   font-feature-settings: "liga","kern";
@@ -350,7 +347,6 @@ h3, .prose h3{ font-size: var(--vp-h3-size); font-weight: 600; }
 /* 3) Abschnittsüberschriften unten (Interests/Education) – sicher auf Bodoni */
 .blox-resume-biography-3 .flex-auto.max-w-prose .grid h3{
   font-family: var(--vp-font-heading) !important; /* Bodoni Moda */
-  font-size: 1.35rem;
   font-weight: 700;
   letter-spacing: -0.005em;
   font-feature-settings: "liga","kern";
@@ -362,7 +358,6 @@ h3, .prose h3{ font-size: var(--vp-h3-size); font-weight: 600; }
 /* Name (oben in der Profile Card) */
 .blox-resume-biography-3 #profile .portrait-title h1{
   font-family: var(--vp-font-heading) !important; /* Bodoni Moda */
-  font-size: 1.35rem;
   font-weight: 700;
   letter-spacing: -0.01em;
   line-height: 1.15;
@@ -378,7 +373,6 @@ h3, .prose h3{ font-size: var(--vp-h3-size); font-weight: 600; }
 /* Bio: nur der letzte Absatz in Bodoni (z. B. "My mission: ...") */
 .blox-resume-biography-3 .flex-auto.max-w-prose .bio-text p:last-of-type{
   font-family: var(--vp-font-heading) !important; /* Bodoni */
-  font-size: 1.35rem;
   font-weight: 600;
   font-size: var(--vp-bio-mission-size) !important;
   letter-spacing: -0.005em;
@@ -388,7 +382,6 @@ h3, .prose h3{ font-size: var(--vp-h3-size); font-weight: 600; }
 /* Interests & Education Überschriften größer machen */
 .blox-resume-biography-3 .flex-auto.max-w-prose .grid h3{
   font-family: var(--vp-font-heading) !important;  /* Bodoni Moda */
-  font-size: 1.35rem;
   font-weight: 700;
   font-size: 1.4rem;   /* oder 1.5rem für noch mehr Präsenz */
   line-height: 1.3;
@@ -407,7 +400,6 @@ h3, .prose h3{ font-size: var(--vp-h3-size); font-weight: 600; }
 /* Selected Projects Überschrift in Bodoni */
 #section-collection .mb-6.text-3xl.font-bold {
   font-family: var(--vp-font-heading) !important; /* Bodoni Moda */
-  font-size: 1.35rem;
   font-weight: 700;
   letter-spacing: -0.01em;
   line-height: 1.2;
@@ -428,7 +420,6 @@ h3, .prose h3{ font-size: var(--vp-h3-size); font-weight: 600; }
 /* Titel "My Research" → Bodoni */
 #papers .mb-6.text-3xl.font-bold {
   font-family: var(--vp-font-heading) !important; /* Bodoni Moda */
-  font-size: 1.35rem;
   font-weight: 700;
   letter-spacing: -0.01em;
   line-height: 1.2;
