@@ -1,0 +1,14 @@
+# Hugo Blox
+# Social sharing links
+# Docs: https://docs.hugoblox.com/reference/page-sharer/
+
+  - id: email
+    url: 'mailto:?subject={title}&body={url}'
+    title: Email
+    icon: hero/at-symbol
+    enable: true
+  - id: linkedin
+    url: 'https://www.linkedin.com/shareArticle?url={url}&title={title}'
+    title: LinkedIn
+    icon: brands/linkedin
+    enable: true
