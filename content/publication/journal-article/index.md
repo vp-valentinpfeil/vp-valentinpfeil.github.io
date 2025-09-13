@@ -39,17 +39,17 @@ tags:
 featured: false
 
 # IDs (optional).
-hugoblox:
-  ids:
-    doi: ""
-    isbn: ""
-    issn: ""
+# hugoblox:
+#   ids:
+#     doi: ""
+#     isbn: ""
+#     issn: ""
 
 links:
   - type: pdf
-    url: ""
-  - type: project
-    url: ""
+    url: "/files/UniBwM_HT24_KIRiskMgmt_VP.pdf"
+  # - type: project
+  #   url: ""
 
 # Featured image (optional).
 image:
@@ -58,7 +58,7 @@ image:
   preview_only: false
 
 # Associated Projects (optional).
-projects: []
+# projects: []
 
-slides: ""
+slides: "/files/20250109_SA_KIRM_Pres_VP.pdf"
 ---

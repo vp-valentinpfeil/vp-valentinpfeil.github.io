@@ -3,6 +3,12 @@
 # Docs: https://docs.hugoblox.com/reference/page-sharer/
 
 links:
+  # explizit deaktivieren (überschreibt Theme-Defaults)
+  - id: x
+    enable: false
+  - id: facebook
+    enable: false
+    
   - id: email
     url: 'mailto:?subject={title}&body={url}'
     title: Email
