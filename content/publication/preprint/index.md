@@ -5,7 +5,7 @@ authors:
   - admin
 
 date: '2025-06-30'
-publishDate: '2025-07-05'
+publishDate: '2025-06-25'
 
 publication_types: ['thesis']
 
@@ -46,7 +46,7 @@ featured: true
 
 links:
   - type: pdf
-    url: "20250625_MT_nxt-gen-data-platform_VP.pdf"
+    url: "/files/20250625_MT_nxt-gen-data-platform_VP.pdf"
   - type: slides
     url: "/files/20250627_MT_Pres_VP.pdf"
 
