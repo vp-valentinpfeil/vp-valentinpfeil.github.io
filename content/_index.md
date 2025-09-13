@@ -17,7 +17,7 @@ sections:
       # Show a call-to-action button under your biography? (optional)
       button:
         text: Download CV
-        url: /files/20241018_CV_VP_EN.pdf
+        url: /files/20250913_CV_VP_EN.pdf
     design:
       css_class: dark
       # Avatar customization

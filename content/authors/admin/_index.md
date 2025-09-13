@@ -50,7 +50,7 @@ profiles:
   - icon: academicons/researchgate
     url: https://www.researchgate.net/profile/Valentin-Pfeil
   - icon: academicons/cv
-    url: /files/20241018_CV_VP_EN.pdf
+    url: /files/20250913_CV_VP_EN.pdf
     label: CV    
 
 interests:
