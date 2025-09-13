@@ -1,82 +1,60 @@
 ---
-title: "An example preprint / working paper"
+title: "Master’s Thesis: Connected Defence — Next-Generation Data Platform for Military Intelligence and Operations"
+
 authors:
-- admin
-date: "2019-04-07T00:00:00Z"
+  - admin
 
-# Schedule page publish date (NOT publication's date).
-publishDate: "2017-01-01T00:00:00Z"
+date: '2025-06-30'
+publishDate: '2025-07-05'
 
-# Publication type.
-# Accepts a single type but formatted as a YAML list (for Hugo requirements).
-# Enter a publication type from the CSL standard.
-publication_types: ["article"]
+publication_types: ['thesis']
 
-# Publication name and optional abbreviated publication name.
-publication: ""
-publication_short: ""
+publication: University of the Bundeswehr Munich, Department of Computer Science, Institute for Software Technology
+publication_short: UniBw M
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: >
+  This thesis designs and evaluates a cloud-native data platform for defence and
+  intelligence organisations operating in secure, sovereign, or coalition
+  environments. The platform targets mission-critical workloads with strict
+  confidentiality and integrity requirements and integrates Confidential
+  Computing techniques, remote attestation and end-to-end integrity protection.
+  A modular microservice architecture, zero-trust principles and policy-driven
+  data flows are combined with auditability and provenance tracking to meet
+  compliance demands in NATO-aligned settings. The work analyses operational
+  constraints, threat models and interoperability requirements and presents a
+  reference implementation with automated deployment, attestation pipeline and
+  governance controls. Results show that the platform can preserve data
+  sovereignty and verifiability while sustaining operational tempo, providing a
+  pragmatic blueprint for connected defence missions.
 
-# Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+summary: >
+  Cloud-native, zero-trust data platform for connected defence: Confidential
+  Computing, remote attestation, integrity/audit and policy-driven governance
+  for NATO-aligned operations.
 
 tags:
-- Large Language Models
+  - Confidential Computing
+  - Cloud-Native
+  - Defence
+  - Data Platform
+  - Remote Attestation
+  - Zero Trust
+  - Data Sovereignty
+  - Compliance
 
 featured: true
 
-hugoblox:
-  ids:
-    arxiv: 1512.04133v1
-
 links:
-- type: preprint
-  provider: arxiv
-  id: 1512.04133v1
-- type: code
-  url: https://github.com/HugoBlox/hugo-blox-builder
-- type: slides
-  url: https://www.slideshare.net/
-- type: dataset
-  url: "#"
-- type: poster
-  url: "#"
-- type: source
-  url: "#"
-- type: video
-  url: https://youtube.com
-- type: custom
-  label: Custom Link
-  url: http://example.org
+  - type: pdf
+    url: "20250625_MT_nxt-gen-data-platform_VP.pdf"
+  - type: slides
+    url: "/files/20250627_MT_Pres_VP.pdf"
 
-# Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/s9CC2SKySJM)'
-  focal_point: ""
+  caption: "Master’s Thesis at UniBw M, 2025"
+  focal_point: "top"
   preview_only: false
 
-# Associated Projects (optional).
-#   Associate this publication with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `internal-project` references `content/project/internal-project/index.md`.
-#   Otherwise, set `projects: []`.
 projects:
-- internal-project
-
-# Slides (optional).
-#   Associate this publication with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides: "example"` references `content/slides/example/index.md`.
-#   Otherwise, set `slides: ""`.
-slides: ""
+  - master-thesis
 ---
-
-This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
-
-{{% callout note %}}
-Create your slides in Markdown - click the *Slides* button to check out the example.
-{{% /callout %}}
-
-Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/).
