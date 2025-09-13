@@ -14,7 +14,7 @@ publication_types: ["report"]
 
 # Publication name and optional abbreviated publication name.
 publication: "Seminar Cyber Defense, Universität der Bundeswehr München, Fakultät Informatik"
-publication_short: "Seminar Cyber Defense, UniBwM"
+publication_short: "Seminar Cyber Defense, UniBw M"
 
 abstract: >
   This seminar paper explores how Artificial Intelligence (AI) can serve as a transformative enabler
@@ -29,7 +29,7 @@ abstract: >
 # Summary (shortened abstract).
 summary: >
   Seminar paper on integrating AI into cyber risk management frameworks to enhance organisational resilience,
-  presented at the Seminar Cyber Defense, UniBwM (HT 2024).
+  presented at the Seminar Cyber Defense, UniBw M (HT 2024).
 
 tags:
 - Cyber Resilience
