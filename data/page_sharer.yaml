@@ -2,6 +2,7 @@
 # Social sharing links
 # Docs: https://docs.hugoblox.com/reference/page-sharer/
 
+links:
   - id: email
     url: 'mailto:?subject={title}&body={url}'
     title: Email
