@@ -1,5 +1,5 @@
 ---
-title: "Bachelor Thesis: Confidential Computing via Hardware Trusted Execution Environments in an OpenStack HPC-capable Cloud"
+title: "Bachelor Thesis: Confidential Computing via Hardware Trusted Execution Environments by an OpenStack HPC capable Cloud"
 
 authors:
   - admin

@@ -87,3 +87,6 @@ extensions:
 #  css:
 #    - "css/navlogo.css"
 
+
+# Share buttons
+sharing: false
