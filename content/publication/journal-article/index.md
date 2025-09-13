@@ -1,7 +1,8 @@
 ---
 title: "Building Cyber Resilience Through AI-based Risk Management"
 authors:
-- Valentin Pfeil
+  - admin
+  
 # author_notes:
 # - "Seminar Paper, Master’s Programme"
 date: "2024-02-01T00:00:00Z"
