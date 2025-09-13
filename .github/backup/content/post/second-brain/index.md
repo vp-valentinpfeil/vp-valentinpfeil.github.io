@@ -53,7 +53,7 @@ renders as
   - blox-plugins-reveal
 ```
 
-Anh here's a more advanced mindmap with formatting, code blocks, and math:
+Anh here's a more advanced mindmap with formatting, code blocks and math:
 
 <div class="highlight">
 <pre class="chroma">
@@ -113,7 +113,7 @@ renders as
 
 ## Callouts
 
-Use [callouts](https://docs.hugoblox.com/reference/markdown/#callouts) (aka _asides_, _hints_, or _alerts_) to draw attention to notes, tips, and warnings.
+Use [callouts](https://docs.hugoblox.com/reference/markdown/#callouts) (aka _asides_, _hints_, or _alerts_) to draw attention to notes, tips and warnings.
 
 By wrapping a paragraph in `{{%/* callout note */%}} ... {{%/* /callout */%}}`, it will render as an aside.
 

@@ -8,7 +8,7 @@ tags:
   - Defense
   - Confidential Computing
   - Cloud-Native
-summary: "Cloud-native, modular platform for defence and intelligence: real-time intelligence, compliance (C5, FedRAMP, NATO D3.2), and secure multi-cloud operations."
+summary: "Cloud-native, modular platform for defence and intelligence: real-time intelligence, compliance (C5, FedRAMP, NATO D3.2) and secure multi-cloud operations."
 ---
 
 ## OmniAware — Connected Defence

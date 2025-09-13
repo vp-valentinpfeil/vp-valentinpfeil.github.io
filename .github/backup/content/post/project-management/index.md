@@ -1,6 +1,6 @@
 ---
 title: ✅ Manage your projects
-summary: Easily manage your projects - create ideation mind maps, Gantt charts, todo lists, and more!
+summary: Easily manage your projects - create ideation mind maps, Gantt charts, todo lists and more!
 date: 2023-10-23
 authors:
   - admin
@@ -11,7 +11,7 @@ image:
   caption: 'Image credit: [**Unsplash**](https://unsplash.com)'
 ---
 
-Easily manage your projects - create ideation mind maps, Gantt charts, todo lists, and more!
+Easily manage your projects - create ideation mind maps, Gantt charts, todo lists and more!
 
 ## Ideation
 

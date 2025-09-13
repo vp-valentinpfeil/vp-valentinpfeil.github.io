@@ -18,7 +18,7 @@ My focus areas include:
 - Kubernetes & Container Security  
 - IT Governance & Compliance (ISO 27001, BSI C5, NATO D3.2)  
 
-With my dual background as an **IT officer in the German Armed Forces** and as a **cloud security consultant**, I combine discipline, technical expertise, and compliance knowledge to deliver measurable results.  
+With my dual background as an **IT officer in the German Armed Forces** and as a **cloud security consultant**, I combine discipline, technical expertise and compliance knowledge to deliver measurable results.  
 
 ---
 
