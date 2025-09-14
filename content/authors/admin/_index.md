@@ -152,13 +152,13 @@ skills:
 
 languages:
   - name: German (native)
-    percent: 1.0
+    percent: 100
   - name: English
-    percent: 0.95
+    percent: 95
   - name: French
-    percent: 0.70
+    percent: 70
   - name: Italian
-    percent: 0.05
+    percent: 5
 
 # awards:
 #   - title: Hyrox Finisher
