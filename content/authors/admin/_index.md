@@ -135,30 +135,30 @@ skills:
     color_border: '#f0bf23'
     items:
       - name: (Military) Leadership and Project Management
-        percent: 100
+        #percent: 100
         icon: user-group
       - name: Sports (Calisthenics, Freeletics, Running, Hyrox and Yoga)
-        percent: 85
+        #percent: 85
         icon: trophy
       - name: Nutrition
-        percent: 100
+        #percent: 100
         icon: fire
       - name: Reading (Philosophy, Entrepreneurship and IT)
-        percent: 70
+        #percent: 70
         icon: book-open
       - name: Languages
-        percent: 70
+        #percent: 70
         icon: language
 
 languages:
   - name: German (native)
-    percent: 100
+    percent: 1.0
   - name: English
-    percent: 95
+    percent: 0.95
   - name: French
-    percent: 70
+    percent: 0.70
   - name: Italian
-    percent: 5
+    percent: 0.05
 
 # awards:
 #   - title: Hyrox Finisher
