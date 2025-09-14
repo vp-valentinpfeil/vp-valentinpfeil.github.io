@@ -1,5 +1,6 @@
 ---
-title: "Seminar Paper: Confidential Computing via Trusted Execution Environments in an HPC-capable Cloud"
+title: "Seminar Paper: High-Performance Computing: Trusted
+Execution Environments"
 
 authors:
   - admin
@@ -17,12 +18,12 @@ abstract: >
   such as AMD SEV-SNP in High-Performance Computing (HPC) environments with a focus on 
   Confidential Computing. It analyses potential benefits for protecting scientific workloads 
   and sensitive data in cloud infrastructures, with emphasis on attestation mechanisms, 
-  data isolation, and workload integrity. The work provides an early investigation of design 
+  data isolation and workload integrity. The work provides an early investigation of design 
   trade-offs and forms the foundation for later thesis-level research.
 
 summary: >
   Early evaluation of Confidential Computing in HPC using AMD SEV-SNP, with emphasis 
-  on attestation, workload protection, and design trade-offs in cloud-based research environments.
+  on attestation, workload protection and design trade-offs in cloud-based research environments.
 
 tags:
   - Confidential Computing
