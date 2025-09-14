@@ -49,6 +49,8 @@ featured: false
 links:
   - type: pdf
     url: "/files/UniBwM_HT24_KIRiskMgmt_VP.pdf"
+  - type: slides
+    url: "/files/20250109_SA_KIRM_Pres_VP.pdf"
   # - type: project
   #   url: ""
 
