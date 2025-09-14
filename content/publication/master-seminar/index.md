@@ -1,5 +1,5 @@
 ---
-title: "Building Cyber Resilience Through AI-based Risk Management"
+title: "Seminar Paper: Building Cyber Resilience Through AI-based Risk Management"
 authors:
   - admin
   
@@ -15,7 +15,7 @@ publication_types: ["report"]
 
 # Publication name and optional abbreviated publication name.
 publication: "Seminar Cyber Defense, Universität der Bundeswehr München, Fakultät Informatik"
-publication_short: "Seminar Cyber Defense, UniBw M"
+publication_short: "UniBw M"
 
 abstract: >
   This seminar paper explores how Artificial Intelligence (AI) can serve as a transformative enabler
