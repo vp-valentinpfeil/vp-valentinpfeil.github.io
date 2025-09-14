@@ -467,3 +467,17 @@ h3, .prose h3{ font-size: var(--vp-h3-size); font-weight: 600; }
   padding: 0 !important;        /* entfernt p-1 */
   background: none !important;  /* entfernt bg-white / bg-gray */
 }
+
+
+/* Languages: invertierte Donut-Füllung korrigieren */
+#section-experience .radial-progress,
+#section-resume-languages .radial-progress,
+.radial-progress[data-vp="lang"] {
+  /* Track-Farbe (heller Ring) – gern anpassen */
+  --vp-track: #e5e7eb;
+
+  /* Donut neu aufbauen: 100 - --value => „erreicht“ statt „restlich“ */
+  background:
+    radial-gradient(closest-side, #fff 80%, transparent 0 99.9%, #fff 0),
+    conic-gradient(currentColor calc((100 - var(--value)) * 1%), var(--vp-track) 0) !important;
+}
