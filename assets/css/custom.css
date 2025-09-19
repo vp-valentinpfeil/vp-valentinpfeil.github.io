@@ -483,9 +483,12 @@ h3, .prose h3{ font-size: var(--vp-h3-size); font-weight: 600; }
 }
 
 
-/* About → Interests/Education gleich groß wie Section-Titel (≈ text-3xl) */
-.blox-resume-biography-3 .flex-auto.max-w-prose .grid h3{
-  font-size: 1.875rem;   /* text-3xl */
-  line-height: 1.25;
+/* Experience → Section-Titel (z.B. "Education") auf Bodoni & gleiche Größe */
+#section-resume-experience h3.mb-6.text-3xl.font-bold{
+  font-family: var(--vp-font-heading) !important; /* Bodoni Moda */
   font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
+  /* optional: falls du die Größe hart angleichen willst */
+  /* font-size: 1.875rem;  */  /* = text-3xl */
 }
