@@ -383,7 +383,7 @@ h3, .prose h3{ font-size: var(--vp-h3-size); font-weight: 600; }
 .blox-resume-biography-3 .flex-auto.max-w-prose .grid h3{
   font-family: var(--vp-font-heading) !important;  /* Bodoni Moda */
   font-weight: 700;
-  font-size: 1.4rem;   /* oder 1.5rem für noch mehr Präsenz */
+  font-size: 1.875rem;   /* oder 1.5rem für noch mehr Präsenz */
   line-height: 1.3;
   letter-spacing: -0.005em;
 }
