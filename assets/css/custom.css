@@ -481,3 +481,11 @@ h3, .prose h3{ font-size: var(--vp-h3-size); font-weight: 600; }
     radial-gradient(closest-side, #fff 80%, transparent 0 99.9%, #fff 0),
     conic-gradient(currentColor calc((100 - var(--value)) * 1%), var(--vp-track) 0) !important;
 }
+
+
+/* About → Interests/Education gleich groß wie Section-Titel (≈ text-3xl) */
+.blox-resume-biography-3 .flex-auto.max-w-prose .grid h3{
+  font-size: 1.875rem;   /* text-3xl */
+  line-height: 1.25;
+  font-weight: 700;
+}
