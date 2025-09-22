@@ -495,71 +495,18 @@ h3, .prose h3{ font-size: var(--vp-h3-size); font-weight: 600; }
 }
 
 
-
-
-
-/* Languages – Donuts sauber (korrekte Füllung, Ring-Dicke, Typo) */
-#section-resume-languages .radial-progress,
+/* Languages: invertierte Donut-Füllung korrigieren */
 #section-experience .radial-progress,
-.radial-progress[data-vp="lang"]{
-  /* Parameter */
-  --value: var(--vp-val, 0);                /* von HTML: style="--value:95" */
-  --size: 6.2rem;                           /* Donut-Durchmesser */
-  --thickness: 10px;                        /* Ring-Dicke */
-  --track: #e5e7eb;                         /* heller Ring (Tailwind zinc-200) */
+#section-resume-languages .radial-progress,
+.radial-progress[data-vp="lang"] {
+  /* Track-Farbe (heller Ring) – gern anpassen */
+  --vp-track: #e5e7eb;
 
-  /* Geometrie */
-  width: var(--size);
-  height: var(--size);
-  border-radius: 50%;
-  display: grid;
-  place-items: center;
-
-  /* Ring zeichnen: gefüllter Anteil + Track, dann „Loch“ maskieren */
-  background: conic-gradient(currentColor calc(var(--value)*1%), var(--track) 0);
-  -webkit-mask: radial-gradient(farthest-side,
-                    transparent calc(100% - var(--thickness)), #000 0);
-          mask: radial-gradient(farthest-side,
-                    transparent calc(100% - var(--thickness)), #000 0);
-
-  /* Zahl in der Mitte (Inter) */
-  color: var(--vp-zinc-800);
-  font-family: var(--vp-font-body);         /* Inter */
-  font-weight: 600;
-  font-size: clamp(1.05rem, 1vw + .55rem, 1.45rem);
-  line-height: 1;
-  text-shadow: none;
+  /* Donut neu aufbauen: 100 - --value => „erreicht“ statt „restlich“ */
+  background:
+    radial-gradient(closest-side, #fff 80%, transparent 0 99.9%, #fff 0),
+    conic-gradient(currentColor calc(var(--value) * 1%), var(--vp-track) 0) !important;
 }
-
-/* Dark-Mode: Track etwas dunkler, Prozentzahl etwas heller */
-.dark #section-resume-languages .radial-progress{
-  --track: #374151;                         /* Tailwind gray-700-ish */
-  color: #e5e7eb;                           /* Zahl */
-}
-
-/* Layout & Beschriftung unterhalb der Donuts */
-#section-resume-languages .grid{
-  gap: 1.25rem 2.25rem;
-  justify-items: center;
-  align-items: center;
-}
-#section-resume-languages .grid p{
-  margin-top: .4rem;
-  font-family: var(--vp-font-body);         /* Inter */
-  color: var(--vp-zinc-700);
-  font-size: .95rem;
-  line-height: 1.3;
-}
-
-/* Optional: leichte Größen- und Abstandsreduktion auf kleineren Screens */
-@media (max-width: 520px){
-  #section-resume-languages .radial-progress{ --size: 5.2rem; --thickness: 9px; }
-  #section-resume-languages .grid{ gap: 1rem 1.5rem; }
-}
-
-
-
-
 
 /* Resume section headings (make Education match the others) */
 #section-resume-experience .mb-6.text-3xl.font-bold,
@@ -637,3 +584,60 @@ main .prose p { margin: 0 0 var(--vp-space-2); }
 main .prose a{ color: var(--vp-zinc-700); text-decoration-thickness: .08em; }
 main .prose a:hover{ color: var(--vp-zinc-800); }
 main .prose li { margin: .15rem 0; }
+
+
+/* =========================
+   Languages (SVG-Donuts) – sauberes Track/Progress-Styling
+   greift in #section-resume-languages UND im Experience-Wrapper
+   ========================= */
+
+/* Grundparameter & Farben */
+:root{
+  --vp-lang-track: #e5e7eb;   /* heller Ring (Tailwind zinc-200) */
+  --vp-lang-ring:  #3f3f46;   /* progress-Ring (zinc-700) */
+}
+
+#section-resume-languages .radial-progress svg,
+#section-experience        .radial-progress svg{
+  display: block;
+}
+
+/* Alle Kreise sauber und gleich stark */
+#section-resume-languages .radial-progress svg circle,
+#section-experience        .radial-progress svg circle{
+  fill: none !important;
+  stroke-width: 18 !important;            /* Dicke des Rings */
+}
+
+/* 1. Kreis = Track (Hintergrundring) */
+#section-resume-languages .radial-progress svg circle:first-of-type,
+#section-experience        .radial-progress svg circle:first-of-type{
+  stroke: var(--vp-lang-track) !important;
+  opacity: 1 !important;
+}
+
+/* Letzter Kreis = Fortschritt */
+#section-resume-languages .radial-progress svg circle:last-of-type,
+#section-experience        .radial-progress svg circle:last-of-type{
+  stroke: var(--vp-lang-ring) !important;
+  stroke-linecap: round !important;       /* hübsche Endkappen */
+  opacity: 1 !important;
+}
+
+/* Prozentzahl & Label: klare Inter-Typo */
+#section-resume-languages .radial-progress + span,   /* 100% */
+#section-experience        .radial-progress + span{
+  font-family: var(--vp-font-body) !important;  /* Inter */
+  font-feature-settings: "tnum" 1;              /* tabellarische Ziffern */
+}
+
+#section-resume-languages .text-1xl,             /* Sprachlabel unter dem Donut */
+#section-experience        .text-1xl{
+  font-family: var(--vp-font-body) !important;  /* Inter */
+  color: var(--vp-zinc-700) !important;
+}
+
+/* Optional: dunkler Modus – Progress farblich eine Nuance kräftiger */
+@media (prefers-color-scheme: dark){
+  :root{ --vp-lang-track: #27272a; --vp-lang-ring: #e5e7eb; } /* invertiert */
+}
