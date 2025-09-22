@@ -14,7 +14,7 @@ publication_short: UniBw M
 
 abstract: >
   This thesis designs and evaluates a cloud-native data platform for defence and
-  intelligence organisations operating in secure, sovereign, or coalition
+  intelligence organisations operating in secure, sovereign or coalition
   environments. The platform targets mission-critical workloads with strict
   confidentiality and integrity requirements and integrates Confidential
   Computing techniques, remote attestation and end-to-end integrity protection.

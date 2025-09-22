@@ -17,7 +17,7 @@ Hugo Blox web framework empowers you with one of the most flexible note-taking c
 
 Create a powerful knowledge base that works on top of a local folder of plain text Markdown files.
 
-Use it as your second brain, either publicly sharing your knowledge with your peers via your website, or via a private GitHub repository and password-protected site just for yourself.
+Use it as your second brain, either publicly sharing your knowledge with your peers via your website or via a private GitHub repository and password-protected site just for yourself.
 
 ## Mindmaps
 
@@ -113,26 +113,26 @@ renders as
 
 ## Callouts
 
-Use [callouts](https://docs.hugoblox.com/reference/markdown/#callouts) (aka _asides_, _hints_, or _alerts_) to draw attention to notes, tips and warnings.
+Use [callouts](https://docs.hugoblox.com/reference/markdown/#callouts) (aka _asides_, _hints_ or _alerts_) to draw attention to notes, tips and warnings.
 
 By wrapping a paragraph in `{{%/* callout note */%}} ... {{%/* /callout */%}}`, it will render as an aside.
 
 ```markdown
 {{%/* callout note */%}}
-A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
+A Markdown aside is useful for displaying notices, hints or definitions to your readers.
 {{%/* /callout */%}}
 ```
 
 renders as
 
 {{% callout note %}}
-A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
+A Markdown aside is useful for displaying notices, hints or definitions to your readers.
 {{% /callout %}}
 
 Or use the `warning` callout type so your readers don't miss critical details:
 
 {{% callout warning %}}
-A Markdown aside is useful for displaying notices, hints, or definitions to your readers.
+A Markdown aside is useful for displaying notices, hints or definitions to your readers.
 {{% /callout %}}
 
 ## Did you find this page helpful? Consider sharing it 🙌

@@ -45,10 +45,10 @@ https://consumer-redress.ec.europa.eu/
 We are neither willing nor obliged to take part in dispute resolution proceedings before a consumer arbitration board.
 
 **Liability for Contents**  
-The contents of this website were created with great care. However, we cannot guarantee the accuracy, completeness, or up-to-dateness of the content. Obligations to remove or block the use of information under general laws remain unaffected.
+The contents of this website were created with great care. However, we cannot guarantee the accuracy, completeness or up-to-dateness of the content. Obligations to remove or block the use of information under general laws remain unaffected.
 
 **Liability for Links**  
 This website contains links to external third-party websites. We have no influence over the contents of those websites; the respective provider or operator is always responsible. Linked pages were checked for possible legal violations at the time of linking; no unlawful content was recognizable then.
 
 **Copyright**  
-Unless otherwise stated, all texts, images, and other content on this site are © Valentin Pfeil. Any reproduction, editing, distribution, or any kind of use outside the limits of copyright law requires prior written consent.
+Unless otherwise stated, all texts, images and other content on this site are © Valentin Pfeil. Any reproduction, editing, distribution or any kind of use outside the limits of copyright law requires prior written consent.

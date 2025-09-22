@@ -23,4 +23,4 @@ SOFTWARE.
 ## License
 - The **theme and framework** (Hugo Blox) are licensed under the MIT License (see `LICENSE` file).  
 - All **content in this repository** (text, images, publications, personal data) is © 2025 Valentin Pfeil.  
-  It may not be reused, copied, or redistributed without explicit permission.
+  It may not be reused, copied or redistributed without explicit permission.
