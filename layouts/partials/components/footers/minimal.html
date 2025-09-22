@@ -1,0 +1,29 @@
+{{/* layouts/partials/components/footers/minimal.html */}}
+
+<div class="mx-auto flex justify-center gap-4 py-4 text-center text-sm text-gray-500">
+
+  {{ with site.GetPage "/privacy.md" }}
+    <a href="{{ .RelPermalink }}" class="hover:underline">
+      {{ .Title }}
+    </a>
+  {{ end }}
+
+  {{ with site.GetPage "/terms.md" }}
+    <span>·</span>
+    <a href="{{ .RelPermalink }}" class="hover:underline">
+      {{ .Title }}
+    </a>
+  {{ end }}
+
+  {{ with site.GetPage "/legal.md" }}
+    <span>·</span>
+    <a href="{{ .RelPermalink }}" class="hover:underline">
+      {{ .Title }}
+    </a>
+  {{ end }}
+
+</div>
+
+<p class="text-center text-xs text-gray-500 mt-2">
+  © {{ now.Format "2006" }} Valentin Pfeil.
+</p>
