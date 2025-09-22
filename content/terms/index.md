@@ -20,7 +20,7 @@ Valentin Pfeil
 Schellingstraße 157  
 80797 Munich  
 Germany  
-E-mail: vp@valentinpfeil.com  
+E-mail: info@valentinpfeil.com  
 Phone: +49 151 28400183
 
 ### Data Collected
@@ -54,7 +54,7 @@ You have the right to request:
 - Data portability (Art. 20 GDPR)  
 - Objection to processing (Art. 21 GDPR)  
 
-Please send any requests to **vp@valentinpfeil.com**.
+Please send any requests to **info@valentinpfeil.com**.
 
 ### Security
 Appropriate technical and organisational measures are applied to protect personal data against loss, misuse and unauthorised access.
