@@ -26,9 +26,6 @@ sections:
     view: article-grid
     fill_image: false
     columns: 4
----
-
-# --- add below your existing collection block ---
 
 - block: markdown
   content:
@@ -77,7 +74,7 @@ sections:
 - block: cta
   content:
     title: Ready to start a project?
-    text: >-
+    text: >-2
       Share a brief on scope, timelines and stakeholders. I typically respond within one business day.
     buttons:
       - label: Email Valentin
