@@ -27,7 +27,7 @@ sections:
     fill_image: false
     columns: 4
 
-#---
+---
 
 # - block: markdown
 #   content:
