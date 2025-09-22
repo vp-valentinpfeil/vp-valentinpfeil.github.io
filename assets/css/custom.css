@@ -505,7 +505,7 @@ h3, .prose h3{ font-size: var(--vp-h3-size); font-weight: 600; }
   /* Donut neu aufbauen: 100 - --value => „erreicht“ statt „restlich“ */
   background:
     radial-gradient(closest-side, #fff 80%, transparent 0 99.9%, #fff 0),
-    conic-gradient(currentColor calc((100 - var(--value)) * 1%), var(--vp-track) 0) !important;
+    conic-gradient(currentColor calc(var(--value) * 1%), var(--vp-track) 0) !important;
 }
 
 /* Resume section headings (make Education match the others) */

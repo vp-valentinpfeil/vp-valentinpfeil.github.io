@@ -151,12 +151,12 @@ skills:
         icon: language
 
 languages:
-  - name: German (native)
+  - name: German
     percent: 100
   - name: English
-    percent: 95
+    percent: 90
   - name: French
-    percent: 70
+    percent: 80
   - name: Italian
     percent: 5
 
