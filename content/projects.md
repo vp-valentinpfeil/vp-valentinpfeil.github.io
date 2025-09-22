@@ -38,7 +38,7 @@ sections:
       (ISO 27001 / BSI / NATO-aligned architectures).
 
       **Day rate:** from **€750 / day** (excl. VAT).  
-      **Availability:** fractional (1–3 days/week) or project sprints; full weeks by arrangement.
+      **Availability:** fractional (1–2 days/week) or project sprints; full weeks by arrangement.
 
 - block: feature
   content:
