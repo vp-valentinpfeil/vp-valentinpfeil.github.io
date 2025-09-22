@@ -2,7 +2,7 @@
 title: 'Consulting'
 type: landing
 summary: 'Cloud and Confidential Computing consulting for defence and healthcare programmes.'
-date: 2024-09-22
+date: 2025-09-22
 
 design:
   spacing: '5rem'
@@ -13,7 +13,7 @@ sections:
     content:
       title: Consulting for Critical Infrastructure
       text: >-
-        I help organisations in **defence** and **healthcare** design and operate secure cloud platforms
+        I help organisations in **defence** and **healthcare** design and operate secure cloud platforms  
         and **Confidential Computing** solutions.  
         Focus: remote attestation (AMD SEV-SNP, Nitro Enclaves), data-in-use protection,  
         cloud security architecture (AWS, Azure, OpenStack), security reviews and compliance  
@@ -21,20 +21,14 @@ sections:
       image:
         placement: right
 
-  - block: feature
+  - block: markdown
     content:
       title: Engagement Models
-      items:
-        - name: Advisory / Architecture
-          description: Strategic guidance, architecture reviews, security patterns and decision memos.
-        - name: Project Delivery
-          description: Hands-on design and implementation (IaC, attestation flows, enclave enablement, controls and guardrails).
-        - name: Security and Compliance Readiness
-          description: Gap analysis and remediation plan for ISO 27001 / BSI IT-Grundschutz; evidence prep for audits and stakeholder reviews.
-        - name: Fractional / Interim
-          description: Part-time Security or Cloud Architect for programmes in defence or healthcare — governance, leadership, vendor alignment.
-    design:
-      columns: 4
+      text: >-
+        • **Advisory / Architecture** — Strategic guidance, architecture reviews, security patterns and decision memos.  
+        • **Project Delivery** — Hands-on design and implementation (IaC, attestation flows, enclave enablement, controls and guardrails).  
+        • **Security and Compliance Readiness** — Gap analysis and remediation plan for ISO 27001 / BSI IT-Grundschutz; evidence prep for audits and stakeholder reviews.  
+        • **Fractional / Interim** — Part-time Security or Cloud Architect for defence and healthcare programmes: governance, leadership, vendor alignment.
 
   - block: markdown
     content:
