@@ -32,11 +32,11 @@ sections:
 
 - block: markdown
   content:
-    title: Consulting & Availability
+    title: Consulting and Availability
     text: >-
       I help organizations in **critical infrastructure** deliver secure cloud platforms and
       **Confidential Computing** solutions—primarily in **defence** and **healthcare**.  
-      Focus areas: remote attestation & data-in-use protection (AMD SEV-SNP, Nitro Enclaves),
+      Focus areas: remote attestation and data-in-use protection (AMD SEV-SNP, Nitro Enclaves),
       cloud security architecture (AWS, Azure, OpenStack), security reviews and compliance
       (ISO 27001 / BSI / NATO-aligned architectures).
 
@@ -49,13 +49,13 @@ sections:
     items:
       - name: Advisory / Architecture
         description: >
-          Strategic guidance, architecture reviews, security patterns & decision memos.
-          Typical: 2–4 workshops + written recommendations.
+          Strategic guidance, architecture reviews, security patterns and decision memos.
+          <!-- Typical: 2–4 workshops + written recommendations. -->
       - name: Project Delivery
         description: >
-          Hands-on design & implementation (IaC, attestation flows, enclave enablement,
-          controls & guardrails). Typical: 1–3 days/week for 4–12 weeks.
-      - name: Security & Compliance Readiness
+          Hands-on design and implementation (IaC, attestation flows, enclave enablement,
+          <!-- controls and guardrails). Typical: 1–3 days/week for 4–12 weeks. -->
+      - name: Security and Compliance Readiness
         description: >
           Gap analysis and remediation plan for ISO 27001 / BSI IT-Grundschutz; evidence
           prep for audits and stakeholder reviews.
@@ -68,11 +68,11 @@ sections:
 
 - block: markdown
   content:
-    title: Industries & Use Cases
+    title: Industries and Use Cases
     text: >-
       **Defence:** multi-cloud data sovereignty, secure data sharing, federation.  
       **Healthcare:** privacy-preserving analytics, enclave-backed research pipelines.  
-      **R&D:** HPC + enclaves, confidential AI/ML workloads, evidence & benchmarks.
+      **R&D:** HPC + enclaves, confidential AI/ML workloads, evidence and benchmarks.
 
 - block: cta
   content:
@@ -83,6 +83,3 @@ sections:
       - label: Email Valentin
         url: "mailto:vp@valentinpfeil.com?subject=Project%20Inquiry%20%2D%20Confidential%20Computing%20%2F%20Cloud%20Security"
         style: primary
-      - label: View Malt Profile
-        url: "https://en.malt.de/profile/valentinpfeil"
-        style: secondary
