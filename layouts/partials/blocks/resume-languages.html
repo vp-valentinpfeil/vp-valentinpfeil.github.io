@@ -1,0 +1,39 @@
+{{/* Custom override for Hugo Blox "resume-languages" block */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $author := $block.content.username | default "admin" }}
+
+{{ $person_page_path := printf "/authors/%s" $author }}
+{{ $person_page := site.GetPage $person_page_path }}
+{{ if not $person_page }}
+  {{ errorf "Could not find an author page at `%s`." $person_page_path }}
+{{ end }}
+{{ $langs := $person_page.Params.languages }}
+
+<div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center">
+  <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
+    {{ $block.content.title | markdownify | emojify }}
+  </div>
+
+  {{ with $block.content.text }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
+
+  <div class="flex items-center flex-col lg:flex-row gap-x-8">
+    {{ range $langs }}
+      {{ $pct := float .percent }}
+      <div class="flex flex-col items-center">
+        <div class="flex items-center justify-center w-28 h-28">
+          <svg class="transform -rotate-90" viewBox="0 0 288 288">
+            <circle cx="145" cy="145" r="120" stroke="currentColor" stroke-width="30"
+                    fill="transparent" class="text-gray-200 dark:text-gray-700" />
+            <circle cx="145" cy="145" r="120" stroke="currentColor" stroke-width="30"
+                    fill="transparent" class="text-primary-600 dark:text-primary-300"
+                    pathLength="100"
+                    style="stroke-dasharray: 100; stroke-dashoffset: {{ printf "%.2f" (sub 100.0 $pct) }}" />
+          </svg>
+          <span class="absolute text-3xl">{{ .percent }}%</span>
+        </div>
+        <span class="text-1xl">{{ .name }}</span>
+      </div>
+    {{ end }}
+  </div>
+</div>
