@@ -482,17 +482,6 @@ h3, .prose h3{ font-size: var(--vp-h3-size); font-weight: 600; }
     conic-gradient(currentColor calc((100 - var(--value)) * 1%), var(--vp-track) 0) !important;
 }
 
-
-/* Experience → Section-Titel (z.B. "Education") auf Bodoni & gleiche Größe */
-#section-resume-experience h3.mb-6.text-3xl.font-bold{
-  font-family: var(--vp-font-heading) !important; /* Bodoni Moda */
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  line-height: 1.2;
-  /* optional: falls du die Größe hart angleichen willst */
-  /* font-size: 1.875rem;  */  /* = text-3xl */
-}
-
 /* Resume section headings (make Education match the others) */
 #section-resume-experience .mb-6.text-3xl.font-bold,
 #section-resume-skills .mb-6.text-3xl.font-bold,
