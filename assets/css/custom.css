@@ -264,6 +264,32 @@ h3, .prose h3{ font-size: var(--vp-h3-size); font-weight: 600; }
   margin: 1rem auto;
 }
 
+/* ==========================================
+   Mail-Button – dunkel, Weiß, garantiert mittig
+   ========================================== */
+#section-markdown a[href^="mailto:"],
+#section-markdown a[href*="Email"] {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .6rem;
+  background: var(--vp-zinc-800);
+  color: #fff !important;
+  font-family: var(--vp-font-heading) !important; /* Bodoni */
+  font-weight: 600;
+  letter-spacing: 0.005em;
+  padding: .78rem 1.25rem;
+  text-decoration: none !important;
+  box-shadow: 0 10px 24px rgba(2,6,23,.16);
+  width: fit-content;
+  margin: 1.2rem auto;
+  border-radius: 0; /* eckig, wie beim CV */
+}
+
+#section-markdown a[href^="mailto:"]:hover {
+  background: var(--vp-zinc-900);
+}
+
 /* =================================
    7) Kleine Screens – Komfort
    ================================= */
