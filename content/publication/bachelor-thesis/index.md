@@ -35,7 +35,7 @@ links:
     url: "/files/20230119_BA_Pres_VP.pdf"
 
 image:
-  caption: 'Bachelor's Thesis at UniBw M, 2024'
+  caption: 'Bachelor Thesis at UniBw M, 2024'
   focal_point: 'top'
   preview_only: false
 
