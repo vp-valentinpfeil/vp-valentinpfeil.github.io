@@ -58,6 +58,17 @@ footer:
       share_alike: true
       allow_commercial: false
 
+  links:
+    - name: Privacy Policy
+      url: /privacy/
+      weight: 10
+    - name: Terms of Service
+      url: /terms/
+      weight: 20
+    - name: Legal Notice
+      url: /legal/
+      weight: 30
+
 # Localization
 locale:
   date_format: 'Jan 2, 2006'
