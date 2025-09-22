@@ -27,7 +27,10 @@ Currently operating under the German *small business regulation* (**§ 19 UStG**
 No VAT ID is issued; invoices are issued **without VAT**.
 
 **Responsible for Content** (per § 18 (2) MStV)  
-Valentin Pfeil, Schellingstraße 157, 80797 Munich, Germany
+Valentin Pfeil
+Schellingstraße 157
+80797 Munich
+Germany
 
 <!--
 OPTIONAL: Professional Liability Insurance
