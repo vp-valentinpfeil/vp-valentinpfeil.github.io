@@ -551,3 +551,17 @@ h3, .prose h3{ font-size: var(--vp-h3-size); font-weight: 600; }
 @media (min-width:1024px){
   .home-section{ padding-top: 4rem; padding-bottom: 4rem; }
 }
+
+/* Vereinheitlichte Abschnittstitel-Größe (Projects, Research, Resume, Consulting) */
+#section-collection .mb-6.text-3xl.font-bold,            /* Selected Projects */
+#papers .mb-6.text-3xl.font-bold,                        /* My Research */
+#section-resume-experience .mb-6.text-3xl.font-bold,     /* Resume: Experience */
+#section-resume-skills .mb-6.text-3xl.font-bold,         /* Resume: Skills */
+#section-resume-languages .mb-6.text-3xl.font-bold,      /* Resume: Languages/Education */
+#section-markdown .mb-6.text-3xl.font-bold               /* Consulting-Überschriften */
+{
+  font-family: var(--vp-font-heading) !important; /* Bodoni bleibt */
+  font-size: var(--vp-h2-size) !important;        /* eine gemeinsame Skala */
+  line-height: 1.2 !important;
+  letter-spacing: -0.01em !important;
+}
