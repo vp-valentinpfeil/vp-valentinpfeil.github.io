@@ -52,7 +52,3 @@ This website contains links to external third-party websites. We have no influen
 
 **Copyright**  
 Unless otherwise stated, all texts, images, and other content on this site are © Valentin Pfeil. Any reproduction, editing, distribution, or any kind of use outside the limits of copyright law requires prior written consent.
-
-<!--
-_Last updated: {{< now "20025-09-22" >}}_
--->
