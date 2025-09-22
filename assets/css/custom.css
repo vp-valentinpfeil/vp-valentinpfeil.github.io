@@ -495,19 +495,6 @@ h3, .prose h3{ font-size: var(--vp-h3-size); font-weight: 600; }
 }
 
 
-/* Languages: invertierte Donut-Füllung korrigieren */
-#section-experience .radial-progress,
-#section-resume-languages .radial-progress,
-.radial-progress[data-vp="lang"] {
-  /* Track-Farbe (heller Ring) – gern anpassen */
-  --vp-track: #e5e7eb;
-
-  /* Donut neu aufbauen: 100 - --value => „erreicht“ statt „restlich“ */
-  background:
-    radial-gradient(closest-side, #fff 80%, transparent 0 99.9%, #fff 0),
-    conic-gradient(currentColor calc(var(--value) * 1%), var(--vp-track) 0) !important;
-}
-
 /* Resume section headings (make Education match the others) */
 #section-resume-experience .mb-6.text-3xl.font-bold,
 #section-resume-skills .mb-6.text-3xl.font-bold,
@@ -586,58 +573,41 @@ main .prose a:hover{ color: var(--vp-zinc-800); }
 main .prose li { margin: .15rem 0; }
 
 
-/* =========================
-   Languages (SVG-Donuts) – sauberes Track/Progress-Styling
-   greift in #section-resume-languages UND im Experience-Wrapper
-   ========================= */
 
-/* Grundparameter & Farben */
-:root{
-  --vp-lang-track: #e5e7eb;   /* heller Ring (Tailwind zinc-200) */
-  --vp-lang-ring:  #3f3f46;   /* progress-Ring (zinc-700) */
+
+/* Languages (SVG Donuts) – Track/Progress, Dicke, Caps, Farben */
+#section-resume-languages svg {
+  width: 7.25rem;            /* optional: einheitliche Größe */
+  height: 7.25rem;
 }
 
-#section-resume-languages .radial-progress svg,
-#section-experience        .radial-progress svg{
-  display: block;
+#section-resume-languages svg circle {
+  fill: transparent !important;
+  stroke-width: 18 !important;      /* Ringdicke (vorher 30px) */
+  stroke-linecap: round !important; /* runde Enden, wirkt wertiger */
 }
 
-/* Alle Kreise sauber und gleich stark */
-#section-resume-languages .radial-progress svg circle,
-#section-experience        .radial-progress svg circle{
-  fill: none !important;
-  stroke-width: 18 !important;            /* Dicke des Rings */
-}
-
-/* 1. Kreis = Track (Hintergrundring) */
-#section-resume-languages .radial-progress svg circle:first-of-type,
-#section-experience        .radial-progress svg circle:first-of-type{
-  stroke: var(--vp-lang-track) !important;
+/* 1. Kreis im SVG = Track (heller Ring) */
+#section-resume-languages svg circle:first-of-type {
+  color: #e5e7eb !important;        /* light: zinc-200 */
+  stroke: currentColor !important;
   opacity: 1 !important;
 }
 
-/* Letzter Kreis = Fortschritt */
-#section-resume-languages .radial-progress svg circle:last-of-type,
-#section-experience        .radial-progress svg circle:last-of-type{
-  stroke: var(--vp-lang-ring) !important;
-  stroke-linecap: round !important;       /* hübsche Endkappen */
+/* 2. Kreis im SVG = Fortschritt */
+#section-resume-languages svg circle:last-of-type {
+  color: var(--vp-zinc-700) !important;  /* light: dunkler Ring */
+  stroke: currentColor !important;
   opacity: 1 !important;
 }
 
-/* Prozentzahl & Label: klare Inter-Typo */
-#section-resume-languages .radial-progress + span,   /* 100% */
-#section-experience        .radial-progress + span{
-  font-family: var(--vp-font-body) !important;  /* Inter */
-  font-feature-settings: "tnum" 1;              /* tabellarische Ziffern */
-}
+/* Dark-Mode Feinheiten (optional) */
+.dark #section-resume-languages svg circle:first-of-type { color: #374151 !important; } /* zinc-700 als Track */
+.dark #section-resume-languages svg circle:last-of-type  { color: #e5e7eb !important; } /* Fortschritt hell */
 
-#section-resume-languages .text-1xl,             /* Sprachlabel unter dem Donut */
-#section-experience        .text-1xl{
-  font-family: var(--vp-font-body) !important;  /* Inter */
-  color: var(--vp-zinc-700) !important;
-}
+/* Typografie unter den Donuts etwas ruhiger */
+#section-resume-languages .text-3xl { font-size: 1.5rem; line-height: 1.2; } /* Prozentzahl */
+#section-resume-languages .text-xl  { font-size: .95rem; }                   /* Sprachlabel */
 
-/* Optional: dunkler Modus – Progress farblich eine Nuance kräftiger */
-@media (prefers-color-scheme: dark){
-  :root{ --vp-lang-track: #27272a; --vp-lang-ring: #e5e7eb; } /* invertiert */
-}
+/* Vertikales Spacing in der Kachel etwas enger */
+#section-resume-languages .flex.flex-col.items-center { gap: .35rem; }
