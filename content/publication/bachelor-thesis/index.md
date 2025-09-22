@@ -1,5 +1,5 @@
 ---
-title: "Bachelor Thesis: Confidential Computing via Hardware Trusted Execution Environments by an OpenStack HPC capable Cloud"
+title: "Bachelor's Thesis: Confidential Computing via Hardware Trusted Execution Environments by an OpenStack HPC capable Cloud"
 
 authors:
   - admin
@@ -35,7 +35,7 @@ links:
     url: "/files/20230119_BA_Pres_VP.pdf"
 
 image:
-  caption: 'Bachelor Thesis at UniBw M, 2024'
+  caption: 'Bachelor's Thesis at UniBw M, 2024'
   focal_point: 'top'
   preview_only: false
 
