@@ -565,3 +565,22 @@ h3, .prose h3{ font-size: var(--vp-h3-size); font-weight: 600; }
   line-height: 1.2 !important;
   letter-spacing: -0.01em !important;
 }
+
+
+/* Legal/ToS/Privacy – Fließtext Inter, normaler Scale/Farbe */
+main .prose,
+.article-container .prose {
+  font-family: var(--vp-font-body) !important;     /* Inter */
+  font-size: var(--vp-body-size) !important;       /* nimmt lg:prose-xl die Größe */
+  line-height: 1.6;
+  color: var(--vp-zinc-800) !important;
+  max-width: 68ch;                                 /* angenehme Zeilenbreite */
+}
+
+/* Dezente Absatzabstände statt großer Blocks */
+main .prose p { margin: 0 0 var(--vp-space-2); }
+
+/* Listen, Links etc. wie gewohnt */
+main .prose a{ color: var(--vp-zinc-700); text-decoration-thickness: .08em; }
+main .prose a:hover{ color: var(--vp-zinc-800); }
+main .prose li { margin: .15rem 0; }
