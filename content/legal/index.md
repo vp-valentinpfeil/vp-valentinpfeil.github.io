@@ -1,6 +1,6 @@
 ---
 title: "Legal Notice"
-type: page          # keeps the simple page layout
+type: page
 layout: page
 summary: "Company and contact information."
 show_date: false
@@ -9,14 +9,48 @@ commentable: false
 share: false
 reading_time: false
 toc: false
-aliases: ["/imprint", "/impressum"]   # useful for DE users
+aliases: ["/legal", "/imprint", "/impressum"]
 ---
-**Owner:** Your Name / Company  
-**Address:** Street, City, Country  
-**Contact:** hello@yourdomain.com — +49 …  
-**VAT ID:** DE… (if applicable)
 
-**Responsible for Content** (according to § 18 Abs. 2 MStV, if relevant):  
-Your Name, Address
+**Provider (according to § 5 TMG)**  
+Valentin Pfeil  
+Schellingstraße 157  
+80797 Munich  
+Germany
 
-**Dispute Resolution:** We do not take part in online dispute resolution procedures.
+**Contact**  
+E-mail: vp@valentinpfeil.com  
+Phone: +49 151 28400183
+
+**VAT / Tax Status**  
+Currently operating under the German *small business regulation* (**§ 19 UStG**).  
+No VAT ID is issued; invoices are issued **without VAT**.
+
+**Responsible for Content** (per § 18 (2) MStV)  
+Valentin Pfeil, Schellingstraße 157, 80797 Munich, Germany
+
+<!--
+OPTIONAL: Professional Liability Insurance
+Uncomment/fill if applicable. If not needed, keep this block removed.
+
+**Professional Liability Insurance**  
+Insurer: …  
+Registered office: …  
+Geographical scope of insurance: …
+-->
+
+**EU Online Dispute Resolution**  
+The European Commission provides a platform for online dispute resolution (ODR):  
+https://ec.europa.eu/consumers/odr/  
+We are neither willing nor obliged to take part in dispute resolution proceedings before a consumer arbitration board.
+
+**Liability for Contents**  
+The contents of this website were created with great care. However, we cannot guarantee the accuracy, completeness, or up-to-dateness of the content. Obligations to remove or block the use of information under general laws remain unaffected.
+
+**Liability for Links**  
+This website contains links to external third-party websites. We have no influence over the contents of those websites; the respective provider or operator is always responsible. Linked pages were checked for possible legal violations at the time of linking; no unlawful content was recognizable then.
+
+**Copyright**  
+Unless otherwise stated, all texts, images, and other content on this site are © Valentin Pfeil. Any reproduction, editing, distribution, or any kind of use outside the limits of copyright law requires prior written consent.
+
+_Last updated: {{< now "20025-09-22" >}}_
