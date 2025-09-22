@@ -495,18 +495,71 @@ h3, .prose h3{ font-size: var(--vp-h3-size); font-weight: 600; }
 }
 
 
-/* Languages: invertierte Donut-Füllung korrigieren */
-#section-experience .radial-progress,
-#section-resume-languages .radial-progress,
-.radial-progress[data-vp="lang"] {
-  /* Track-Farbe (heller Ring) – gern anpassen */
-  --vp-track: #e5e7eb;
 
-  /* Donut neu aufbauen: 100 - --value => „erreicht“ statt „restlich“ */
-  background:
-    radial-gradient(closest-side, #fff 80%, transparent 0 99.9%, #fff 0),
-    conic-gradient(currentColor calc(var(--value) * 1%), var(--vp-track) 0) !important;
+
+
+/* Languages – Donuts sauber (korrekte Füllung, Ring-Dicke, Typo) */
+#section-resume-languages .radial-progress,
+#section-experience .radial-progress,
+.radial-progress[data-vp="lang"]{
+  /* Parameter */
+  --value: var(--vp-val, 0);                /* von HTML: style="--value:95" */
+  --size: 6.2rem;                           /* Donut-Durchmesser */
+  --thickness: 10px;                        /* Ring-Dicke */
+  --track: #e5e7eb;                         /* heller Ring (Tailwind zinc-200) */
+
+  /* Geometrie */
+  width: var(--size);
+  height: var(--size);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+
+  /* Ring zeichnen: gefüllter Anteil + Track, dann „Loch“ maskieren */
+  background: conic-gradient(currentColor calc(var(--value)*1%), var(--track) 0);
+  -webkit-mask: radial-gradient(farthest-side,
+                    transparent calc(100% - var(--thickness)), #000 0);
+          mask: radial-gradient(farthest-side,
+                    transparent calc(100% - var(--thickness)), #000 0);
+
+  /* Zahl in der Mitte (Inter) */
+  color: var(--vp-zinc-800);
+  font-family: var(--vp-font-body);         /* Inter */
+  font-weight: 600;
+  font-size: clamp(1.05rem, 1vw + .55rem, 1.45rem);
+  line-height: 1;
+  text-shadow: none;
 }
+
+/* Dark-Mode: Track etwas dunkler, Prozentzahl etwas heller */
+.dark #section-resume-languages .radial-progress{
+  --track: #374151;                         /* Tailwind gray-700-ish */
+  color: #e5e7eb;                           /* Zahl */
+}
+
+/* Layout & Beschriftung unterhalb der Donuts */
+#section-resume-languages .grid{
+  gap: 1.25rem 2.25rem;
+  justify-items: center;
+  align-items: center;
+}
+#section-resume-languages .grid p{
+  margin-top: .4rem;
+  font-family: var(--vp-font-body);         /* Inter */
+  color: var(--vp-zinc-700);
+  font-size: .95rem;
+  line-height: 1.3;
+}
+
+/* Optional: leichte Größen- und Abstandsreduktion auf kleineren Screens */
+@media (max-width: 520px){
+  #section-resume-languages .radial-progress{ --size: 5.2rem; --thickness: 9px; }
+  #section-resume-languages .grid{ gap: 1rem 1.5rem; }
+}
+
+
+
+
 
 /* Resume section headings (make Education match the others) */
 #section-resume-experience .mb-6.text-3xl.font-bold,
