@@ -40,8 +40,8 @@ Geographical scope of insurance: …
 -->
 
 **EU Online Dispute Resolution**  
-The European Commission provides a platform for online dispute resolution (ODR):  
-https://ec.europa.eu/consumers/odr/  
+The European Commission provides a platform for Consumer Redress:  
+https://consumer-redress.ec.europa.eu/  
 We are neither willing nor obliged to take part in dispute resolution proceedings before a consumer arbitration board.
 
 **Liability for Contents**  
