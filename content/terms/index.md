@@ -1,67 +1,41 @@
 ---
-title: "Privacy Policy"
+title: "Terms of Service"
 type: page
 layout: page
-summary: "How personal data is collected, processed and protected on this website."
+summary: "Terms governing the use of this website and consulting engagements."
 show_date: false
 draft: false
 commentable: false
 share: false
 reading_time: false
 toc: true
-aliases: ["/privacy", "/datenschutz"]
 ---
 
-### Introduction
-This Privacy Policy explains what personal data may be collected when you use this website, how it is processed and your rights under applicable data protection laws (in particular the **GDPR**).
+### Scope
+These Terms govern the use of this website as well as consulting services offered by Valentin Pfeil.  
+Specific engagements are subject to separate agreements or Statements of Work (SOWs). In case of conflict, the SOW shall prevail.
 
-### Controller
-Valentin Pfeil  
-Schellingstraße 157  
-80797 Munich  
-Germany  
-E-mail: info@valentinpfeil.com  
-Phone: +49 151 28400183
+### Professional Services
+Consulting services are delivered based on written SOWs or engagement letters.  
+These documents define scope, deliverables, timelines, fees, payment terms, intellectual property, confidentiality and warranties.  
+No obligation arises without a signed SOW.
 
-### Data Collected
-- **Server logs:** Technical data such as IP address, browser type, time of access and requested pages.  
-- **Contact data (if provided):** Information you voluntarily share via e-mail or contact forms.  
-- **Cookies & analytics:** This site does not use tracking or analytics tools unless explicitly stated.
+### Intellectual Property
+Unless explicitly agreed otherwise in writing:  
+- Pre-existing intellectual property remains the property of the originating party.  
+- Newly created work product will be licensed or assigned as defined in the applicable SOW.  
 
-### Purpose of Processing
-Data is processed solely for:  
-- Operating and securing the website (server logs).  
-- Responding to inquiries (contact data).  
-- Fulfilling legal obligations.  
+### Confidentiality
+Both parties undertake to treat all non-public information received in the course of an engagement as confidential, using at least a reasonable standard of care.  
+Confidentiality obligations survive the termination of the engagement.
 
-No data is sold or shared with third parties unless legally required.
+### Liability
+To the maximum extent permitted by law, liability is limited to direct damages and capped at the total fees paid for the relevant services.  
+Exclusions: this limitation does not apply in cases of wilful misconduct, gross negligence or where mandatory statutory law provides otherwise.
 
-### Legal Basis
-Processing is based on:  
-- **Art. 6(1)(b) GDPR** – performance of a contract or pre-contractual steps.  
-- **Art. 6(1)(c) GDPR** – compliance with legal obligations.  
-- **Art. 6(1)(f) GDPR** – legitimate interests in secure and efficient website operation.  
+### Governing Law & Venue
+These Terms and any disputes arising from them are governed by the laws of Germany.  
+Exclusive venue is Munich, unless mandatory statutory provisions dictate otherwise.
 
-### Data Retention
-Personal data is retained only as long as necessary for the stated purposes or legal obligations. Server logs are automatically deleted after a short period.
-
-### Your Rights
-You have the right to request:  
-- Access to your personal data (Art. 15 GDPR)  
-- Rectification (Art. 16 GDPR)  
-- Erasure (Art. 17 GDPR)  
-- Restriction of processing (Art. 18 GDPR)  
-- Data portability (Art. 20 GDPR)  
-- Objection to processing (Art. 21 GDPR)  
-
-Please send any requests to **info@valentinpfeil.com**.
-
-### Security
-Appropriate technical and organisational measures are applied to protect personal data against loss, misuse and unauthorised access.
-
-### Supervisory Authority
-You have the right to lodge a complaint with your local data protection authority.  
-For Bavaria: **Bavarian State Office for Data Protection Supervision (BayLDA), Ansbach.**
-
-### Updates
-This Privacy Policy may be updated from time to time to reflect changes in law or website operations.
+### Amendments
+We may update these Terms from time to time. The version published on this website at the time of use or engagement shall apply.
