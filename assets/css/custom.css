@@ -283,7 +283,7 @@ h3, .prose h3{ font-size: var(--vp-h3-size); font-weight: 600; }
   box-shadow: 0 10px 24px rgba(2,6,23,.16);
   width: fit-content;
   margin: 1.2rem auto;
-  border-radius: 0; /* eckig, wie beim CV */
+  border-radius: .5rem;              /* <<< rounded like CV */
 }
 
 #section-markdown a[href^="mailto:"]:hover {
