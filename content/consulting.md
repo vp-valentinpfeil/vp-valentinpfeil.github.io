@@ -42,8 +42,8 @@ sections:
     content:
       title: Industries and Use Cases
       text: >-
-        **Defence:** multi-cloud data sovereignty, secure data sharing, federation.  
-        **Healthcare:** privacy-preserving analytics, enclave-backed research pipelines.  
+        **Defence:** multi-cloud data sovereignty, secure data sharing and federation.  
+        **Healthcare:** privacy-preserving analytics and enclave-backed research pipelines.  
         **R&D:** HPC with enclaves, confidential AI/ML workloads, evidence and benchmarks.
 
 - block: markdown
@@ -51,7 +51,7 @@ sections:
     title: Ready to start a project?
     text: >-
       Share a brief on scope, timelines and stakeholders.  
-      I typically respond within one business day.  
+      I typically respond within one business day.
 
       ✉️ [Email Valentin](mailto:vp@valentinpfeil.com?subject=Project%20Inquiry%20—%20Confidential%20Computing%20and%20Cloud%20Security)
 ---
