@@ -29,3 +29,12 @@ main:
 #  - name: Teaching
 #    url: teaching/
 #    weight: 40
+  - name: Privacy Policy
+    url: /privacy/
+    weight: 50
+  - name: Terms of Service
+    url: /terms/
+    weight: 51
+  - name: Legal Notice
+    url: /legal/
+    weight: 52
