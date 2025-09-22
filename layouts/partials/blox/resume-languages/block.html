@@ -18,7 +18,12 @@
   {{ with $block.content.text }}<p>{{ . | markdownify | emojify }}</p>{{ end }}
 
   <div class="flex items-center flex-col lg:flex-row gap-x-8">
-    {{ range $langs }}
+{{ $radius := 120.0 }}
+{{ $circ := mul (mul 2.0 math.Pi) $radius }}
+{{ range $langs }}
+  {{ $pct := float .percent }}
+  {{ $ratio := div $pct 100.0 }}
+  {{ $offset := mul $circ (sub 1.0 $ratio) }}
       <div class="flex flex-col items-center">
         <div class="flex items-center justify-center w-28 h-28">
           <svg class="transform -rotate-90" viewBox="0 0 288 288">
@@ -28,8 +33,8 @@
             <!-- Fortschritt -->
             <circle cx="145" cy="145" r="120" stroke="currentColor" stroke-width="30"
                     class="text-primary-600 dark:text-primary-300" fill="transparent"
-                    style="stroke-dasharray: calc(2 * 22 / 7 * 120);
-                          stroke-dashoffset: calc((2 * 22 / 7 * 120) * (1 - ({{ .percent }} / 100)))" />
+                    style="stroke-dasharray: {{ printf "%.4f" $circ }};
+                          stroke-dashoffset: {{ printf "%.4f" $offset }}" />
           </svg>
           <span class="absolute text-3xl">{{ .percent }}%</span>
         </div>
