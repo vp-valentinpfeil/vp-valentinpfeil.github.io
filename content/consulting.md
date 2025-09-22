@@ -27,7 +27,7 @@ sections:
         - **Advisory / Architecture** — Strategic guidance, architecture reviews, security patterns and decision memos.  
         - **Project Delivery** — Hands-on design and implementation (IaC, attestation flows, enclave enablement, controls and guardrails).  
         - **Security and Compliance Readiness** — Gap analysis and remediation plan for ISO 27001 / BSI IT-Grundschutz; evidence prep for audits and stakeholder reviews.  
-        - **Fractional / Interim** — Part-time Security or Cloud Architect for defence and healthcare programmes: governance, leadership, vendor alignment.
+        - **Fractional / Interim** — Part-time Security or Cloud Architect for defence and healthcare programmes: governance, leadership and vendor alignment.
 
   - block: markdown
     content:
@@ -53,5 +53,5 @@ sections:
       text: |
         Share a brief on scope, timelines and stakeholders. I typically respond within one business day.
 
-        ✉️ [Email Valentin](mailto:vp@valentinpfeil.com?subject=Project%20Inquiry%20—%20Confidential%20Computing%20and%20Cloud%20Security)
+        ✉️ [Request a consultation](mailto:vp@valentinpfeil.com?subject=Project%20Inquiry%20—%20Confidential%20Computing%20and%20Cloud%20Security)
 ---
