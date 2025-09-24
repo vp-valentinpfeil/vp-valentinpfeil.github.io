@@ -22,7 +22,7 @@
   {{- $title = $siteTitle -}}
 {{- end -}}
 
-{{/* -------- Description: vermeidet else-if -------- */}}
+{{/* Description ohne else-if Kette */}}
 {{- $descriptionSource := "" -}}
 {{- with $params.description -}}
   {{- $descriptionSource = . -}}
@@ -72,7 +72,7 @@
   {{- $image = $params.featured_image -}}
 {{- else if $params.image -}}
   {{- $imgParam := $params.image -}}
-  {{- if (isMap $imgParam) -}}
+  {{- if (reflect.IsMap $imgParam) -}}
     {{- if isset $imgParam "src" -}}
       {{- $image = index $imgParam "src" -}}
     {{- else if isset $imgParam "path" -}}
@@ -129,7 +129,7 @@
 <meta name="keywords" content="{{ $keywords }}">
 {{- end }}
 
-{{/* -------- Author: vermeidet else-if -------- */}}
+{{/* Author ohne else-if */}}
 {{- with (index $seoConfig "org_name") -}}
 <meta name="author" content="{{ . }}">
 {{- else -}}
