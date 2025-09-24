@@ -2,7 +2,18 @@
 title: 'Consulting'
 type: landing
 summary: 'Cloud and Confidential Computing consulting for defence and healthcare programmes.'
+description: 'Consulting services for secure cloud platforms, confidential computing and remote attestation in defence, healthcare and research environments across Europe.'
+keywords:
+  - confidential computing consulting
+  - defence cloud security expert
+  - healthcare data platform consulting
+  - remote attestation architecture
+  - fractional cloud security architect
+slug: consulting
+canonical: 'https://www.valentinpfeil.com/consulting/'
+seo_title: 'Consulting | Confidential Computing & Secure Cloud Architecture'
 date: 2025-09-22
+lastmod: 2025-09-22
 
 design:
   spacing: '5rem'

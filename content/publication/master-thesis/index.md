@@ -1,5 +1,18 @@
 ---
 title: "Master’s Thesis: Connected Defence — Next-Generation Data Platform for Military Intelligence and Operations"
+slug: masters-thesis-connected-defence
+summary: >
+  Cloud-native, zero-trust data platform for connected defence: Confidential
+  Computing, remote attestation, integrity/audit and policy-driven governance
+  for NATO-aligned operations.
+description: 'Master’s thesis designing a confidential computing enabled, NATO-aligned defence data platform with remote attestation, auditability and zero-trust controls.'
+canonical: 'https://www.valentinpfeil.com/publication/master-thesis/'
+keywords:
+  - confidential computing thesis
+  - defence data platform research
+  - remote attestation blueprint
+  - nato aligned cloud security
+  - zero trust architecture thesis
 
 authors:
   - admin
@@ -26,11 +39,6 @@ abstract: >
   governance controls. Results show that the platform can preserve data
   sovereignty and verifiability while sustaining operational tempo, providing a
   pragmatic blueprint for connected defence missions.
-
-summary: >
-  Cloud-native, zero-trust data platform for connected defence: Confidential
-  Computing, remote attestation, integrity/audit and policy-driven governance
-  for NATO-aligned operations.
 
 tags:
   - Confidential Computing

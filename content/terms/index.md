@@ -3,6 +3,14 @@ title: "Terms of Service"
 type: page
 layout: page
 summary: "Terms governing the use of this website and consulting engagements."
+description: 'Terms of service for Valentin Pfeil Consulting, covering scope of work, confidentiality, liability and governing law.'
+keywords:
+  - terms of service valentin pfeil
+  - consulting engagement terms germany
+  - confidentiality agreement consulting
+  - liability clause cloud security consultant
+slug: terms-of-service
+canonical: 'https://www.valentinpfeil.com/terms/'
 show_date: false
 draft: false
 commentable: false
@@ -21,7 +29,7 @@ These documents define scope, deliverables, timelines, fees, payment terms, inte
 No obligation arises without a signed SOW.
 
 ### Intellectual Property
-Unless explicitly agreed otherwise in writing:   fire
+Unless explicitly agreed otherwise in writing:
 - Pre-existing intellectual property remains the property of the originating party.  
 - Newly created work product will be licensed or assigned as defined in the applicable SOW.  
 

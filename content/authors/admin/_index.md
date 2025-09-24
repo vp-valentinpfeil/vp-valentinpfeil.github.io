@@ -1,6 +1,16 @@
 ---
 # Display name
 title: Valentin Pfeil
+slug: valentin-pfeil
+summary: 'Cloud and Confidential Computing consultant specialising in defence cloud security, remote attestation and privacy-preserving healthcare platforms.'
+description: 'Profile of Valentin Pfeil, a cloud security architect and Confidential Computing expert with defence leadership experience and applied research in NATO-aligned data platforms.'
+keywords:
+  - valentin pfeil consultant
+  - confidential computing expert germany
+  - defence cloud architect
+  - remote attestation specialist
+  - healthcare privacy engineer
+seo_title: 'Valentin Pfeil — Cloud & Confidential Computing Consultant'
 
 # Name pronunciation (optional)
 #name_pronunciation: Valentin Pfeil

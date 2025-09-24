@@ -9,6 +9,15 @@ tags:
   - Confidential Computing
   - Cloud-Native
 summary: "Cloud-native, modular platform for defence and intelligence: real-time intelligence, compliance (C5, FedRAMP, NATO D3.2) and secure multi-cloud operations."
+description: 'Capgemini and AWS OmniAware platform project delivering confidential computing, remote attestation and compliant defence cloud operations across coalition environments.'
+keywords:
+  - defence cloud platform
+  - confidential computing defence project
+  - omniaware connected defence
+  - nato compliant cloud solution
+  - remote attestation defence architecture
+slug: omniaware-connected-defence
+canonical: 'https://www.valentinpfeil.com/project/omniaware/'
 ---
 
 ## OmniAware — Connected Defence

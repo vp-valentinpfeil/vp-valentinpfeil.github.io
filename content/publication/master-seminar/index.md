@@ -1,5 +1,17 @@
 ---
 title: "Seminar Paper: Building Cyber Resilience Through AI-based Risk Management"
+slug: seminar-cyber-resilience-ai-risk-management
+summary: >
+  Seminar paper on integrating AI into cyber risk management frameworks to enhance organisational resilience,
+  presented at the Seminar Cyber Defense, UniBw M (HT 2024).
+description: 'Seminar paper detailing how AI-driven risk management strengthens cyber resilience across critical infrastructure, considering EU AI Act compliance and ethical safeguards.'
+canonical: 'https://www.valentinpfeil.com/publication/master-seminar/'
+keywords:
+  - ai cyber resilience seminar
+  - risk management artificial intelligence paper
+  - cybersecurity resilience research germany
+  - eu ai act risk management analysis
+  - cyber defense seminar unibw
 authors:
   - admin
   
@@ -28,10 +40,6 @@ abstract: >
   resilience and ensure operational continuity in increasingly hostile digital environments.
 
 # Summary (shortened abstract).
-summary: >
-  Seminar paper on integrating AI into cyber risk management frameworks to enhance organisational resilience,
-  presented at the Seminar Cyber Defense, UniBw M (HT 2024).
-
 tags:
 - Cyber Resilience
 - Risk Management

@@ -1,6 +1,17 @@
 ---
-title: "Seminar Paper: High-Performance Computing: Trusted
-Execution Environments"
+title: "Seminar Paper: High-Performance Computing: Trusted Execution Environments"
+slug: seminar-hpc-trusted-execution-environments
+summary: >
+  Early evaluation of Confidential Computing in HPC using AMD SEV-SNP, with emphasis
+  on attestation, workload protection and design trade-offs in cloud-based research environments.
+description: 'Seminar paper analysing AMD SEV-SNP trusted execution environments for high-performance computing, covering attestation, workload isolation and design considerations for confidential research clouds.'
+canonical: 'https://www.valentinpfeil.com/publication/bachelor-seminar/'
+keywords:
+  - hpc trusted execution seminar
+  - confidential computing amd sev-snp
+  - remote attestation research paper
+  - secure scientific computing cloud
+  - trusted workloads university research
 
 authors:
   - admin

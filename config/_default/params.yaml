@@ -13,10 +13,24 @@ marketing:
   seo:
     site_type: Person
 #    local_business_type: ''
-    org_name: 'Valentin Pfeil'
-    description: 'Cloud and Confidential Computing Consultant'
+    org_name: 'Valentin Pfeil Consulting'
+    alternate_name: 'Valentin Pfeil — Cloud & Confidential Computing Consulting'
+    description: 'Cloud security and confidential computing consulting for defence, healthcare and research programmes in Germany and across Europe.'
+    keywords:
+      - cloud security consulting
+      - confidential computing expert
+      - defence data platform architect
+      - healthcare privacy engineering
+      - remote attestation specialist
     image: "media/icon.png"
-    twitter: 'GetResearchDev'
+    image_alt: 'Valentin Pfeil consulting mark'
+    canonical: 'https://www.valentinpfeil.com/'
+    locale: en_US
+    twitter: 'vp_valentin'
+    same_as:
+      - 'https://www.linkedin.com/in/valentinpfeil/'
+      - 'https://github.com/vp-valentinpfeil'
+      - 'https://orcid.org/0009-0007-8612-4926'
   analytics:
     google_analytics: ''
     baidu_tongji: ''
@@ -26,6 +40,8 @@ marketing:
   verification:
     google: ''
     baidu: ''
+    bing: ''
+    yandex: ''
 
 # Site header
 header:

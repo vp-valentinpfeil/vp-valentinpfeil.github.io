@@ -3,6 +3,17 @@ title: 'Research and Development'
 date: 2024-05-19
 type: landing
 url: /research/
+summary: 'Research on confidential computing, defence data platforms and resilient cloud security led by Valentin Pfeil.'
+description: 'Discover Valentin Pfeil’s research on confidential computing, remote attestation, NATO-aligned cloud security architectures and privacy-preserving healthcare data platforms.'
+keywords:
+  - confidential computing research
+  - defence cloud architecture
+  - remote attestation studies
+  - healthcare data security research
+  - resilient multi-cloud platforms
+slug: research
+canonical: 'https://www.valentinpfeil.com/research/'
+seo_title: 'Research | Confidential Computing & Defence Cloud Innovation'
 
 design:
   # Section spacing

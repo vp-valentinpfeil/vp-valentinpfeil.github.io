@@ -1,0 +1,181 @@
+{{- $site := .Site -}}
+{{- $page := . -}}
+{{- $params := $page.Params -}}
+{{- $marketing := $site.Params.marketing | default (dict) -}}
+{{- $seoConfig := index $marketing "seo" | default (dict) -}}
+{{- $siteTitle := strings.TrimSpace ($site.Title | default "") -}}
+{{- $pageTitle := strings.TrimSpace ($page.Title | default "") -}}
+{{- $title := $siteTitle -}}
+{{- with $params.seo_title -}}
+  {{- $title = strings.TrimSpace . -}}
+{{- else -}}
+  {{- if and (not $page.IsHome) (ne $pageTitle "") -}}
+    {{- if ne $siteTitle "" -}}
+      {{- $title = printf "%s | %s" $pageTitle $siteTitle -}}
+    {{- else -}}
+      {{- $title = $pageTitle -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- if eq $title "" -}}
+  {{- $title = $siteTitle -}}
+{{- end -}}
+
+{{- $descriptionSource := "" -}}
+{{- with $params.description -}}
+  {{- $descriptionSource = . -}}
+{{- else if $page.Summary -}}
+  {{- $descriptionSource = $page.Summary -}}
+{{- else if index $seoConfig "description" -}}
+  {{- $descriptionSource = index $seoConfig "description" -}}
+{{- end -}}
+{{- $description := strings.TrimSpace (plainify $descriptionSource) -}}
+
+{{- $keywordsSlice := slice -}}
+{{- if $params.keywords -}}
+  {{- range $params.keywords -}}
+    {{- $kw := strings.TrimSpace (plainify .) -}}
+    {{- if ne $kw "" -}}
+      {{- $keywordsSlice = $keywordsSlice | append $kw -}}
+    {{- end -}}
+  {{- end -}}
+{{- else if index $seoConfig "keywords" -}}
+  {{- range index $seoConfig "keywords" -}}
+    {{- $kw := strings.TrimSpace (plainify .) -}}
+    {{- if ne $kw "" -}}
+      {{- $keywordsSlice = $keywordsSlice | append $kw -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+{{- $keywordsSlice = uniq $keywordsSlice -}}
+{{- $keywords := delimit $keywordsSlice ", " -}}
+
+{{- $canonical := "" -}}
+{{- with $params.canonical -}}
+  {{- $canonical = . -}}
+{{- else -}}
+  {{- $canonical = $page.Permalink -}}
+{{- end -}}
+{{- if not (or (strings.HasPrefix $canonical "http://") (strings.HasPrefix $canonical "https://")) -}}
+  {{- $canonical = absURL $canonical -}}
+{{- end -}}
+
+{{- $image := "" -}}
+{{- $imageAlt := "" -}}
+{{- if $params.featured_image -}}
+  {{- $image = $params.featured_image -}}
+{{- else if $params.image -}}
+  {{- $imgParam := $params.image -}}
+  {{- if (isMap $imgParam) -}}
+    {{- if isset $imgParam "src" -}}
+      {{- $image = index $imgParam "src" -}}
+    {{- else if isset $imgParam "path" -}}
+      {{- $image = index $imgParam "path" -}}
+    {{- else if isset $imgParam "filename" -}}
+      {{- $image = printf "media/%s" (index $imgParam "filename") -}}
+    {{- end -}}
+    {{- if isset $imgParam "alt" -}}
+      {{- $imageAlt = index $imgParam "alt" -}}
+    {{- end -}}
+    {{- if and (eq $imageAlt "") (isset $imgParam "caption") -}}
+      {{- $imageAlt = index $imgParam "caption" -}}
+    {{- end -}}
+  {{- else -}}
+    {{- $image = $imgParam -}}
+  {{- end -}}
+{{- end -}}
+{{- if eq $image "" -}}
+  {{- with index $seoConfig "image" -}}
+    {{- $image = . -}}
+  {{- end -}}
+{{- end -}}
+{{- if eq $imageAlt "" -}}
+  {{- with index $seoConfig "image_alt" -}}
+    {{- $imageAlt = . -}}
+  {{- end -}}
+{{- end -}}
+{{- if and (ne $image "") (not (or (strings.HasPrefix $image "http://") (strings.HasPrefix $image "https://"))) -}}
+  {{- $image = absURL $image -}}
+{{- end -}}
+
+{{- $twitterHandle := "" -}}
+{{- with index $seoConfig "twitter" -}}
+  {{- $handle := strings.TrimSpace . -}}
+  {{- if ne $handle "" -}}
+    {{- if strings.HasPrefix $handle "@" -}}
+      {{- $twitterHandle = $handle -}}
+    {{- else -}}
+      {{- $twitterHandle = printf "@%s" $handle -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $ogType := "website" -}}
+{{- if and (not $page.IsHome) $page.IsPage -}}
+  {{- $ogType = "article" -}}
+{{- end -}}
+
+<title>{{ $title }}</title>
+{{- if ne $description "" }}
+<meta name="description" content="{{ $description }}">
+{{- end }}
+{{- if ne $keywords "" }}
+<meta name="keywords" content="{{ $keywords }}">
+{{- end }}
+{{- with (index $seoConfig "org_name") -}}
+<meta name="author" content="{{ . }}">
+{{- else if ne $siteTitle "" -}}
+<meta name="author" content="{{ $siteTitle }}">
+{{- end }}
+<link rel="canonical" href="{{ $canonical }}">
+<meta property="og:site_name" content="{{ $siteTitle }}">
+<meta property="og:title" content="{{ $title }}">
+{{- if ne $description "" }}
+<meta property="og:description" content="{{ $description }}">
+{{- end }}
+<meta property="og:type" content="{{ $ogType }}">
+<meta property="og:url" content="{{ $canonical }}">
+{{- with index $seoConfig "locale" }}
+<meta property="og:locale" content="{{ . }}">
+{{- end }}
+{{- if ne $image "" }}
+<meta property="og:image" content="{{ $image }}">
+  {{- if ne $imageAlt "" }}
+<meta property="og:image:alt" content="{{ $imageAlt }}">
+  {{- end }}
+{{- end }}
+<meta name="twitter:card" content="{{ if ne $image "" }}summary_large_image{{ else }}summary{{ end }}">
+<meta name="twitter:title" content="{{ $title }}">
+{{- if ne $description "" }}
+<meta name="twitter:description" content="{{ $description }}">
+{{- end }}
+{{- if ne $twitterHandle "" }}
+<meta name="twitter:site" content="{{ $twitterHandle }}">
+<meta name="twitter:creator" content="{{ $twitterHandle }}">
+{{- end }}
+{{- if ne $image "" }}
+<meta name="twitter:image" content="{{ $image }}">
+  {{- if ne $imageAlt "" }}
+<meta name="twitter:image:alt" content="{{ $imageAlt }}">
+  {{- end }}
+{{- end }}
+
+{{- $schema := dict "@context" "https://schema.org" "@type" (default "WebSite" (index $seoConfig "site_type")) "url" $canonical -}}
+{{- if ne $title "" -}}
+  {{- $schema = merge $schema (dict "name" $title) -}}
+{{- end -}}
+{{- with index $seoConfig "alternate_name" -}}
+  {{- $schema = merge $schema (dict "alternateName" .) -}}
+{{- end -}}
+{{- if ne $description "" -}}
+  {{- $schema = merge $schema (dict "description" $description) -}}
+{{- end -}}
+{{- if ne $image "" -}}
+  {{- $schema = merge $schema (dict "image" (slice $image)) -}}
+{{- end -}}
+{{- with index $seoConfig "same_as" -}}
+  {{- if gt (len .) 0 -}}
+    {{- $schema = merge $schema (dict "sameAs" .) -}}
+  {{- end -}}
+{{- end -}}
+<script type="application/ld+json">{{ $schema | jsonify }}</script>

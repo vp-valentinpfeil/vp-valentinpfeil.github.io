@@ -29,7 +29,9 @@ summaryLength: 30
 pagination:
   pagerSize: 10
 enableEmoji: true
+canonifyURLs: true
 enableRobotsTXT: true
+disableHugoGeneratorInject: true
 footnotereturnlinkcontents: <sup>^</sup>
 ignoreFiles: [\.ipynb$, .ipynb_checkpoints$, \.Rmd$, \.Rmarkdown$, _cache$]
 permalinks:
@@ -38,6 +40,7 @@ disableAliases: true
 outputs:
   home: [HTML, RSS, headers, redirects, backlinks]
   section: [HTML, RSS]
+  page: [HTML]
 imaging:
   resampleFilter: lanczos
   quality: 90

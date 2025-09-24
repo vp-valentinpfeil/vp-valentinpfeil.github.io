@@ -1,5 +1,16 @@
 ---
 title: "Bachelor’s Thesis: Confidential Computing via Hardware Trusted Execution Environments by an OpenStack HPC capable Cloud"
+slug: bachelors-thesis-confidential-computing
+summary: >
+  Integration of hardware Trusted Execution Environments (AMD SEV-SNP) into an OpenStack HPC cloud, with focus on deployment, attestation, usability and performance benchmarking using biomedical workloads.
+description: 'Bachelor’s thesis delivering AMD SEV-SNP confidential computing for OpenStack HPC environments with automated deployment, attestation workflows and biomedical workload benchmarking.'
+canonical: 'https://www.valentinpfeil.com/publication/bachelor-thesis/'
+keywords:
+  - confidential computing bachelor thesis
+  - amd sev-snp openstack research
+  - trusted execution environment hpc
+  - remote attestation cloud thesis
+  - digimed bayern research security
 
 authors:
   - admin
@@ -14,9 +25,6 @@ publication_short: UniBw M
 
 abstract: >
   This thesis investigates the integration of Confidential Computing in High-Performance Computing (HPC) environments by leveraging hardware-based Trusted Execution Environments (TEEs) such as AMD SEV-SNP within an OpenStack cloud infrastructure. It analyses how TEEs protect sensitive biomedical and scientific data by ensuring security attestation, data integrity and isolation of workloads. The study includes deployment automation with Terraform and Ansible, workload orchestration with SLURM and benchmarks with GROMACS simulations to evaluate usability, performance and scalability. The results highlight the trade-offs between performance overhead and enhanced confidentiality, providing a foundation for secure cloud-based HPC suitable for regulated research projects such as DigiMed Bayern.
-
-summary: >
-  Integration of hardware Trusted Execution Environments (AMD SEV-SNP) into an OpenStack HPC cloud, with focus on deployment, attestation, usability and performance benchmarking using biomedical workloads.
 
 tags:
   - Confidential Computing

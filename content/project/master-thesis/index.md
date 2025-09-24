@@ -5,6 +5,16 @@ tags:
   - Confidential Computing
   - Defense
   - Cloud Security
+summary: 'Master’s thesis designing a confidential computing enabled, NATO-aligned defence data platform with remote attestation and zero-trust controls.'
+description: 'Research project delivering a blueprint for connected defence data platforms that blend confidential computing, remote attestation pipelines and mission-grade security compliance.'
+keywords:
+  - defence data platform thesis
+  - confidential computing master thesis
+  - remote attestation research project
+  - nato aligned cloud architecture
+  - zero trust defence blueprint
+slug: masters-thesis-connected-defence
+canonical: 'https://www.valentinpfeil.com/project/master-thesis/'
 ---
 
 **Connected Defence — Next-Generation Data Platform**  

@@ -3,6 +3,14 @@ title: "Privacy Policy"
 type: page
 layout: page
 summary: "How personal data is collected, processed and protected on this website."
+description: 'Privacy policy detailing data collection, processing, legal bases and user rights for Valentin Pfeil’s consulting website.'
+keywords:
+  - privacy policy valentin pfeil
+  - gdpr compliance consulting website
+  - data protection confidential computing consultant
+  - privacy notice cloud security consulting
+slug: privacy-policy
+canonical: 'https://www.valentinpfeil.com/privacy/'
 show_date: false
 draft: false
 commentable: false

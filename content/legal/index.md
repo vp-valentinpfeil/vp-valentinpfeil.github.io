@@ -3,6 +3,14 @@ title: "Legal Notice"
 type: page
 layout: page
 summary: "Company and contact information."
+description: 'Legal disclosure for Valentin Pfeil Consulting including address, contact details and regulatory notes.'
+keywords:
+  - legal notice valentin pfeil
+  - impressum cloud consultant germany
+  - company contact valentin pfeil
+  - imprint confidential computing consultant
+slug: legal-notice
+canonical: 'https://www.valentinpfeil.com/legal/'
 show_date: false
 draft: false
 commentable: false

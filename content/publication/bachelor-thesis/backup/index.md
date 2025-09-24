@@ -1,5 +1,14 @@
 ---
 title: 'An example conference paper'
+slug: example-conference-paper
+summary: 'Example conference paper kept as a template for Hugo Blox publication metadata.'
+description: 'Template entry illustrating how to capture conference paper metadata within Hugo Blox; unpublished placeholder left in draft mode.'
+canonical: 'https://www.valentinpfeil.com/publication/example-conference-paper/'
+keywords:
+  - hugo blox conference template
+  - publication metadata example
+  - conference paper placeholder
+draft: true
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here
@@ -30,7 +39,7 @@ publication_short: In *ICW*
 abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
 
 # Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+# summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
 
 tags:
   - Large Language Models

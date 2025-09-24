@@ -2,6 +2,17 @@
 title: 'Projects'
 date: 2024-05-19
 type: landing
+summary: 'Selected confidential computing, defence cloud and healthcare data platform projects delivered by Valentin Pfeil.'
+description: 'Explore confidential computing, defence innovation and healthcare data platform projects showcasing Valentin Pfeil’s expertise in secure cloud architecture and remote attestation.'
+keywords:
+  - confidential computing projects
+  - defence cloud transformation
+  - healthcare data platform case studies
+  - remote attestation implementations
+  - secure multi-cloud architecture
+slug: projects
+canonical: 'https://www.valentinpfeil.com/projects/'
+seo_title: 'Projects | Confidential Computing & Defence Cloud Case Studies'
 
 design:
   # Section spacing

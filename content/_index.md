@@ -3,6 +3,17 @@
 title: ""
 date: 2022-10-24
 type: landing
+slug: home
+summary: 'Confidential computing and cloud security consulting for defence, healthcare and research programmes led by Valentin Pfeil.'
+description: 'Valentin Pfeil provides confidential computing, remote attestation and secure cloud architecture consulting for defence, healthcare and research organisations in Germany and across Europe.'
+keywords:
+  - confidential computing consulting
+  - cloud security architect germany
+  - defence data platform expert
+  - healthcare privacy engineering
+  - remote attestation services
+seo_title: 'Valentin Pfeil | Cloud & Confidential Computing Consulting'
+canonical: 'https://www.valentinpfeil.com/'
 
 design:
   # Default section spacing
