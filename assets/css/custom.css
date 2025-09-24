@@ -588,22 +588,22 @@ main .prose li { margin: .15rem 0; }
 }
 
 /* 1. Kreis im SVG = Track (heller Ring) */
-#section-resume-languages svg circle:first-of-type {
+#section-resume-languages .lang-donut-track {
   color: #e5e7eb !important;        /* light: zinc-200 */
   stroke: currentColor !important;
   opacity: 1 !important;
 }
 
 /* 2. Kreis im SVG = Fortschritt */
-#section-resume-languages svg circle:last-of-type {
+#section-resume-languages .lang-donut-progress {
   color: var(--vp-zinc-700) !important;  /* light: dunkler Ring */
   stroke: currentColor !important;
   opacity: 1 !important;
 }
 
 /* Dark-Mode Feinheiten (optional) */
-.dark #section-resume-languages svg circle:first-of-type { color: #374151 !important; } /* zinc-700 als Track */
-.dark #section-resume-languages svg circle:last-of-type  { color: #e5e7eb !important; } /* Fortschritt hell */
+.dark #section-resume-languages .lang-donut-track { color: #374151 !important; } /* zinc-700 als Track */
+.dark #section-resume-languages .lang-donut-progress  { color: #e5e7eb !important; } /* Fortschritt hell */
 
 /* Typografie unter den Donuts etwas ruhiger */
 #section-resume-languages .text-3xl { font-size: 1.5rem; line-height: 1.2; } /* Prozentzahl */
