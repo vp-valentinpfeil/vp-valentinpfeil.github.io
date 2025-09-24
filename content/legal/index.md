@@ -8,7 +8,7 @@ draft: false
 commentable: false
 share: false
 reading_time: false
-toc: false
+toc: true
 aliases: ["/legal", "/imprint", "/impressum"]
 ---
 
