@@ -12,7 +12,7 @@ keywords:
   - secure multi-cloud architecture
 slug: projects
 canonical: 'https://www.valentinpfeil.com/projects/'
-seo_title: 'Projects | Confidential Computing & Defence Cloud Case Studies'
+seo_title: 'Projects | Cloud and Confidential Computing Case Studies'
 
 design:
   # Section spacing

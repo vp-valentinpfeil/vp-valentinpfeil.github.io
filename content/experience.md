@@ -12,7 +12,7 @@ keywords:
   - leadership in cyber defence
 slug: experience
 canonical: 'https://www.valentinpfeil.com/experience/'
-seo_title: 'Experience | Valentin Pfeil — Confidential Computing & Defence Cloud'
+seo_title: 'Experience | Valentin Pfeil — Cloud and Confidential Computing Consultant'
 
 design:
   spacing: '5rem'

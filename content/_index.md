@@ -12,7 +12,7 @@ keywords:
   - defence data platform expert
   - healthcare privacy engineering
   - remote attestation services
-seo_title: 'Valentin Pfeil | Cloud & Confidential Computing Consulting'
+seo_title: 'Valentin Pfeil | Cloud and Confidential Computing Consultant'
 canonical: 'https://www.valentinpfeil.com/'
 
 design:

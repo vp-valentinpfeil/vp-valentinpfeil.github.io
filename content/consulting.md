@@ -11,7 +11,7 @@ keywords:
   - fractional cloud security architect
 slug: consulting
 canonical: 'https://www.valentinpfeil.com/consulting/'
-seo_title: 'Consulting | Confidential Computing & Secure Cloud Architecture'
+seo_title: 'Consulting | Cloud and Confidential Computing'
 date: 2025-09-22
 lastmod: 2025-09-22
 

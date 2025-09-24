@@ -6,6 +6,7 @@
 {{- $siteTitle := strings.TrimSpace ($site.Title | default "") -}}
 {{- $pageTitle := strings.TrimSpace ($page.Title | default "") -}}
 {{- $title := $siteTitle -}}
+
 {{- with $params.seo_title -}}
   {{- $title = strings.TrimSpace . -}}
 {{- else -}}
@@ -21,13 +22,18 @@
   {{- $title = $siteTitle -}}
 {{- end -}}
 
+{{/* -------- Description: vermeidet else-if -------- */}}
 {{- $descriptionSource := "" -}}
 {{- with $params.description -}}
   {{- $descriptionSource = . -}}
-{{- else if $page.Summary -}}
-  {{- $descriptionSource = $page.Summary -}}
-{{- else if index $seoConfig "description" -}}
-  {{- $descriptionSource = index $seoConfig "description" -}}
+{{- else -}}
+  {{- if $page.Summary -}}
+    {{- $descriptionSource = $page.Summary -}}
+  {{- else -}}
+    {{- with index $seoConfig "description" -}}
+      {{- $descriptionSource = . -}}
+    {{- end -}}
+  {{- end -}}
 {{- end -}}
 {{- $description := strings.TrimSpace (plainify $descriptionSource) -}}
 
@@ -122,11 +128,16 @@
 {{- if ne $keywords "" }}
 <meta name="keywords" content="{{ $keywords }}">
 {{- end }}
+
+{{/* -------- Author: vermeidet else-if -------- */}}
 {{- with (index $seoConfig "org_name") -}}
 <meta name="author" content="{{ . }}">
-{{- else if ne $siteTitle "" -}}
+{{- else -}}
+  {{- if ne $siteTitle "" -}}
 <meta name="author" content="{{ $siteTitle }}">
+  {{- end -}}
 {{- end }}
+
 <link rel="canonical" href="{{ $canonical }}">
 <meta property="og:site_name" content="{{ $siteTitle }}">
 <meta property="og:title" content="{{ $title }}">
