@@ -46,9 +46,11 @@ sections:
       text: |
         **Day rate:** from **€750 / day** (excl. VAT).
 
-        **Availability:** up to 1–2 days per week or dedicated project sprints by arrangement.
-
-        Contracts via German small-business regulation (*Kleinunternehmerregelung*, no VAT charged) until further notice.
+        **Availability:** typically up to 1–2 days per week or in dedicated project sprints.  
+        
+        Engagements can be delivered on-site or remotely across the EU, subject to prior arrangement.  
+        
+        Contracts are issued under German small-business regulation (*Kleinunternehmerregelung*), with no VAT charged in accordance with §19 UStG; for EU cross-border services, the reverse-charge mechanism applies.  
 
   - block: markdown
     content:
