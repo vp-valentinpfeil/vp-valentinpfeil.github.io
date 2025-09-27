@@ -27,7 +27,7 @@ Schellingstraße 157
 Germany
 
 **Contact**  
-E-mail: vp@valentinpfeil.com  
+Email: vp@valentinpfeil.com  
 Phone: +49 151 28400183
 
 **VAT / Tax Status**  
@@ -50,13 +50,13 @@ Registered office: …
 Geographical scope of insurance: …
 -->
 
-**EU Consumer Redress**  
-The European Commission provides a platform for Consumer Redress:  
+**EU Consumer Dispute Resolution**  
+The European Commission provides a platform for consumer dispute resolution:  
 https://consumer-redress.ec.europa.eu/  
 We are neither willing nor obliged to take part in dispute resolution proceedings before a consumer arbitration board.
 
 **Liability for Contents**  
-The contents of this website were created with great care. However, we cannot guarantee the accuracy, completeness or up-to-dateness of the content. Obligations to remove or block the use of information under general laws remain unaffected.
+The contents of this website were created with great care. However, we cannot guarantee the accuracy, completeness or timeliness of the content. Obligations to remove or block the use of information under general laws remain unaffected.
 
 **Liability for Links**  
 This website contains links to external third-party websites. We have no influence over the contents of those websites; the respective provider or operator is always responsible. Linked pages were checked for possible legal violations at the time of linking; no unlawful content was recognizable then.

@@ -1,11 +1,11 @@
 ---
 title: 'Consulting'
 type: landing
-summary: 'Cloud and Confidential Computing consulting for defence and healthcare programmes.'
-description: 'Consulting services for secure cloud platforms, confidential computing and remote attestation in defence, healthcare and research environments across Europe.'
+summary: 'Cloud and Confidential Computing consulting for defense and healthcare programs.'
+description: 'Consulting services for secure cloud platforms, confidential computing and remote attestation in defense, healthcare and research environments across Europe.'
 keywords:
   - confidential computing consulting
-  - defence cloud security expert
+  - defense cloud security expert
   - healthcare data platform consulting
   - remote attestation architecture
   - fractional cloud security architect
@@ -24,7 +24,7 @@ sections:
     content:
       title: Consulting for Critical Infrastructure
       text: |
-        I help organisations in **defence** and **healthcare** design and operate secure cloud platforms
+        I help organizations in **defense** and **healthcare** design and operate secure cloud platforms
         and **Confidential Computing** solutions.
 
         **Focus:** remote attestation (AMD SEV-SNP, Nitro Enclaves), data-in-use protection,
@@ -38,7 +38,7 @@ sections:
         - **Advisory / Architecture** — Strategic guidance, architecture reviews, security patterns and decision memos.  
         - **Project Delivery** — Hands-on design and implementation (IaC, attestation flows, enclave enablement, controls and guardrails).  
         - **Security and Compliance Readiness** — Gap analysis and remediation plan for ISO 27001 / BSI IT-Grundschutz; evidence prep for audits and stakeholder reviews.  
-        - **Fractional / Interim** — Part-time Security or Cloud Architect for defence and healthcare programmes: governance, leadership and vendor alignment.
+        - **Fractional / Interim** — Part-time Security or Cloud Architect for defense and healthcare programs: governance, leadership and vendor alignment.
 
   - block: markdown
     content:
@@ -54,7 +54,7 @@ sections:
     content:
       title: Industries and Use Cases
       text: |
-        - **Defence:** multi-cloud data sovereignty, secure data sharing and federation.  
+        - **Defense:** multi-cloud data sovereignty, secure data sharing and federation.  
         - **Healthcare:** privacy-preserving analytics and enclave-backed research pipelines.  
         - **R&D:** HPC with enclaves, confidential AI/ML workloads, evidence and benchmarks.
 

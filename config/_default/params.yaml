@@ -15,11 +15,11 @@ marketing:
 #    local_business_type: ''
     org_name: 'Valentin Pfeil Consulting'
     alternate_name: 'Valentin Pfeil — Cloud & Confidential Computing Consulting'
-    description: 'Cloud security and confidential computing consulting for defence, healthcare and research programmes in Germany and across Europe.'
+    description: 'Cloud security and confidential computing consulting for defense, healthcare and research programs in Germany and across Europe.'
     keywords:
       - cloud security consulting
       - confidential computing expert
-      - defence data platform architect
+      - defense data platform architect
       - healthcare privacy engineering
       - remote attestation specialist
     image: "media/icon.png"

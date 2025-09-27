@@ -48,7 +48,7 @@ profiles:
     label: Phone
   - icon: envelope-open
     url: 'mailto:vp@valentinpfeil.com'
-    label: E-mail
+    label: Email
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/valentinpfeil/
   - icon: brands/github
@@ -86,7 +86,7 @@ education:
     summary: |
       Built a solid foundation in computer science and cloud technologies.  
       Explored trusted execution environments (AMD SEV-SNP) within OpenStack-based cloud environments.
-      Bachelor’s Thesis: *Confidential Computing via Hardware Trusted Execution Environments by an OpenStack HPC capable Cloud (393 p., Sep 2023 - Jan 2024)*
+      Bachelor’s Thesis: *Confidential Computing via Hardware Trusted Execution Environments by an OpenStack HPC-capable Cloud (393 p., Sep 2023 - Jan 2024)*
   - area: State-Certified Electrical Engineer
     institution: DAA Technikum
     date_start: 2013-10-01

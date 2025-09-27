@@ -2,14 +2,14 @@
 title: 'Experience'
 date: 2023-10-24
 type: landing
-summary: 'Professional experience, leadership roles and technical expertise in cloud security, confidential computing and defence operations.'
-description: 'Track Valentin Pfeil’s experience across defence, consulting and research with expertise in confidential computing, cloud security architecture and remote attestation.'
+summary: 'Professional experience, leadership roles and technical expertise in cloud security, confidential computing and defense operations.'
+description: 'Track Valentin Pfeil’s experience across defense, consulting and research with expertise in confidential computing, cloud security architecture and remote attestation.'
 keywords:
   - confidential computing experience
-  - defence cloud security career
+  - defense cloud security career
   - cloud security architect resume
   - remote attestation specialist background
-  - leadership in cyber defence
+  - leadership in cyber defense
 slug: experience
 canonical: 'https://www.valentinpfeil.com/experience/'
 seo_title: 'Experience | Valentin Pfeil — Cloud and Confidential Computing Consultant'

@@ -2,11 +2,11 @@
 title: 'Projects'
 date: 2024-05-19
 type: landing
-summary: 'Selected confidential computing, defence cloud and healthcare data platform projects delivered by Valentin Pfeil.'
-description: 'Explore confidential computing, defence innovation and healthcare data platform projects showcasing Valentin Pfeil’s expertise in secure cloud architecture and remote attestation.'
+summary: 'Selected confidential computing, defense cloud and healthcare data platform projects delivered by Valentin Pfeil.'
+description: 'Explore confidential computing, defense innovation and healthcare data platform projects showcasing Valentin Pfeil’s expertise in secure cloud architecture and remote attestation.'
 keywords:
   - confidential computing projects
-  - defence cloud transformation
+  - defense cloud transformation
   - healthcare data platform case studies
   - remote attestation implementations
   - secure multi-cloud architecture
@@ -25,10 +25,10 @@ sections:
     title: Selected Projects
     text: >
       A curated selection of projects that reflect my focus on **cloud security,
-      confidential computing and defence/health-oriented innovation**.  
+      confidential computing and defense/health-oriented innovation**.  
       Highlights include applied research in precision medicine,
       confidential computing in HPC-enabled clouds,
-      federated multi-cloud security for defence and NATO-aligned
+      federated multi-cloud security for defense and NATO-aligned
       architectures for data sovereignty.
     filters:
       folders:
@@ -45,7 +45,7 @@ sections:
 #     title: Consulting and Availability
 #     text: >-
 #       I help organizations in **critical infrastructure** deliver secure cloud platforms and
-#       **Confidential Computing** solutions—primarily in **defence** and **healthcare**.  
+#       **Confidential Computing** solutions—primarily in **defense** and **healthcare**.  
 #       Focus areas: remote attestation and data-in-use protection (AMD SEV-SNP, Nitro Enclaves),
 #       cloud security architecture (AWS, Azure, OpenStack), security reviews and compliance
 #       (ISO 27001 / BSI / NATO-aligned architectures).
@@ -71,7 +71,7 @@ sections:
 #           prep for audits and stakeholder reviews.
 #       - name: Fractional / Interim
 #         description: >
-#           Part-time Security/Cloud Architect for programmes in defence/health—governance,
+#           Part-time Security/Cloud Architect for programs in defense/health—governance,
 #           technical leadership, vendor alignment.
 #   design:
 #     columns: 4
@@ -80,7 +80,7 @@ sections:
 #   content:
 #     title: Industries and Use Cases
 #     text: >-
-#       **Defence:** multi-cloud data sovereignty, secure data sharing, federation.  
+#       **Defense:** multi-cloud data sovereignty, secure data sharing, federation.  
 #       **Healthcare:** privacy-preserving analytics, enclave-backed research pipelines.  
 #       **R&D:** HPC + enclaves, confidential AI/ML workloads, evidence and benchmarks.
 

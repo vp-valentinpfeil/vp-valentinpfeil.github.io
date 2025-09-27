@@ -8,7 +8,7 @@ tags:
   - Healthcare
   - Big Data
   - P4 Medicine
-summary: 'Flagship Bavarian precision medicine programme building a secure cloud platform for privacy-preserving multi-omics research.'
+summary: 'Flagship Bavarian precision medicine program building a secure cloud platform for privacy-preserving multi-omics research.'
 description: 'DigiMed Bayern project delivering secure big data infrastructure for predictive healthcare, multi-omics analytics and privacy-preserving research workflows.'
 keywords:
   - healthcare data platform project

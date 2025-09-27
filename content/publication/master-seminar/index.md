@@ -3,7 +3,7 @@ title: "Seminar Paper: Building Cyber Resilience Through AI-based Risk Managemen
 slug: seminar-cyber-resilience-ai-risk-management
 summary: >
   Seminar paper on integrating AI into cyber risk management frameworks to enhance organisational resilience,
-  presented at the Seminar Cyber Defense, UniBw M (HT 2024).
+  presented at the Seminar Cyber Defence, UniBw M (HT 2024).
 description: 'Seminar paper detailing how AI-driven risk management strengthens cyber resilience across critical infrastructure, considering EU AI Act compliance and ethical safeguards.'
 canonical: 'https://www.valentinpfeil.com/publication/master-seminar/'
 keywords:
@@ -11,7 +11,7 @@ keywords:
   - risk management artificial intelligence paper
   - cybersecurity resilience research germany
   - eu ai act risk management analysis
-  - cyber defense seminar unibw
+  - cyber defence seminar unibw
 authors:
   - admin
   
@@ -26,7 +26,7 @@ publishDate: "2024-02-15T00:00:00Z"
 publication_types: ["report"]
 
 # Publication name and optional abbreviated publication name.
-publication: "Seminar Cyber Defense, Universität der Bundeswehr München, Fakultät Informatik"
+publication: "Seminar Cyber Defence, Universität der Bundeswehr München, Fakultät Informatik"
 publication_short: "UniBw M"
 
 abstract: >
@@ -44,7 +44,7 @@ tags:
 - Cyber Resilience
 - Risk Management
 - Artificial Intelligence
-- Cyber Defense
+- Cyber Defence
 featured: false
 
 # IDs (optional).
