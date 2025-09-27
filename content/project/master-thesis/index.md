@@ -31,7 +31,7 @@ Focusing on **confidential computing**, secure remote attestation, performance b
 
 ### Contributions
 - Delivered a proof of concept that enforces zero-trust access, auditability and resilient data exchange across coalition stakeholders.
-- Mapped security control catalogues to NATO data-handling guidance such as `D3.2`, ensuring traceable compliance across mission systems.
+- Mapped security control catalogues to NATO data-handling guidance such as `D32`, ensuring traceable compliance across mission systems.
 - Produced deployment and validation runbooks that translate academic findings into operationally actionable architectures.
 
 ### Artefacts

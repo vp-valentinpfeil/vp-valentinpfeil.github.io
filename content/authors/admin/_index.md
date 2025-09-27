@@ -187,7 +187,7 @@ languages:
 I support companies **secure** their **cloud** infrastructures and **enable data protection** during use with **confidential computing**.
 
 My focus areas: Trusted Execution Environments (**AMD SEV-SNP**, AWS Nitro Enclaves and OP-TEE), remote attestation and vault integration — for a new level of security for business-critical workloads.
-With my dual background as an IT officer in the German Armed Forces and a cloud security consultant, I combine discipline, technical expertise and compliance knowledge (**ISO 27001**, BSI C5 and **NATO D3.2**) to achieve measurable results.
+With my dual background as an IT officer in the German Armed Forces and a cloud security consultant, I combine discipline, technical expertise and compliance knowledge (**ISO 27001**, BSI C5 and **NATO D32**) to achieve measurable results.
 
 Core competencies: Cloud security architecture (**AWS**, Azure and **OpenStack**), Kubernetes and container security, infrastructure-as-code (Terraform, Helm, Kubectl), IT governance and compliance consulting.
 Available part-time for consulting, architecture design, security reviews and proof-of-concepts also in civilian industries such as healthcare, finance and Industry 4.0.

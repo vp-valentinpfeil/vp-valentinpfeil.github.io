@@ -23,7 +23,7 @@ canonical: 'https://www.valentinpfeil.com/project/omniaware/'
 ## OmniAware — Connected Defense
 
 **OmniAware** is a **cloud-native, scalable** platform co-developed by Capgemini and AWS for defense and intelligence organizations operating in secure, sovereign or coalition environments.  
-It provides **real-time intelligence**, a **modular serverless** architecture and compliance with **C5**, **FedRAMP**, **NATO D3.2** and more.  
+It provides **real-time intelligence**, a **modular serverless** architecture and compliance with **C5**, **FedRAMP**, **NATO D32** and more.  
 GenAI-ready and designed for immutable, auditable data integrity, OmniAware enables defense-grade secure, AI-powered operations across multi-cloud deployments.
 
 **Learn more:** [Capgemini — OmniAware Connected Defense](https://www.capgemini.com/solutions/omniaware-connected-defense/).
