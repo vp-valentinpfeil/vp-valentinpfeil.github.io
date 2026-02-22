@@ -56,5 +56,4 @@ This site is powered by [Hugo Blox](https://hugoblox.com/)
 using the [Academic/Portfolio Starter Template](https://github.com/HugoBlox/theme-academic-cv).
 ---
 
-Built with passion — combining **Defense discipline** and **Cloud security innovation**.  
-- Test -
+Built with passion — combining **Defense discipline** and **Cloud security innovation**.
